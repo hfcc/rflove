@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/hfcc/rflove/issues"
   },
-  "homepage": "https://github.com/hfcc/rflove#readme"
+  "homepage": "https://github.com/hfcc/rflove#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "koa": "^2.0.0"
+  }
 }
