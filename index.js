@@ -1,5 +1,6 @@
 const Koa = require('koa');
 const co = require('co');
+const router = require('koa-router')();
 
 const app = new Koa();
 
@@ -10,8 +11,10 @@ app.use(co.wrap(function *(ctx, next){
     console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
 }));
 
-app.use(co.wrap(function *(ctx){
-    ctx.body = 'hello Koa';
-}));
+router.get('/', function (ctx, next){
+   ctx.body = "hello koa & co & koa-router";
+});
+
+app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(3000);
