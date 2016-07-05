@@ -12,9 +12,7 @@ app.use(co.wrap(function *(ctx, next){
     console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
 }));
 
-app.use(staticServer({
-    rootDir: 'webapp'
-}));
+app.use(staticServer({rootDir: 'webapp'}));
 
 // router.get('/', function (ctx, next){
 //    ctx.body = "hello koa & co & koa-router";
