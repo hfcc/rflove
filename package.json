@@ -5,7 +5,8 @@
   "main": "serverbootup.js",
   "scripts": {
     "start": "node server/serverbootup.js",
-    "build": "./node_modules/webpack"
+    "build": "webpack --config ./webapp/webpack.config.js",
+    "watch": "webpack --watch --config ./webapp/webpack.config.js"
   },
   "repository": {
     "type": "git",

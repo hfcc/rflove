@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	document.writeln("hello world! test webpack");
+	document.writeln("hello world! test webpack, test webpack watch");
 
 /***/ }
 /******/ ]);
