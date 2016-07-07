@@ -9,10 +9,13 @@ module.exports = {
             {
                 test: /\.js?$/,
                 loader: 'babel-loader',
-                exclude: /node_modules/,
                 query: {
-                    presets: ['es2015', 'react']
+                    presets: ['es2015', 'react'],
+                    plugins: [['antd', {'style': true}]]
                 }
+            },
+            {
+                test: /\.less$/, loader: 'style!css!less'
             }
         ]
     }
