@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Hello extends React.Component {
+class Main extends React.Component {
     render() {
-        return <h1>hello world! oh my God!</h1>
+        return (
+            <div>hello world</div>
+        );
     }
 }
 
-ReactDOM.render(<Hello/>, document.getElementById('content'));
+ReactDOM.render(<Main />, document.getElementById('content'));
