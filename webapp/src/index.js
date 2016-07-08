@@ -1,25 +1,56 @@
 import './css/reset.css';
 import './css/main.less';
+import './css/timeline.min.css';
+import 'pills/dist/pills.min.css';
+
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Timeline, Icon } from 'antd';
 
 class Main extends React.Component {
     render() {
         return (
-            <Timeline>
-                <Timeline.Item>
-                    <div><span>2015-09-01</span> 创建服务现场</div>
-                </Timeline.Item>
-                <Timeline.Item>初步排除网络异常 2015-09-01</Timeline.Item>
-                <Timeline.Item
-                    dot={<Icon type="clock-circle-o" style={{ fontSize: '16px' }} />}
-                    color="red">
-                    技术测试异常 2015-09-01
-                </Timeline.Item>
-                <Timeline.Item>网络异常正在修复 2015-09-01</Timeline.Item>
-            </Timeline>
+            <div>
+                <div className="row">
+                    <div className="twelve columns">header</div>
+                </div>
+                <div className="row">
+                    <div className="six columns">user info</div>
+                    <div className="six columns">user description</div>
+                </div>
+                <div className="row">
+                    <div className="ten columns">
+                        <div className="timeline timeline-left blue-blue-blue">
+                            <div className="timeline-block">
+                                <div className="timeline-icon timeline-icon-hide-border">
+                                    <i className="fa fa-github fa-2"></i>
+                                </div>
+                                <div className="timeline-content">
+                                    <p> Any content </p>
+                                    <div className="timeline-date">Yesterday</div>
+                                </div>
+                            </div>
+
+                             <div className="timeline-block">
+                                <div className="timeline-icon timeline-icon-hide-border">
+                                    <i className="fa fa-book fa-2"></i>
+                                </div>
+                                <div className="timeline-content">
+                                    <p> Any content </p>
+                                    <div className="timeline-date">Yesterday</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="two columns">
+                        type filter
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="twelve columns">footer</div>
+                </div>
+            </div>
         );
     }
 }
