@@ -19,7 +19,7 @@ class Main extends React.Component {
                     <div className="six columns">user description</div>
                 </div>
                 <div className="row">
-                    <div className="ten columns">
+                    <div className="nine columns">
                         <div className="timeline timeline-left blue-blue-blue">
                             <div className="timeline-block">
                                 <div className="timeline-icon timeline-icon-hide-border">
@@ -30,20 +30,9 @@ class Main extends React.Component {
                                     <div className="timeline-date">Yesterday</div>
                                 </div>
                             </div>
-
-                             <div className="timeline-block">
-                                <div className="timeline-icon timeline-icon-hide-border">
-                                    <i className="fa fa-book fa-2"></i>
-                                </div>
-                                <div className="timeline-content">
-                                    <p> Any content </p>
-                                    <div className="timeline-date">Yesterday</div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
-                    <div className="two columns">
+                    <div className="three columns">
                         type filter
                     </div>
                 </div>
