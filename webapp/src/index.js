@@ -1,6 +1,8 @@
 import './css/reset.css';
 import './css/main.less';
 import './css/timeline.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/unify/css/style.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -13,11 +15,11 @@ class Main extends React.Component {
             <div>
                 <Header />
                 <div className="row">
-                    <div className="six columns">user info</div>
-                    <div className="six columns">user description</div>
+                    <div className="col-md-6">user info</div>
+                    <div className="col-md-6">user description</div>
                 </div>
                 <div className="row">
-                    <div className="nine columns">
+                    <div className="col-md-9">
                         <div className="timeline timeline-left blue-blue-blue">
                             <div className="timeline-block">
                                 <div className="timeline-icon timeline-icon-hide-border">
@@ -30,12 +32,12 @@ class Main extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="three columns">
+                    <div className="col-md-3">
                         type filter
                     </div>
                 </div>
                 <div className="row">
-                    <div className="twelve columns">footer</div>
+                    <div className="col-md-12">footer</div>
                 </div>
             </div>
         );

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/serverbootup.js",
     "build": "webpack --config ./webapp/webpack.config.js",
-    "watch": "webpack --watch --config ./webapp/webpack.config.js"
+    "watch": "webpack --watch --config ./webapp/webpack.config.js --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -34,9 +34,11 @@
   "devDependencies": {
     "babel-plugin-antd": "^0.4.0",
     "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.1"
   }
 }
