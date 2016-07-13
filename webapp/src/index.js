@@ -1,19 +1,17 @@
 import './css/reset.css';
 import './css/main.less';
 import './css/timeline.min.css';
-import 'pills/dist/pills.min.css';
-
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import Header from './component/header.js'
 
 class Main extends React.Component {
     render() {
         return (
             <div>
-                <div className="row">
-                    <div className="twelve columns">header</div>
-                </div>
+                <Header />
                 <div className="row">
                     <div className="six columns">user info</div>
                     <div className="six columns">user description</div>
