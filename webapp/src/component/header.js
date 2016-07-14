@@ -1,8 +1,4 @@
 import './../css/unify/css/headers/header-v4-centered.css';
-import './../css/unify/plugins/animate.css';
-import './../css/unify/plugins/line-icons/line-icons.css';
-import './../css/unify/css/theme-skins/dark.css';
-import './../css/unify/css/theme-colors/dark-blue.css';
 
 import React from 'react';
 
