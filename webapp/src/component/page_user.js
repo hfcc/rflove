@@ -1,8 +1,5 @@
 import './../css/unify/css/pages/profile.css';
 import './../css/unify/css/pages/shortcode_timeline2.css';
-import './../css/unify/plugins/sky-forms-pro/skyforms/css/sky-forms.css';
-import './../css/unify/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css';
-
 import React from 'react';
 
 export default class User extends React.Component {
@@ -87,6 +84,27 @@ export default class User extends React.Component {
                                         <div className="panel-body">
                                         <form action="#" className="sky-form">
                                             <ul className="list-unstyled social-contacts-v2">
+                                                <li>
+                                                    <label className="checkbox">
+                                                        <input type="checkbox"/>
+                                                        <i></i>
+                                                        Video
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label className="checkbox">
+                                                        <input type="checkbox"/>
+                                                        <i></i>
+                                                        Video
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label className="checkbox">
+                                                        <input type="checkbox"/>
+                                                        <i></i>
+                                                        Video
+                                                    </label>
+                                                </li>
                                                 <li>
                                                     <label className="checkbox">
                                                         <input type="checkbox"/>

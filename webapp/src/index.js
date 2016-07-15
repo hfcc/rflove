@@ -12,6 +12,7 @@ import ReactDOM from 'react-dom';
 
 import Header from './component/header.js';
 import PageUser from './component/page_user.js';
+import Footer from './component/footer.js';
 
 class Main extends React.Component {
     render() {
@@ -19,6 +20,7 @@ class Main extends React.Component {
             <div>
                 <Header />
                 <PageUser />
+                <Footer />
             </div>
         );
     }
