@@ -9,6 +9,7 @@ import './css/unify/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, Link } from 'react-router';
 
 import Header from './component/header.js';
 import PageUser from './component/page_user.js';
@@ -20,11 +21,18 @@ class Main extends React.Component {
         return (
             <div>
                 <Header />
-                <PageUser />
+                {this.props.children}
                 <Footer />
             </div>
         );
     }
 }
 
-ReactDOM.render(<Main />, document.getElementById('root'));
+ReactDOM.render((
+    <Router>
+        <Route component={Main}>
+            <Route path="user" component={ PageUser } />
+            <Route path="/" component={ PageUserList } />
+        </Route>
+    </Router>
+), document.getElementById('root'));
