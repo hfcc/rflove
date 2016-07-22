@@ -662,28 +662,18 @@
 	margin: 12px 0 10px;
 }
 
-.profile .name-location {
+.profile .user-name {
 	overflow: hidden;
 }
 
-.profile .name-location strong {
+.profile .user-name a {
 	color: #555;
 	display: block;
 	font-size: 16px;
 }
 
-.profile .name-location span a {
-	color: #555;
-}
-
-.profile .name-location span a:hover {
+.profile .user-name a:hover {
 	color: #4765a0;
-}
-
-.profile .name-location span i {
-	color: #4765a0;
-	font-size: 18px;
-	margin-right: 5px;
 }
 
 /*Profile Projects
