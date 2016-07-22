@@ -2,6 +2,7 @@ import './../css/unify/css/pages/profile.css';
 
 import React from 'react';
 import _ from 'lodash';
+import $ from 'jquery';
 
 import UserCardMain from './user_card_main.js';
 
@@ -11,81 +12,9 @@ export default class UserList extends React.Component {
         this.state = { userList: [] };
     }
     componentDidMount() {
-        var userList = [
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-            {
-                name: "hanfeng",
-                description: "developer",
-                lovedCount: 5000,
-                followerCount: 1000
-            },
-        ];
-        this.setState({userList: userList});
+        $.get('users', (userList) => {
+            this.setState({userList: userList});
+        });
     }
     render() {
         return (

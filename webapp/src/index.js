@@ -10,6 +10,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link } from 'react-router';
 import $ from 'jquery';
+import _ from 'lodash';
 
 import Header from './component/header.js';
 import PageUser from './component/page_user.js';

@@ -9,18 +9,15 @@ export default class Header extends React.Component {
                 <div className="topbar-v1">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6">
-                                <ul className="list-inline top-v1-contacts">
-                                    <li>
-                                        <i className="fa fa-envelope"></i> Email: <a href="mailto:hfcc8685@gmail.com">hfcc8685@gmail.com</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div className="col-md-6">
+                            <div className="col-md-6 col-md-offset-6">
                                 <ul className="list-inline top-v1-data">
-                                    <li><a href="#"><i className="fa fa-home"></i></a></li>
-                                    <li><a href="#"><i className="fa fa-globe"></i></a></li>
+                                    <li><i className="fa fa-sign-in"></i></li>
+                                    <li><a href="#"><i className="fa fa-google"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-github"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-weibo"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-weixin"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -31,7 +28,7 @@ export default class Header extends React.Component {
                     <div className="container">
                         <div className="navbar-header">
                             <a className="navbar-brand" href="index.html">
-                                <h1>Recommend Your Love && Find Your Love</h1>
+                                <h1>Recommend Your Love Find Your Love</h1>
                             </a>
 
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -51,16 +48,6 @@ export default class Header extends React.Component {
                         <div className="container">
                             <ul className="nav navbar-nav">
                                 <li className="active">
-                                    <a href="javascript:void(0);">
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="javascript:void(0);">
                                         Home
                                     </a>

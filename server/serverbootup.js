@@ -14,9 +14,95 @@ app.use(co.wrap(function *(ctx, next){
 
 app.use(staticServer({rootDir: 'webapp'}));
 
-// router.get('/', function (ctx, next){
-//    ctx.body = "hello koa & co & koa-router";
-// });
+router.get('/users', function(ctx, next) {
+    var userList = [
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000
+        }
+    ];
+    ctx.body = userList;
+});
 
 app.use(router.routes()).use(router.allowedMethods());
 

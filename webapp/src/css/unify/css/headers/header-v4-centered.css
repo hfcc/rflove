@@ -133,8 +133,8 @@
 	float: none;
 }
 
-.header-v4 .navbar-brand img {
-	margin: 0 auto;
+.header-v4 .navbar-brand h1 {
+    text-align: center;
 }
 
 .header-v4 .navbar-nav {

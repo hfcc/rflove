@@ -13,8 +13,8 @@ export default class UserCardMain extends React.Component {
                 <p>{this.props.user.description}</p>
                 <hr />
                 <ul className="list-inline share-list">
-                    <li><i className="fa fa-heart red"></i>{this.props.user.lovedCount} loved</li>
-                    <li><i className="fa fa-group"></i>{this.props.user.followerCount} Followers</li>
+                    <li><i className="fa fa-heart red"></i>{this.props.user.lovedCount}</li>
+                    <li><i className="fa fa-group"></i>{this.props.user.followerCount}</li>
                 </ul>
             </div>
         );
