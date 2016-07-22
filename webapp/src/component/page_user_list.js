@@ -65,7 +65,7 @@ export default class UserList extends React.Component {
                                 </div>
                             </div>
 
-                                                        <div className="row margin-bottom-20">
+                            <div className="row margin-bottom-20">
                                 <div className="col-sm-4 sm-margin-bottom-20">
                                     <div className="profile-blog">
                                         <img className="rounded-x" src="" alt="" />
@@ -121,7 +121,7 @@ export default class UserList extends React.Component {
                                 </div>
                             </div>
 
-                                                        <div className="row margin-bottom-20">
+                            <div className="row margin-bottom-20">
                                 <div className="col-sm-4 sm-margin-bottom-20">
                                     <div className="profile-blog">
                                         <img className="rounded-x" src="" alt="" />
@@ -177,7 +177,7 @@ export default class UserList extends React.Component {
                                 </div>
                             </div>
 
-                                                        <div className="row margin-bottom-20">
+                            <div className="row margin-bottom-20">
                                 <div className="col-sm-4 sm-margin-bottom-20">
                                     <div className="profile-blog">
                                         <img className="rounded-x" src="" alt="" />
@@ -233,7 +233,7 @@ export default class UserList extends React.Component {
                                 </div>
                             </div>
 
-                                                        <div className="row margin-bottom-20">
+                            <div className="row margin-bottom-20">
                                 <div className="col-sm-4 sm-margin-bottom-20">
                                     <div className="profile-blog">
                                         <img className="rounded-x" src="" alt="" />

@@ -6,10 +6,10 @@ import './css/unify/css/style.css';
 import './css/unify/plugins/sky-forms-pro/skyforms/css/sky-forms.css';
 import './css/unify/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css';
 
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link } from 'react-router';
+import $ from 'jquery';
 
 import Header from './component/header.js';
 import PageUser from './component/page_user.js';
