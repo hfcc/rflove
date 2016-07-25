@@ -5,14 +5,14 @@ import React from 'react';
 export default class User extends React.Component {
     render() {
         return (
-            <div className="container content profile">
+            <div className="container content-xs profile">
                 <div className="row">
                     <div className="col-md-12">
                         <div className="profile-body">
                             <div className="profile-bio">
                                 <div className="row">
                                     <div className="col-md-9">
-                                        <h2>Edward Rooster</h2>
+                                        <h2>Edward Rooster {this.props.params.userId}</h2>
                                         <span><strong>Job:</strong> Web Developer</span>
                                         <span><strong>Position:</strong> Web Designer</span>
                                         <hr />
@@ -82,43 +82,42 @@ export default class User extends React.Component {
                                             <h2 className="panel-title heading-sm pull-left"><i className="fa fa-filter"></i> Types</h2>
                                         </div>
                                         <div className="panel-body">
-                                        <form action="#" className="sky-form">
-                                            <ul className="list-unstyled social-contacts-v2">
-                                                <li>
-                                                    <label className="checkbox">
-                                                        <input type="checkbox"/>
-                                                        <i></i>
-                                                        Video
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label className="checkbox">
-                                                        <input type="checkbox"/>
-                                                        <i></i>
-                                                        Video
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label className="checkbox">
-                                                        <input type="checkbox"/>
-                                                        <i></i>
-                                                        Video
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label className="checkbox">
-                                                        <input type="checkbox"/>
-                                                        <i></i>
-                                                        Video
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                        </form>
+                                            <form action="#" className="sky-form">
+                                                <ul className="list-unstyled social-contacts-v2">
+                                                    <li>
+                                                        <label className="checkbox">
+                                                            <input type="checkbox"/>
+                                                            <i></i>
+                                                            Video
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label className="checkbox">
+                                                            <input type="checkbox"/>
+                                                            <i></i>
+                                                            Video
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label className="checkbox">
+                                                            <input type="checkbox"/>
+                                                            <i></i>
+                                                            Video
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label className="checkbox">
+                                                            <input type="checkbox"/>
+                                                            <i></i>
+                                                            Video
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ import './css/unify/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link } from 'react-router';
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 import $ from 'jquery';
 import _ from 'lodash';
 
@@ -30,10 +30,10 @@ class Main extends React.Component {
 }
 
 ReactDOM.render((
-    <Router>
-        <Route component={Main}>
-            <Route path="user" component={ PageUser } />
-            <Route path="/" component={ PageUserList } />
+    <Router history={browserHistory}>
+        <Route path="/" component={Main}>
+            <IndexRoute component={PageUserList} />
+            <Route path="/user/:userId" component={ PageUser } />
         </Route>
     </Router>
 ), document.getElementById('root'));

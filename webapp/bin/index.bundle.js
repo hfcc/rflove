@@ -131,12 +131,12 @@
 
 	_reactDom2.default.render(_react2.default.createElement(
 	    _reactRouter.Router,
-	    null,
+	    { history: _reactRouter.browserHistory },
 	    _react2.default.createElement(
 	        _reactRouter.Route,
-	        { component: Main },
-	        _react2.default.createElement(_reactRouter.Route, { path: 'user', component: _page_user2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/', component: _page_user_list2.default })
+	        { path: '/', component: Main },
+	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _page_user_list2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/user/:userId', component: _page_user2.default })
 	    )
 	), document.getElementById('root'));
 
@@ -39062,7 +39062,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'container content profile' },
+	                { className: 'container content-xs profile' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'row' },
@@ -39084,7 +39084,8 @@
 	                                        _react2.default.createElement(
 	                                            'h2',
 	                                            null,
-	                                            'Edward Rooster'
+	                                            'Edward Rooster ',
+	                                            this.props.params.userId
 	                                        ),
 	                                        _react2.default.createElement(
 	                                            'span',
@@ -39630,6 +39631,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(249);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -39657,8 +39660,8 @@
 	                    'div',
 	                    { className: 'user-name' },
 	                    _react2.default.createElement(
-	                        'a',
-	                        { href: '#' },
+	                        _reactRouter.Link,
+	                        { to: '/user/' + this.props.user.id },
 	                        this.props.user.name
 	                    )
 	                ),

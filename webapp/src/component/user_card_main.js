@@ -1,13 +1,14 @@
 import './../css/unify/css/pages/profile.css';
 
 import React from 'react';
+import { Link } from 'react-router';
 
 export default class UserCardMain extends React.Component {
     render() {
         return (
             <div className="profile-blog">
                 <div className="user-name">
-                    <a href="#">{this.props.user.name}</a>
+                    <Link to={`/user/${this.props.user.id}`}>{this.props.user.name}</Link>
                 </div>
                 <div className="clearfix margin-bottom-20"></div>
                 <p>{this.props.user.description}</p>

@@ -17,6 +17,7 @@ app.use(staticServer({rootDir: 'webapp'}));
 router.get('/users', function(ctx, next) {
     var userList = [
         {
+            id: 1,
             name: "hanfeng",
             description: "developer",
             lovedCount: 5000,
@@ -26,6 +27,7 @@ router.get('/users', function(ctx, next) {
             ]
         },
         {
+            id: 2,
             name: "hanfeng",
             description: "developer",
             lovedCount: 5000,
@@ -35,6 +37,7 @@ router.get('/users', function(ctx, next) {
             ]
         },
         {
+            id: 3,
             name: "hanfeng",
             description: "developer",
             lovedCount: 5000,
@@ -44,6 +47,7 @@ router.get('/users', function(ctx, next) {
             ]
         },
         {
+            id: 4,
             name: "hanfeng",
             description: "developer",
             lovedCount: 5000,
@@ -53,6 +57,7 @@ router.get('/users', function(ctx, next) {
             ]
         },
         {
+            id: 5,
             name: "hanfeng",
             description: "developer",
             lovedCount: 5000,
@@ -60,58 +65,7 @@ router.get('/users', function(ctx, next) {
             lovedTypes:[
                 {name: "music", count: 50}
             ]
-        }
-        ,
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000,
-            lovedTypes:[
-                {name: "music", count: 50}
-            ]
-        }
-        ,
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000,
-            lovedTypes:[
-                {name: "music", count: 50}
-            ]
-        }
-        ,
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000,
-            lovedTypes:[
-                {name: "music", count: 50}
-            ]
-        }
-        ,
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000,
-            lovedTypes:[
-                {name: "music", count: 50}
-            ]
-        }
-        ,
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000,
-            lovedTypes:[
-                {name: "music", count: 50}
-            ]
-        }
-
+        },
     ];
     ctx.body = userList;
 });
