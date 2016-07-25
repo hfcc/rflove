@@ -18,10 +18,10 @@ export default class UserList extends React.Component {
     }
     render() {
         return (
-            <div className="container content profile">
+            <div className="container content-xs profile">
                 <div className="row">
                     <div className="col-md-12">
-                        <div className="profile-body margin-bottom-20">
+                        <div className="profile-body">
                            {this.renderUserList()}
                         </div>
                     </div>
@@ -39,7 +39,7 @@ export default class UserList extends React.Component {
                         {
                             _.map(users, (user, userIndex) => {
                                 var className = "col-sm-4 ";
-                                if(userIndex === 0 || userIndex%3 === 0){
+                                if(userIndex === 0 || userIndex != 2){
                                     className += "sm-margin-bottom-20"
                                 }
                                 return (

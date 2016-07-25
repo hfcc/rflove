@@ -20,86 +20,98 @@ router.get('/users', function(ctx, next) {
             name: "hanfeng",
             description: "developer",
             lovedCount: 5000,
-            followerCount: 1000
+            followerCount: 1000,
+            lovedTypes:[
+                {name: "music", count: 50}
+            ]
         },
         {
             name: "hanfeng",
             description: "developer",
             lovedCount: 5000,
-            followerCount: 1000
+            followerCount: 1000,
+            lovedTypes:[
+                {name: "music", count: 50}
+            ]
         },
         {
             name: "hanfeng",
             description: "developer",
             lovedCount: 5000,
-            followerCount: 1000
+            followerCount: 1000,
+            lovedTypes:[
+                {name: "music", count: 50}
+            ]
         },
         {
             name: "hanfeng",
             description: "developer",
             lovedCount: 5000,
-            followerCount: 1000
+            followerCount: 1000,
+            lovedTypes:[
+                {name: "music", count: 50}
+            ]
         },
         {
             name: "hanfeng",
             description: "developer",
             lovedCount: 5000,
-            followerCount: 1000
-        },
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000
-        },
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000
-        },
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000
-        },
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000
-        },
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000
-        },
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000
-        },
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000
-        },
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000
-        },
-        {
-            name: "hanfeng",
-            description: "developer",
-            lovedCount: 5000,
-            followerCount: 1000
+            followerCount: 1000,
+            lovedTypes:[
+                {name: "music", count: 50}
+            ]
         }
+        ,
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000,
+            lovedTypes:[
+                {name: "music", count: 50}
+            ]
+        }
+        ,
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000,
+            lovedTypes:[
+                {name: "music", count: 50}
+            ]
+        }
+        ,
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000,
+            lovedTypes:[
+                {name: "music", count: 50}
+            ]
+        }
+        ,
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000,
+            lovedTypes:[
+                {name: "music", count: 50}
+            ]
+        }
+        ,
+        {
+            name: "hanfeng",
+            description: "developer",
+            lovedCount: 5000,
+            followerCount: 1000,
+            lovedTypes:[
+                {name: "music", count: 50}
+            ]
+        }
+
     ];
     ctx.body = userList;
 });

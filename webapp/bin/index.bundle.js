@@ -39568,7 +39568,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'container content profile' },
+	                { className: 'container content-xs profile' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'row' },
@@ -39577,7 +39577,7 @@
 	                        { className: 'col-md-12' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'profile-body margin-bottom-20' },
+	                            { className: 'profile-body' },
 	                            this.renderUserList()
 	                        )
 	                    )
@@ -39593,7 +39593,7 @@
 	                    { className: 'row margin-bottom-20', key: usersIndex },
 	                    _lodash2.default.map(users, function (user, userIndex) {
 	                        var className = "col-sm-4 ";
-	                        if (userIndex === 0 || userIndex % 3 === 0) {
+	                        if (userIndex === 0 || userIndex != 2) {
 	                            className += "sm-margin-bottom-20";
 	                        }
 	                        return _react2.default.createElement(
@@ -39671,6 +39671,12 @@
 	                _react2.default.createElement('hr', null),
 	                _react2.default.createElement(
 	                    'ul',
+	                    { className: 'list-inline' },
+	                    this.renderUserTypeList()
+	                ),
+	                _react2.default.createElement('hr', null),
+	                _react2.default.createElement(
+	                    'ul',
 	                    { className: 'list-inline share-list' },
 	                    _react2.default.createElement(
 	                        'li',
@@ -39686,6 +39692,26 @@
 	                    )
 	                )
 	            );
+	        }
+	    }, {
+	        key: 'renderUserTypeList',
+	        value: function renderUserTypeList() {
+	            return this.props.user.lovedTypes.map(function (lovedType, index) {
+	                return _react2.default.createElement(
+	                    'li',
+	                    { className: 'margin-bottom-5', key: index },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'label label-dark-blue' },
+	                        lovedType.name
+	                    ),
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'label label-light' },
+	                        lovedType.count
+	                    )
+	                );
+	            });
 	        }
 	    }]);
 
