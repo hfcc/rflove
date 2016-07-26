@@ -688,7 +688,7 @@
 
 
 	// module
-	exports.push([module.id, "/*\n * Template Name: Unify - Responsive Bootstrap Template\n * Description: Business, Corporate, Portfolio, E-commerce, Blog and One Page Template.\n * Version: 1.9.2\n * Author: @htmlstream\n * Website: http://htmlstream.com\n*/\n\n/*Thematic Break\n------------------------------------*/\nhr {\n\tmargin: 30px 0;\n}\n\nhr.hr-xs {\n\tmargin: 10px 0;\n}\n\nhr.hr-md {\n\tmargin: 20px 0;\n}\n\nhr.hr-lg {\n\tmargin: 40px 0;\n}\n\n/*Headings\n------------------------------------*/\nh1 {\n\tfont-size: 28px;\n\tline-height: 35px;\n}\nh2 {\n\tfont-size: 24px;\n\tline-height: 33px;\n}\nh3 {\n\tfont-size: 20px;\n\tline-height: 27px;\n}\nh4 {\n\tline-height: 25px;\n}\nh5 {\n\tline-height: 20px;\n}\nh6 {\n\tline-height: 18px;\n}\n\n.font-open-sans {\n\tfont-family: \"Open Sans\", Arial, sans-serif;\n}\n\nh1, h2, h3, h4, h5, h6 {\n\tcolor: #555;\n\tmargin-top: 5px;\n\ttext-shadow: none;\n\tfont-weight: normal;\n\tfont-family: \"Open Sans\", Arial, sans-serif;\n}\n\nh1 i, h2 i, h3 i, h4 i, h5 i, h6 i {\n\tmargin-right: 5px;\n}\n\n/*Block Headline*/\n.headline {\n\tdisplay: block;\n\tmargin: 10px 0 25px 0;\n\tborder-bottom: 1px dotted #e4e9f0;\n}\n\n.headline h2 {\n\tfont-size: 22px;\n}\n\n.headline h2,\n.headline h3,\n.headline h4 {\n\tmargin: 0 0 -2px 0;\n\tpadding-bottom: 5px;\n\tdisplay: inline-block;\n\tborder-bottom: 2px solid #4765a0;\n}\n\n.headline-md {\n\tmargin-bottom: 15px;\n}\n\n.headline-md h2 {\n\tfont-size: 21px;\n}\n\n/*Heading Options*/\n.heading {\n\ttext-align: center;\n}\n\n.heading h2 {\n\tpadding: 0 12px;\n\tposition: relative;\n\tdisplay: inline-block;\n\tline-height: 34px !important; /*For Tagline Boxes*/\n}\n\n.heading h2:before,\n.heading h2:after {\n\tcontent: ' ';\n\twidth: 70%;\n\tposition: absolute;\n\tborder-width: 1px;\n\tborder-color: #bbb;\n}\n\n.heading h2:before {\n\tright: 100%;\n}\n\n.heading h2:after {\n\tleft: 100%;\n}\n\n@media (max-width: 768px) {\n\t.heading h2:before,\n\t.heading h2:after {\n\t\twidth: 20%;\n\t}\n}\n\n/*Headline v1*/\n.heading-v1 h2:before,\n.heading-v1 h2:after {\n\ttop: 15px;\n\theight: 6px;\n\tborder-top-style: solid;\n\tborder-bottom-style: solid;\n}\n\n/*Headline v2*/\n.heading-v2 h2:before,\n.heading-v2 h2:after {\n\ttop: 15px;\n\theight: 6px;\n\tborder-top-style: dashed;\n\tborder-bottom-style: dashed;\n}\n\n/*Headline v3*/\n.heading-v3 h2:before,\n.heading-v3 h2:after {\n\ttop: 15px;\n\theight: 6px;\n\tborder-top-style: dotted;\n\tborder-bottom-style: dotted;\n}\n\n/*Headline v4*/\n.heading-v4 h2:before,\n.heading-v4 h2:after {\n\ttop: 17px;\n\tborder-bottom-style: solid;\n}\n\n/*Headline v5*/\n.heading-v5 h2:before,\n.heading-v5 h2:after {\n\ttop: 17px;\n\tborder-bottom-style: dashed;\n}\n\n/*Headline v6*/\n.heading-v6 h2:before,\n.heading-v6 h2:after {\n\ttop: 17px;\n\tborder-bottom-style: dotted;\n}\n\n/*Heading Titles v1*/\n.title-v1 {\n\tz-index: 1;\n\tposition: relative;\n\ttext-align: center;\n\tmargin-bottom: 60px;\n}\n\n.title-v1 h1,\n.title-v1 h2 {\n\tcolor: #444;\n\tfont-size: 28px;\n\tposition: relative;\n\tmargin-bottom: 15px;\n\tpadding-bottom: 20px;\n\ttext-transform: uppercase;\n\tfont-family: \"Open Sans\", Arial, sans-serif;\n}\n\n.title-v1 h1:after,\n.title-v1 h2:after {\n\tbottom: 0;\n\tleft: 50%;\n\theight: 1px;\n\twidth: 70px;\n\tcontent: \" \";\n\tmargin-left: -35px;\n\tposition: absolute;\n\tbackground: #4765a0;\n}\n\n.title-v1 p {\n\tfont-size: 17px;\n\tfont-weight: 200;\n}\n\n/*Heading Titles v2*/\nh2.title-v2 {\n\tcolor: #555;\n\tposition: relative;\n\tmargin-bottom: 30px;\n}\n\nh2.title-v2:after {\n\tleft: 0;\n\twidth: 70px;\n\theight: 2px;\n\tcontent: \" \";\n\tbottom: -10px;\n\tbackground: #555;\n\tposition: absolute;\n}\n\nh1.title-v2.title-center,\nh2.title-v2.title-center,\nh3.title-v2.title-center {\n\ttext-align: center;\n}\n\nh1.title-v2.title-center:after,\nh2.title-v2.title-center:after,\nh3.title-v2.title-center:after {\n\tleft: 50%;\n\twidth: 70px;\n\tmargin-left: -35px;\n}\n\nh1.title-light,\nh2.title-light,\nh3.title-light {\n\tcolor: #fff;\n}\n\nh2.title-light:after {\n\tbackground: #fff;\n}\n\n/*Heading Title v3*/\nh1[class^=\"title-v3-\"],\nh2[class^=\"title-v3-\"],\nh3[class^=\"title-v3-\"] {\n\tcolor: #555;\n}\n\nh2.title-v3-xlg {\n\tfont-size: 28px;\n\tline-height: 32px;\n}\n\nh1.title-v3-lg,\nh2.title-v3-lg {\n\tfont-size: 24px;\n\tline-height: 28px;\n}\n\nh1.title-v3-md,\nh2.title-v3-md {\n\tfont-size: 20px;\n\tline-height: 24px;\n}\n\nh2.title-v3-sm,\nh3.title-v3-md {\n\tfont-size: 18px;\n\tline-height: 24px;\n}\n\nh3.title-v3-md {\n\tline-height: 22px;\n}\n\nh3.title-v3-sm {\n\tfont-size: 16px;\n\tline-height: 20px;\n}\n\nh2.title-v3-xs {\n\tfont-size: 16px;\n\tline-height: 22px;\n}\n\nh3.title-v3-xs {\n\tfont-size: 14px;\n\tmargin-bottom: 0;\n}\n\n/*Title v4*/\n.title-v4 {\n\tfont-size: 18px;\n\tmargin: 0 0 20px;\n\tfont-weight: bold;\n\tposition: relative;\n\ttext-transform: uppercase;\n\tborder-bottom: 3px solid #333;\n}\n\n/*Headline Center*/\n.headline-center {\n\ttext-align: center;\n\tposition: relative;\n}\n\n.headline-center h2 {\n\tcolor: #555;\n\tfont-size: 24px;\n\tposition: relative;\n\tmargin-bottom: 20px;\n\tpadding-bottom: 15px;\n}\n\n.headline-center h2:after {\n\tleft: 50%;\n\tz-index: 1;\n\twidth: 30px;\n\theight: 2px;\n\tcontent: \" \";\n\tbottom: -5px;\n\tmargin-left: -15px;\n\ttext-align: center;\n\tposition: absolute;\n\tbackground: #4765a0;\n}\n\n.headline-center p {\n\t/*color: #999;*/\n\tfont-size: 14px;\n\t/*padding: 0 150px;*/\n}\n\n@media (max-width: 991px) {\n\t.headline-center p {\n\t\tpadding: 0 50px;\n\t}\n}\n\n.headline-center.headline-light h2 {\n\tcolor: #fff;\n}\n\n.headline-center.headline-light p {\n\tcolor: #eee;\n}\n\n/*Headline Center v2*/\n.headline-center-v2 {\n\tz-index: 0;\n\ttext-align: center;\n\tposition: relative;\n}\n\n.headline-center-v2 h2 {\n\tcolor: #555;\n\tfont-size: 24px;\n\tmargin-bottom: 20px;\n\ttext-transform: uppercase;\n}\n\n.headline-center-v2 span.bordered-icon {\n\tcolor: #fff;\n\tpadding: 0 10px;\n\tfont-size: 15px;\n\tline-height: 18px;\n\tposition: relative;\n\tmargin-bottom: 25px;\n\tdisplay: inline-block;\n}\n\n.headline-center-v2 span.bordered-icon:before,\n.headline-center-v2 span.bordered-icon:after {\n\ttop: 8px;\n\theight: 1px;\n\tcontent: \" \";\n\twidth: 100px;\n\tbackground: #fff;\n\tposition: absolute;\n}\n\n.headline-center-v2 span.bordered-icon:before {\n\tleft: 100%;\n}\n\n.headline-center-v2 span.bordered-icon:after {\n\tright: 100%;\n}\n\n.headline-center-v2 p {\n\tcolor: #555;\n\tfont-size: 14px;\n\tpadding: 0 70px;\n}\n\n.headline-center-v2.headline-center-v2-dark p {\n\tcolor: #666;\n}\n\n.headline-center-v2.headline-center-v2-dark span.bordered-icon {\n\tcolor: #666;\n}\n\n.headline-center-v2.headline-center-v2-dark span.bordered-icon:before,\n.headline-center-v2.headline-center-v2-dark span.bordered-icon:after {\n\tbackground: #666;\n}\n\n/*Headline Left*/\n.headline-left {\n\tposition: relative;\n}\n\n.headline-left .headline-brd {\n\tcolor: #555;\n\tposition: relative;\n\tmargin-bottom: 25px;\n\tpadding-bottom: 10px;\n}\n\n.headline-left .headline-brd:after {\n\tleft: 1px;\n\tz-index: 1;\n\twidth: 30px;\n\theight: 2px;\n\tcontent: \" \";\n\tbottom: -5px;\n\tposition: absolute;\n\tbackground: #4765a0;\n}\n\n/*Headline v2\n------------------------------------*/\n.headline-v2 {\n\tdisplay: block;\n\tbackground: #fff;\n\tpadding: 1px 10px;\n\tmargin: 0 0 20px 0;\n\tborder-left: 2px solid #000;\n}\n\n.headline-v2 h2 {\n\tmargin: 3px 0;\n\tfont-size: 20px;\n\tfont-weight: 200;\n}\n\n/*Heading Sizes\n------------------------------------*/\nh2.heading-md {\n\tfont-size: 20px;\n\tline-height: 24px;\n}\n\nh2.heading-sm,\nh3.heading-md {\n\tfont-size: 18px;\n\tline-height: 24px;\n}\n\nh3.heading-md {\n\tline-height: 22px;\n}\n\nh3.heading-sm {\n\tfont-size: 16px;\n\tline-height: 20px;\n}\n\nh2.heading-xs {\n\tfont-size: 16px;\n\tline-height: 22px;\n}\n\nh3.heading-xs {\n\tfont-size: 14px;\n\tmargin-bottom: 0;\n}\n\n/*Devider\n------------------------------------*/\n.devider.devider-dotted {\n\tborder-top: 2px dotted #eee;\n}\n.devider.devider-dashed {\n\tborder-top: 2px dashed #eee;\n}\n\n.devider.devider-db {\n\theight: 5px;\n\tborder-top: 1px solid #eee;\n\tborder-bottom: 1px solid #eee;\n}\n.devider.devider-db-dashed {\n\theight: 5px;\n\tborder-top: 1px dashed #ddd;\n\tborder-bottom: 1px dashed #ddd;\n}\n.devider.devider-db-dotted {\n\theight: 5px;\n\tborder-top: 1px dotted #ddd;\n\tborder-bottom: 1px dotted #ddd;\n}\n\n/*Tables\n------------------------------------*/\n/*Basic Tables*/\n.table thead > tr > th {\n\tborder-bottom: none;\n}\n\n@media (max-width: 768px) {\n\t.table th.hidden-sm,\n\t.table td.hidden-sm {\n\t\tdisplay: none !important;\n\t}\n}\n\n/*Forms\n------------------------------------*/\n.form-control {\n\tbox-shadow: none;\n\tborder-radius: 0;\n}\n\n.input-group-addon {\n\tborder-radius: 0;\n}\n\n.form-control:focus {\n\tborder-color: #bbb;\n\tbox-shadow: 0 0 2px #c9c9c9;\n}\n\n/*Form Spacing*/\n.form-spacing .form-control {\n\tmargin-bottom: 15px;\n}\n\n/*Form Icons*/\n.input-group-addon {\n\tcolor: #b3b3b3;\n\tfont-size: 14px;\n\tbackground: #fff;\n}\n\n/*Navigation\n------------------------------------*/\n.dropdown-menu,\n.navbar-toggle {\n\tborder-radius: 0;\n}\n\n/*Button Styles\n------------------------------------*/\n.btn {\n\tbox-shadow: none;\n\tborder-radius: 0;\n}\n.btn-u {\n\tborder: 0;\n\tcolor: #fff;\n\tfont-size: 14px;\n\tcursor: pointer;\n\tfont-weight: 400;\n\tpadding: 6px 13px;\n\tposition: relative;\n\tbackground: #4765a0;\n\twhite-space: nowrap;\n\tdisplay: inline-block;\n\ttext-decoration: none;\n}\n.btn-u:hover {\n\tcolor: #fff;\n\ttext-decoration: none;\n\ttransition: all 0.3s ease-in-out;\n}\n\n.btn-u.btn-block {\n\ttext-align: center;\n}\n\n.btn-u-sm,\na.btn-u-sm {\n\tpadding: 3px 12px;\n}\n\n.btn-u-md,\na.btn-u-md {\n\tpadding: 10px 20px;\n}\n\n.btn-u-lg,\na.btn-u-lg {\n\tfont-size: 18px;\n\tpadding: 10px 25px;\n}\n\n.btn-u-xs,\na.btn-u-xs {\n\tfont-size: 12px;\n\tpadding: 2px 12px;\n\tline-height: 18px;\n}\n\n/*Button Groups*/\n.btn-group .dropdown-menu > li > a {\n\tpadding: 3px 13px;\n}\n\n.btn-group > .btn-u,\n.btn-group-vertical > .btn-u {\n\tfloat: left;\n\tposition: relative;\n}\n\n.btn-group > .btn-u:first-child {\n\tmargin-left: 0;\n}\n\n/*For FF Only*/\n@-moz-document url-prefix() {\n\t.footer-subsribe .btn-u {\n\t\tpadding-bottom: 4px;\n\t}\n}\n@media (max-width: 768px) {\n\t@-moz-document url-prefix() {\n\t\t.btn-u {\n\t\t\tpadding-bottom: 6px;\n\t\t}\n\t}\n}\n\n/*Buttons Color*/\n.btn-u:hover,\n.btn-u:focus,\n.btn-u:active,\n.btn-u.active,\n.open .dropdown-toggle.btn-u {\n\tbackground: #5fb611;\n}\n.btn-u-split.dropdown-toggle {\n\tborder-left: solid 1px #5fb611;\n}\n\n.btn-u.btn-u-blue {\n\tbackground: #3498db;\n}\n.btn-u.btn-u-blue:hover,\n.btn-u.btn-u-blue:focus,\n.btn-u.btn-u-blue:active,\n.btn-u.btn-u-blue.active,\n.open .dropdown-toggle.btn-u.btn-u-blue {\n\tbackground: #2980b9;\n}\n.btn-u.btn-u-split-blue.dropdown-toggle {\n\tborder-left: solid 1px #2980b9;\n}\n\n.btn-u.btn-u-red {\n\tbackground: #e74c3c;\n}\n.btn-u.btn-u-red:hover,\n.btn-u.btn-u-red:focus,\n.btn-u.btn-u-red:active,\n.btn-u.btn-u-red.active,\n.open .dropdown-toggle.btn-u.btn-u-red {\n\tbackground: #c0392b;\n}\n.btn-u.btn-u-split-red.dropdown-toggle {\n\tborder-left: solid 1px #c0392b;\n}\n\n.btn-u.btn-u-orange {\n\tbackground: #e67e22;\n}\n.btn-u.btn-u-orange:hover,\n.btn-u.btn-u-orange:focus,\n.btn-u.btn-u-orange:active,\n.btn-u.btn-u-orange.active,\n.open .dropdown-toggle.btn-u.btn-u-orange {\n\tbackground: #d35400;\n}\n.btn-u.btn-u-split-orange.dropdown-toggle {\n\tborder-left: solid 1px #d35400;\n}\n\n.btn-u.btn-u-sea {\n\tbackground: #1abc9c;\n}\n.btn-u.btn-u-sea:hover,\n.btn-u.btn-u-sea:focus,\n.btn-u.btn-u-sea:active,\n.btn-u.btn-u-sea.active,\n.open .dropdown-toggle.btn-u.btn-u-sea {\n\tbackground: #16a085;\n}\n.btn-u.btn-u-split-sea.dropdown-toggle {\n\tborder-left: solid 1px #16a085;\n}\n\n.btn-u.btn-u-green {\n\tbackground: #2ecc71;\n}\n.btn-u.btn-u-green:hover,\n.btn-u.btn-u-green:focus,\n.btn-u.btn-u-green:active,\n.btn-u.btn-u-green.active,\n.open .dropdown-toggle.btn-u.btn-u-green {\n\tbackground: #27ae60;\n}\n.btn-u.btn-u-split-green.dropdown-toggle {\n\tborder-left: solid 1px #27ae60;\n}\n\n.btn-u.btn-u-yellow {\n\tbackground: #f1c40f;\n}\n.btn-u.btn-u-yellow:hover,\n.btn-u.btn-u-yellow:focus,\n.btn-u.btn-u-yellow:active,\n.btn-u.btn-u-yellow.active,\n.open .dropdown-toggle.btn-u.btn-u-yellow {\n\tbackground: #f39c12;\n}\n.btn-u.btn-u-split-yellow.dropdown-toggle {\n\tborder-left: solid 1px #f39c12;\n}\n\n.btn-u.btn-u-default {\n\tbackground: #95a5a6;\n}\n.btn-u.btn-u-default:hover,\n.btn-u.btn-u-default:focus,\n.btn-u.btn-u-default:active,\n.btn-u.btn-u-default.active,\n.open .dropdown-toggle.btn-u.btn-u-default {\n\tbackground: #7f8c8d;\n}\n.btn-u.btn-u-split-default.dropdown-toggle {\n\tborder-left: solid 1px #7f8c8d;\n}\n\n.btn-u.btn-u-purple {\n\tbackground: #9b6bcc;\n}\n.btn-u.btn-u-purple:hover,\n.btn-u.btn-u-purple:focus,\n.btn-u.btn-u-purple:active,\n.btn-u.btn-u-purple.active,\n.open .dropdown-toggle.btn-u.btn-u-purple {\n\tbackground: #814fb5;\n}\n.btn-u.btn-u-split-purple.dropdown-toggle {\n\tborder-left: solid 1px #814fb5;\n}\n\n.btn-u.btn-u-aqua {\n\tbackground: #27d7e7;\n}\n.btn-u.btn-u-aqua:hover,\n.btn-u.btn-u-aqua:focus,\n.btn-u.btn-u-aqua:active,\n.btn-u.btn-u-aqua.active,\n.open .dropdown-toggle.btn-u.btn-u-aqua {\n\tbackground: #26bac8;\n}\n.btn-u.btn-u-split-aqua.dropdown-toggle {\n\tborder-left: solid 1px #26bac8;\n}\n\n.btn-u.btn-u-brown {\n\tbackground: #9c8061;\n}\n.btn-u.btn-u-brown:hover,\n.btn-u.btn-u-brown:focus,\n.btn-u.btn-u-brown:active,\n.btn-u.btn-u-brown.active,\n.open .dropdown-toggle.btn-u.btn-u-brown {\n\tbackground: #81674b;\n}\n.btn-u.btn-u-split-brown.dropdown-toggle {\n\tborder-left: solid 1px #81674b;\n}\n\n.btn-u.btn-u-dark-blue {\n\tbackground: #4765a0;\n}\n.btn-u.btn-u-dark-blue:hover,\n.btn-u.btn-u-dark-blue:focus,\n.btn-u.btn-u-dark-blue:active,\n.btn-u.btn-u-dark-blue.active,\n.open .dropdown-toggle.btn-u.btn-u-dark-blue {\n\tbackground: #324c80;\n}\n.btn-u.btn-u-split-dark.dropdown-toggle {\n\tborder-left: solid 1px #324c80;\n}\n\n.btn-u.btn-u-light-green {\n\tbackground: #79d5b3;\n}\n.btn-u.btn-u-light-green:hover,\n.btn-u.btn-u-light-green:focus,\n.btn-u.btn-u-light-green:active,\n.btn-u.btn-u-light-green.active,\n.open .dropdown-toggle.btn-u.btn-u-light-green {\n\tbackground: #59b795;\n}\n.btn-u.btn-u-split-light-green.dropdown-toggle {\n\tborder-left: solid 1px #59b795;\n}\n\n.btn-u.btn-u-dark {\n\tbackground: #555;\n}\n.btn-u.btn-u-dark:hover,\n.btn-u.btn-u-dark:focus,\n.btn-u.btn-u-dark:active,\n.btn-u.btn-u-dark.active,\n.open .dropdown-toggle.btn-u.btn-u-dark {\n\tbackground: #333;\n}\n.btn-u.btn-u-split-dark.dropdown-toggle {\n\tborder-left: solid 1px #333;\n}\n\n.btn-u.btn-u-light-grey {\n\tbackground: #585f69;\n}\n.btn-u.btn-u-light-grey:hover,\n.btn-u.btn-u-light-grey:focus,\n.btn-u.btn-u-light-grey:active,\n.btn-u.btn-u-light-grey.active,\n.open .dropdown-toggle.btn-u.btn-u-light-grey {\n\tbackground: #484f58;\n}\n.btn-u.btn-u-split-light-grey.dropdown-toggle {\n\tborder-left: solid 1px #484f58;\n}\n\n/*Bordered Buttons*/\n.btn-u.btn-brd {\n\tcolor: #555;\n\tbackground: none;\n\tpadding: 5px 13px;\n\tborder: solid 1px transparent;\n}\n.btn-u.btn-brd-width-2 {\n\tpadding: 7px 18px;\n\tborder-width: 2px;\n}\n.btn-u.btn-brd:hover {\n\tbackground: none;\n}\n.btn-u.btn-brd:focus {\n\tbackground: none;\n}\n.btn-u.btn-brd.btn-brd-hover:hover {\n\tcolor: #fff !important;\n}\n\n.btn-u.btn-brd {\n\tborder-color: #4765a0;\n}\n.btn-u.btn-brd:hover {\n\tcolor: #5fb611;\n\tborder-color: #5fb611;\n}\n.btn-u.btn-brd.btn-brd-hover:hover {\n\tbackground: #5fb611;\n}\n\n.btn-u.btn-brd.btn-u-blue {\n\tborder-color: #3498db;\n}\n.btn-u.btn-brd.btn-u-blue:hover {\n\tcolor: #2980b9;\n\tborder-color: #2980b9;\n}\n.btn-u.btn-brd.btn-u-blue.btn-brd-hover:hover {\n\tbackground: #2980b9;\n}\n\n.btn-u.btn-brd.btn-u-red {\n\tborder-color: #e74c3c;\n}\n.btn-u.btn-brd.btn-u-red:hover {\n\tcolor: #c0392b;\n\tborder-color: #c0392b;\n}\n.btn-u.btn-brd.btn-u-red.btn-brd-hover:hover {\n\tbackground: #c0392b;\n}\n\n.btn-u.btn-brd.btn-u-orange {\n\tborder-color: #e67e22;\n}\n.btn-u.btn-brd.btn-u-orange:hover {\n\tcolor: #d35400;\n\tborder-color: #d35400;\n}\n.btn-u.btn-brd.btn-u-orange.btn-brd-hover:hover {\n\t background: #d35400;\n}\n\n.btn-u.btn-brd.btn-u-sea {\n\tborder-color: #1abc9c;\n}\n.btn-u.btn-brd.btn-u-sea:hover {\n\tcolor: #16a085;\n\tborder-color: #16a085;\n}\n.btn-u.btn-brd.btn-u-sea.btn-brd-hover:hover {\n\tbackground: #16a085;\n}\n\n.btn-u.btn-brd.btn-u-green {\n\tborder-color: #2ecc71;\n}\n.btn-u.btn-brd.btn-u-green:hover {\n\tcolor: #27ae60;\n\tborder-color: #27ae60;\n}\n.btn-u.btn-brd.btn-u-green.btn-brd-hover:hover {\n\tbackground: #27ae60;\n}\n\n.btn-u.btn-brd.btn-u-yellow {\n\tborder-color: #f1c40f;\n}\n.btn-u.btn-brd.btn-u-yellow:hover {\n\tcolor: #f39c12;\n\tborder-color: #f39c12;\n}\n.btn-u.btn-brd.btn-u-yellow.btn-brd-hover:hover {\n\tbackground: #f39c12;\n}\n\n.btn-u.btn-brd.btn-u-default {\n\tborder-color: #95a5a6;\n}\n.btn-u.btn-brd.btn-u-default:hover {\n\tcolor: #7f8c8d;\n\tborder-color: #7f8c8d;\n}\n.btn-u.btn-brd.btn-u-default.btn-brd-hover:hover {\n\tbackground: #7f8c8d;\n}\n\n.btn-u.btn-brd.btn-u-dark {\n\tborder-color: #555;\n}\n.btn-u.btn-brd.btn-u-dark:hover {\n\tcolor: #333;\n\tborder-color: #333;\n}\n.btn-u.btn-brd.btn-u-dark.btn-brd-hover:hover {\n\tbackground: #333;\n}\n\n.btn-u.btn-brd.btn-u-light-grey {\n\tborder-color: #585f69;\n}\n.btn-u.btn-brd.btn-u-light-grey:hover {\n\tcolor: #484f58;\n\tborder-color: #484f58;\n}\n.btn-u.btn-brd.btn-u-light-grey.btn-brd-hover:hover {\n\tbackground: #484f58;\n}\n\n.btn-u.btn-brd.btn-u-purple {\n\tborder-color: #9b6bcc;\n}\n.btn-u.btn-brd.btn-u-purple:hover {\n\tcolor: #814fb5;\n\tborder-color: #814fb5;\n}\n.btn-u.btn-brd.btn-u-purple.btn-brd-hover:hover {\n\tbackground: #814fb5;\n}\n\n.btn-u.btn-brd.btn-u-aqua {\n\tborder-color: #27d7e7;\n}\n.btn-u.btn-brd.btn-u-aqua:hover {\n\tcolor: #26bac8;\n\tborder-color: #26bac8;\n}\n.btn-u.btn-brd.btn-u-aqua.btn-brd-hover:hover {\n\tbackground: #26bac8;\n}\n\n.btn-u.btn-brd.btn-u-brown {\n\tborder-color: #9c8061;\n}\n.btn-u.btn-brd.btn-u-brown:hover {\n\tcolor: #81674b;\n\tborder-color: #81674b;\n}\n.btn-u.btn-brd.btn-u-brown.btn-brd-hover:hover {\n\tbackground: #81674b;\n}\n\n.btn-u.btn-brd.btn-u-dark-blue {\n\tborder-color: #4765a0;\n}\n.btn-u.btn-brd.btn-u-dark-blue:hover {\n\tcolor: #324c80;\n\tborder-color: #324c80;\n}\n.btn-u.btn-brd.btn-u-dark-blue.btn-brd-hover:hover {\n\tbackground: #324c80;\n}\n\n.btn-u.btn-brd.btn-u-light-green {\n\tborder-color: #79d5b3;\n}\n.btn-u.btn-brd.btn-u-light-green:hover {\n\tcolor: #59b795;\n\tborder-color: #59b795;\n}\n.btn-u.btn-brd.btn-u-light-green.btn-brd-hover:hover {\n\tbackground: #59b795;\n}\n\n.btn-u.btn-brd.btn-u-light {\n\tcolor: #fff;\n\tborder-color: #fff;\n}\n.btn-u.btn-brd.btn-u-light:hover {\n\tborder-color: #fff;\n}\n.btn-u.btn-brd.btn-u-light.btn-brd-hover:hover {\n background: #fff;\n color: #555 !important;\n}\n\n/*Dropdown Buttons\n------------------------------------*/\n.dropdown-show {\n\tbox-shadow: 0 0 4px #eee;\n\tdisplay: inline-block;\n\tposition: relative;\n}\n\n/*Badges and Labels\n------------------------------------*/\n.badge,\n.label {\n\tborder-radius: 0;\n}\n\n/*Labels*/\nspan.label {\n\tfont-size: 11px;\n\tfont-weight: 400;\n\tpadding: 4px 7px;\n}\n\n/*Badges*/\nspan.badge,\n.list-group-item.active>.badge {\n\tcolor: #fff;\n\tfont-weight: 400;\n\tpadding: 4px 7px;\n}\n\nspan.label-u,\nspan.badge-u,\n.list-group-item.active>.badge.badge-u {\n\tbackground: #4765a0;\n}\n\nspan.label-blue,\nspan.badge-blue,\n.list-group-item.active>.badge {\n\tbackground: #3498db;\n}\n\nspan.label-red,\nspan.badge-red,\n.list-group-item.active>.badge {\n\tbackground: #e74c3c;\n}\n\nspan.label-green,\nspan.badge-green,\n.list-group-item.active>.badge.badge-green {\n\tbackground: #2ecc71;\n}\n\nspan.label-sea,\nspan.badge-sea,\n.list-group-item.active>.badge.badge-sea {\n\tbackground: #1abc9c;\n}\n\nspan.label-orange,\nspan.badge-orange,\n.list-group-item.active>.badge.badge-orange {\n\tbackground: #e67e22;\n}\n\nspan.label-yellow,\nspan.badge-yellow,\n.list-group-item.active>.badge.badge-yellow {\n\tbackground: #f1c40f;\n}\n\nspan.label-purple,\nspan.badge-purple,\n.list-group-item.active>.badge.badge-purple {\n\tbackground: #9b6bcc;\n}\n\nspan.label-aqua,\nspan.badge-aqua,\n.list-group-item.active>.badge.badge-aqua {\n\tbackground: #27d7e7;\n}\n\nspan.label-brown,\nspan.badge-brown,\n.list-group-item.active>.badge.badge-brown {\n\tbackground: #9c8061;\n}\n\nspan.label-dark-blue,\nspan.badge-dark-blue,\n.list-group-item.active>.badge.badge-dark-blue {\n\tbackground: #4765a0;\n}\n\nspan.label-light-green,\nspan.badge-light-green,\n.list-group-item.active>.badge.badge-light-green {\n\tbackground: #79d5b3;\n}\n\nspan.label-light,\nspan.badge-light,\n.list-group-item.active>.badge.badge-light {\n\tcolor: #777;\n\tbackground: #ecf0f1;\n}\n\nspan.label-dark,\nspan.badge-dark,\n.list-group-item.active>.badge.badge-dark {\n\tbackground: #555;\n}\n\n/*Badge Lists*/\n.badge-lists li {\n\tposition: relative;\n}\n\n.badge-lists span.badge {\n\ttop: -10px;\n\tright: -6px;\n\tposition: absolute;\n}\n\n/*Badge Icons*/\n.badge-lists.badge-icons span.badge {\n\tmin-width: 12px;\n\tpadding: 3px 6px;\n }\n\n.badge-lists.badge-icons i {\n\tfont-size: 18px;\n\tmin-width: 25px;\n}\n\n/*Badge Box v1*/\n.badge-box-v1 a {\n\tcolor: #777;\n\tmin-width: 40px;\n\tfont-size: 18px;\n\tpadding: 8px 9px;\n\tdisplay: inline-block;\n\tborder: solid 1px #eee;\n}\n\n/*Badge Box v2*/\n.badge-box-v2 a {\n\tcolor: #777;\n\tfont-size: 12px;\n\tpadding: 10px;\n\tmin-width: 70px;\n\ttext-align: center;\n\tdisplay: inline-block;\n\tborder: solid 1px #eee;\n}\n\n.badge-box-v2 a i {\n\tfont-size: 20px;\n}\n\n/*General Badge Box*/\n.badge-box-v1 a i,\n.badge-box-v2 a i {\n\tdisplay: block;\n\tmargin: 1px auto 2px;\n}\n\n.badge-box-v1 a:hover,\n.badge-box-v2 a:hover {\n\tcolor: #555;\n\tborder-color: #555;\n\ttext-decoration: none;\n\ttransition: all 0.2s ease-in-out;\n}\n\n/*Icons\n------------------------------------*/\n/*Social Icons*/\n.social-icons {\n\tmargin: 0;\n\tpadding: 0;\n}\n\n.social-icons li {\n\tlist-style: none;\n\tmargin-right: 3px;\n\tmargin-bottom: 5px;\n\ttext-indent: -9999px;\n\tdisplay: inline-block;\n}\n\n.social-icons li a, a.social-icon {\n\twidth: 28px;\n\theight: 28px;\n\tdisplay: block;\n\tbackground-position: 0 0;\n\tbackground-repeat: no-repeat;\n\ttransition: all 0.3s ease-in-out;\n}\n\n.social-icons li:hover a {\n\t background-position: 0 -38px;\n}\n\n.social-icons-color li a {\n\topacity: 0.7;\n\tbackground-position: 0 -38px !important;\n\t-webkit-backface-visibility: hidden; /*For Chrome*/\n}\n\n.social-icons-color li a:hover {\n\topacity: 1;\n}\n\n.social_amazon {background: url(" + __webpack_require__(19) + ") no-repeat;}\n.social_behance {background: url(" + __webpack_require__(20) + ") no-repeat;}\n.social_blogger {background: url(" + __webpack_require__(21) + ") no-repeat;}\n.social_deviantart {background: url(" + __webpack_require__(22) + ") no-repeat;}\n.social_dribbble {background: url(" + __webpack_require__(23) + ") no-repeat;}\n.social_dropbox {background: url(" + __webpack_require__(24) + ") no-repeat;}\n.social_evernote {background: url(" + __webpack_require__(25) + ") no-repeat;}\n.social_facebook {background: url(" + __webpack_require__(26) + ") no-repeat;}\n.social_forrst {background: url(" + __webpack_require__(27) + ") no-repeat;}\n.social_github {background: url(" + __webpack_require__(28) + ") no-repeat;}\n.social_googleplus {background: url(" + __webpack_require__(29) + ") no-repeat;}\n.social_jolicloud {background: url(" + __webpack_require__(30) + ") no-repeat;}\n.social_last-fm {background: url(" + __webpack_require__(31) + ") no-repeat;}\n.social_linkedin {background: url(" + __webpack_require__(32) + ") no-repeat;}\n.social_picasa {background: url(" + __webpack_require__(33) + ") no-repeat;}\n.social_pintrest {background: url(" + __webpack_require__(34) + ") no-repeat;}\n.social_rss {background: url(" + __webpack_require__(35) + ") no-repeat;}\n.social_skype {background: url(" + __webpack_require__(36) + ") no-repeat;}\n.social_spotify {background: url(" + __webpack_require__(37) + ") no-repeat;}\n.social_stumbleupon {background: url(" + __webpack_require__(38) + ") no-repeat;}\n.social_tumblr {background: url(" + __webpack_require__(39) + ") no-repeat;}\n.social_twitter {background: url(" + __webpack_require__(40) + ") no-repeat;}\n.social_vimeo {background: url(" + __webpack_require__(41) + ") no-repeat;}\n.social_wordpress {background: url(" + __webpack_require__(42) + ") no-repeat;}\n.social_xing {background: url(" + __webpack_require__(43) + ") no-repeat;}\n.social_yahoo {background: url(" + __webpack_require__(44) + ") no-repeat;}\n.social_youtube {background: url(" + __webpack_require__(45) + ") no-repeat;}\n.social_vk {background: url(" + __webpack_require__(46) + ") no-repeat;}\n.social_instagram {background: url(" + __webpack_require__(47) + ") no-repeat;}\n\n/*Font Awesome Icon Styles*/\ni.icon-custom {\n\tcolor: #555;\n\twidth: 40px;\n\theight: 40px;\n\tfont-size: 20px;\n\tline-height: 40px;\n\tmargin-bottom: 5px;\n\ttext-align: center;\n\tdisplay: inline-block;\n\tborder: solid 1px #555;\n}\n\ni.icon-sm {\n width: 35px;\n height: 35px;\n font-size: 16px;\n line-height: 35px;\n}\n\ni.icon-md {\n\twidth: 55px;\n\theight: 55px;\n\tfont-size: 22px;\n\tline-height: 55px;\n}\n\ni.icon-lg {\n\twidth: 60px;\n\theight: 60px;\n\tfont-size: 31px;\n\tline-height: 60px;\n\tmargin-bottom: 10px;\n}\n\ni.icon-2x {\n\tfont-size: 30px;\n}\ni.icon-3x {\n\tfont-size: 40px;\n}\ni.icon-4x {\n\tfont-size: 50px;\n}\n\n/*Line Icons*/\ni.icon-line {\n\tfont-size: 17px;\n}\ni.icon-sm.icon-line {\n\tfont-size: 14px;\n}\ni.icon-md.icon-line {\n\tfont-size: 22px;\n}\ni.icon-lg.icon-line {\n\tfont-size: 28px;\n}\n\ni.icon-2x.icon-line {\n\tfont-size: 27px;\n}\ni.icon-3x.icon-line {\n\tfont-size: 36px;\n}\ni.icon-4x.icon-line {\n\tfont-size: 47px;\n}\n\n/*Icon Styles For Links*/\n.link-icon,\n.link-bg-icon {\n\tcolor: #555;\n}\n\n.link-icon:hover,\n.link-bg-icon:hover {\n\tborder: none;\n\ttext-decoration: none;\n}\n\n.link-icon:hover i {\n\tcolor: #4765a0;\n\tbackground: none;\n\tborder: solid 1px #4765a0;\n}\n\n.link-bg-icon:hover i {\n\tcolor: #4765a0;\n\tbackground: #4765a0;\n\tborder-color: #4765a0;\n\tcolor: #fff !important;\n}\n\n/*Icons Color*/\ni.icon-color-u,\ni.icon-color-red,\ni.icon-color-sea,\ni.icon-color-dark,\ni.icon-color-grey,\ni.icon-color-blue,\ni.icon-color-green,\ni.icon-color-yellow,\ni.icon-color-orange,\ni.icon-color-purple,\ni.icon-color-aqua,\ni.icon-color-brown,\ni.icon-color-dark-blue,\ni.icon-color-light-grey,\ni.icon-color-light-green {\n\tbackground: none;\n}\n\ni.icon-color-u {\n\tcolor: #4765a0;\n\tborder: solid 1px #4765a0;\n}\ni.icon-color-blue {\n\tcolor: #3498db;\n\tborder: solid 1px #3498db;\n}\ni.icon-color-red {\n\tcolor: #e74c3c;\n\tborder: solid 1px #e74c3c;\n}\ni.icon-color-sea {\n\tcolor: #1abc9c;\n\tborder: solid 1px #1abc9c;\n}\ni.icon-color-green {\n\tcolor: #2ecc71;\n\tborder: solid 1px #2ecc71;\n}\ni.icon-color-yellow {\n\tcolor: #f1c40f;\n\tborder: solid 1px #f1c40f;\n}\ni.icon-color-orange {\n\tcolor: #e67e22;\n\tborder: solid 1px #e67e22;\n}\ni.icon-color-grey {\n\tcolor: #95a5a6;\n\tborder: solid 1px #95a5a6;\n}\ni.icon-color-purple {\n\tcolor: #9b6bcc;\n\tborder: solid 1px #9b6bcc;\n}\ni.icon-color-aqua {\n\tcolor: #27d7e7;\n\tborder: solid 1px #27d7e7;\n}\ni.icon-color-brown {\n\tcolor: #9c8061;\n\tborder: solid 1px #9c8061;\n}\ni.icon-color-dark-blue {\n\tcolor: #4765a0;\n\tborder: solid 1px #4765a0;\n}\ni.icon-color-light-green {\n\tcolor: #79d5b3;\n\tborder: solid 1px #79d5b3;\n}\ni.icon-color-light {\n\tcolor: #fff;\n\tborder: solid 1px #fff;\n}\ni.icon-color-light-grey {\n\tcolor: #585f69;\n\tborder: solid 1px #585f69;\n}\n\n/*Icons Backgroun Color*/\ni.icon-bg-u,\ni.icon-bg-red,\ni.icon-bg-sea,\ni.icon-bg-dark,\ni.icon-bg-darker,\ni.icon-bg-grey,\ni.icon-bg-blue,\ni.icon-bg-green,\ni.icon-bg-yellow,\ni.icon-bg-orange,\ni.icon-bg-purple,\ni.icon-bg-aqua,\ni.icon-bg-brown,\ni.icon-bg-dark-blue,\ni.icon-bg-light-grey,\ni.icon-bg-light-green {\n\tcolor: #fff;\n\tborder-color: transparent;\n}\n\ni.icon-bg-u {\n\tbackground: #4765a0;\n}\ni.icon-bg-blue {\n\tbackground: #3498db;\n}\ni.icon-bg-red {\n\tbackground: #e74c3c;\n}\ni.icon-bg-sea {\n\tbackground: #1abc9c;\n}\ni.icon-bg-green {\n\tbackground: #2ecc71;\n}\ni.icon-bg-yellow {\n\tbackground: #f1c40f;\n}\ni.icon-bg-orange {\n\tbackground: #e67e22;\n}\ni.icon-bg-grey {\n\tbackground: #95a5a6;\n}\ni.icon-bg-dark {\n\tbackground: #555;\n}\ni.icon-bg-darker {\n\tbackground: #333;\n}\ni.icon-bg-purple {\n\tbackground: #9b6bcc;\n}\ni.icon-bg-aqua {\n\tbackground: #27d7e7;\n}\ni.icon-bg-brown {\n\tbackground: #9c8061;\n}\ni.icon-bg-dark-blue {\n\tbackground: #4765a0;\n}\ni.icon-bg-light-green {\n\tbackground: #79d5b3;\n}\ni.icon-bg-light {\n\tbackground: #fff;\n\tborder-color: transparent;\n}\ni.icon-bg-light-grey {\n\tbackground: #585f69;\n\tborder-color: transparent;\n}\n\n/* Make Font Awesome icons fixed width */\n.fa-fixed [class^=\"fa\"],\n.fa-fixed [class*=\" fa\"] {\n\twidth: 1.25em;\n\ttext-align: center;\n\tdisplay: inline-block;\n}\n.fa-fixed [class^=\"fa\"].fa-lg,\n.fa-fixed [class*=\" fa\"].fa-lg {\n\t/* increased font size for fa-lg */\n\twidth: 1.5625em;\n}\n\n/*Typography\n------------------------------------*/\n.text-justify p { text-align: justify;}\n.text-transform-uppercase { text-transform: uppercase;}\n.text-transform-normal { text-transform: inherit !important;}\n\n.font-bold { font-weight: 600;}\n.font-light { font-weight: 200;}\n.font-normal { font-weight: 400 !important;}\n\n/*Text Dropcap*/\n.dropcap {\n\tfloat: left;\n\tcolor: #4765a0;\n\tpadding: 5px 0;\n\tfont-size: 45px;\n\tfont-weight: 200;\n\tline-height: 30px;\n\tmargin: 0px 5px 0 0;\n}\n\n.dropcap-bg {\n\tfloat: left;\n\tcolor: #fff;\n\tpadding: 7px 0;\n\tmin-width: 50px;\n\tfont-size: 35px;\n\tfont-weight: 200;\n\tline-height: 35px;\n\ttext-align: center;\n\tbackground: #4765a0;\n\tmargin: 4px 10px 0 0;\n}\n\n/*Text Highlights*/\n.text-highlights {\n\tcolor: #fff;\n\tfont-weight: 200;\n\tpadding: 0px 5px;\n\tbackground: #555;\n}\n\n.text-highlights-green {\n\tbackground: #4765a0;\n}\n.text-highlights-blue {\n\tbackground: #3498db;\n}\n.text-highlights-red {\n\tbackground: #e74c3c;\n}\n.text-highlights-sea {\n\tbackground: #1abc9c;\n}\n.text-highlights-orange {\n\tbackground: #e67e22;\n}\n.text-highlights-yellow {\n\tbackground: #f1c40f;\n}\n.text-highlights-purple {\n\tbackground: #9b6bcc;\n}\n.text-highlights-aqua {\n\tbackground: #27d7e7;\n}\n.text-highlights-brown {\n\tbackground: #9c8061;\n}\n.text-highlights-dark-blue {\n\tbackground: #4765a0;\n}\n.text-highlights-light-green {\n\tbackground: #79d5b3;\n}\n\n/*Text Borders*/\n.text-border {\n\tborder-bottom: dashed 1px #555;\n}\n\n.text-border-default {\n\tborder-color: #95a5a6;\n}\n.text-border-green {\n\tborder-color: #4765a0;\n}\n.text-border-blue {\n\tborder-color: #3498db;\n}\n.text-border-red {\n\tborder-color: #e74c3c;\n}\n.text-border-yellow {\n\tborder-color: #f1c40f;\n}\n.text-border-purple {\n\tborder-color: #9b6bcc;\n}\n\n/*List Styles*/\n.list-styles li {\n\tmargin-bottom: 8px;\n}\n\n/*Contextual Backgrounds*/\n.contex-bg p {\n\topacity: 0.8;\n\tpadding: 8px 10px;\n}\n.contex-bg p:hover {\n\topacity: 1;\n}\n\n/*Blockquote*/\nblockquote {\n\tpadding: 5px 15px;\n\tborder-left-width: 2px;\n}\n\nblockquote p {\n\tfont-size: 14px;\n\tfont-weight: 400;\n}\n\nblockquote h1,\nblockquote h2,\nblockquote span {\n\tfont-size: 18px;\n\tmargin: 0 0 8px;\n\tline-height: 24px;\n}\n\n/*Blockquote Styles*/\nblockquote.bq-text-lg p,\nblockquote.bq-text-lg small {\n\ttext-transform: uppercase;\n}\n\nblockquote.bq-text-lg p {\n\tfont-size: 22px;\n\tfont-weight: 300;\n\tline-height: 32px;\n}\n\nblockquote.text-right,\nblockquote.hero.text-right {\n\tborder-left: none;\n\tborder-right: 2px solid #eee;\n}\n\nblockquote.hero.text-right,\nblockquote.hero.text-right:hover {\n\tborder-color: #555;\n}\n\nblockquote:hover,\nblockquote.text-right:hover {\n\tborder-color: #4765a0;\n\ttransition: all 0.4s ease-in-out;\n}\n\nblockquote.bq-dark,\nblockquote.bq-dark:hover {\n\tborder-color: #585f69;\n}\n\nblockquote.bq-green {\n\tborder-color: #4765a0;\n}\n\n/*Blockquote Hero Styles*/\nblockquote.hero {\n\tborder: none;\n\tpadding: 18px;\n\tfont-size: 16px;\n\tbackground: #f3f3f3;\n\tborder-left: solid 2px #666;\n}\n\nblockquote.hero:hover {\n\tbackground: #eee;\n\tborder-left-color: #666;\n}\n\nblockquote.hero.hero-dark,\nblockquote.hero.hero-default {\n\tborder: none;\n}\n\nblockquote.hero.hero-dark {\n\tbackground: #444;\n}\n\nblockquote.hero.hero-dark:hover {\n\tbackground: #555;\n}\n\nblockquote.hero.hero-default {\n\tbackground: #4765a0;\n}\n\nblockquote.hero.hero-default:hover {\n\tbackground: #5fb611;\n}\n\nblockquote.hero.hero-dark p,\nblockquote.hero.hero-dark h2,\nblockquote.hero.hero-dark small,\nblockquote.hero.hero-default p,\nblockquote.hero.hero-default h2,\nblockquote.hero.hero-default small {\n\tcolor: #fff;\n\tfont-weight: 200;\n}\n\n/*Lists\n------------------------------------*/\n.list-row {\n\tpadding: 0;\n\tmargin-bottom: 0;\n\tlist-style: none;\n}\n\n/*Lists v1*/\n.lists-v1 li {\n\tmargin-bottom: 10px;\n}\n\n.lists-v1 i {\n\tcolor: #fff;\n\twidth: 15px;\n\theight: 15px;\n\tpadding: 1px;\n\tfont-size: 13px;\n\tmargin-right: 7px;\n\ttext-align: center;\n\tbackground: #4765a0;\n\tdisplay: inline-block;\n\tborder-radius: 50% !important;\n}\n\n/*Lists v2*/\n.lists-v2 li {\n\tmargin-bottom: 10px;\n}\n\n.lists-v2 i {\n\tcolor: #4765a0;\n\tfont-size: 13px;\n\tmargin-right: 7px;\n\tdisplay: inline-block;\n}\n\n/*Alerts\n------------------------------------*/\n.alert {\n\tborder-radius: 0;\n}\n\n/*Thumbnails\n------------------------------------*/\n.thumbnail {\n\tborder-radius: 0;\n}\n\n/*Panels (Portlets)\n------------------------------------*/\n.panel,\n.panel-heading,\n.panel-group .panel {\n\tborder-radius: 0;\n}\n\n.panel-heading {\n\tcolor: #fff;\n\tpadding: 5px 15px;\n}\n\n/*Panel Table*/\n.panel .table {\n\tmargin-bottom: 0;\n}\n\n/*Panel Unify*/\n.panel-u {\n\tborder-color: #4765a0;\n}\n\n.panel-u > .panel-heading {\n\tbackground: #4765a0;\n}\n\n/*Panel Blue*/\n.panel-blue {\n\tborder-color: #3498db;\n}\n\n.panel-blue > .panel-heading {\n\tbackground: #3498db;\n}\n\n/*Panel Red*/\n.panel-red {\n\tborder-color: #e74c3c;\n}\n\n.panel-red > .panel-heading {\n\tbackground: #e74c3c;\n}\n\n/*Panel Green*/\n.panel-green {\n\tborder-color: #2ecc71;\n}\n\n.panel-green > .panel-heading {\n\tbackground: #2ecc71;\n}\n\n/*Panel Sea*/\n.panel-sea {\n\tborder-color: #1abc9c;\n}\n\n.panel-sea > .panel-heading {\n\tbackground: #1abc9c;\n}\n\n/*Panel Orange*/\n.panel-orange {\n\tborder-color: #e67e22;\n}\n\n.panel-orange > .panel-heading {\n\tbackground: #e67e22;\n}\n\n/*Panel Yellow*/\n.panel-yellow {\n\tborder-color: #f1c40f;\n}\n\n.panel-yellow > .panel-heading {\n\tbackground: #f1c40f;\n}\n\n/*Panel Grey*/\n.panel-grey {\n\tborder-color: #95a5a6;\n}\n\n.panel-grey > .panel-heading {\n\tbackground: #95a5a6;\n}\n\n/*Panel Dark*/\n.panel-dark {\n\tborder-color: #555;\n}\n\n.panel-dark > .panel-heading {\n\tbackground: #555;\n}\n\n/*Panel Purple*/\n.panel-purple {\n\tborder-color: #9b6bcc;\n}\n\n.panel-purple > .panel-heading {\n\tbackground: #9b6bcc;\n}\n\n/*Panel Aqua*/\n.panel-aqua {\n\tborder-color: #27d7e7;\n}\n\n.panel-aqua > .panel-heading {\n\tbackground: #27d7e7;\n}\n\n/*Panel Brown*/\n.panel-brown {\n\tborder-color: #9c8061;\n}\n\n.panel-brown > .panel-heading {\n\tbackground: #9c8061;\n}\n\n/*Panel Dark Blue*/\n.panel-dark-blue {\n\tborder-color: #4765a0;\n}\n\n.panel-dark-blue > .panel-heading {\n\tbackground: #4765a0;\n}\n\n/*Panel Light Green*/\n.panel-light-green {\n\tborder-color: #79d5b3;\n}\n\n.panel-light-green > .panel-heading {\n\tbackground: #79d5b3;\n}\n\n/*Panel Default Dark*/\n.panel-default-dark {\n\tborder-color: #585f69;\n}\n\n.panel-default-dark > .panel-heading {\n\tbackground: #585f69;\n}\n\n/*Progress Bar\n------------------------------------*/\n.progress {\n\tborder-radius: 0;\n}\n\n.progress-u {\n\tbox-shadow: none;\n}\n\n.progress-u .progress-bar {\n\tbox-shadow: none;\n}\n\n/*progress-bar (sizes)*/\n.progress-lg {\n\theight: 25px;\n}\n.progress-lg p {\n\tpadding-top: 3px;\n}\n\n.progress-sm {\n\theight: 12px;\n}\n\n.progress-xs {\n\theight: 7px;\n}\n\n.progress-xxs {\n\theight: 3px;\n}\n\n/*progress-bar (colors)*/\n.progress {\n\tbackground: #e5e5e5;\n}\n\n.progress-bar-u {\n\tbackground: #4765a0;\n}\n\n.progress-bar-blue {\n\tbackground: #3498db;\n}\n\n.progress-bar-orange {\n\tbackground: #e67e22;\n}\n\n.progress-bar-red {\n\tbackground: #e74c3c;\n}\n\n.progress-bar-purple {\n\tbackground: #9b6bcc;\n}\n\n.progress-bar-aqua {\n\tbackground: #27d7e7;\n}\n\n.progress-bar-brown {\n\tbackground: #9c8061;\n}\n\n.progress-bar-dark-blue {\n\tbackground: #4765a0;\n}\n\n.progress-bar-light-green {\n\tbackground: #79d5b3;\n}\n\n.progress-bar-dark {\n\tbackground: #555;\n}\n\n/*Progress Bar Animation\n------------------------------------*/\n.progress {\n\t\tposition: relative;\n}\n\n.progress .progress-bar {\n\toverflow: hidden;\n\tline-height: 20px;\n}\n\n.progress-box .progress-bar {\n\ttransition: all 3s ease-in;\n}\n\n/*Vertical Progress Bar*/\n.progress.vertical {\n\tfloat: left;\n\twidth: 100%;\n\theight: 200px;\n\tmargin-right: 20px;\n}\n\n.progress.vertical.bottom {\n\tposition: relative;\n}\n\n.progress.vertical .progress-bar {\n\theight: 0;\n\twidth: 100%;\n\ttransition: height 3s ease;\n}\n\n.progress.vertical.bottom .progress-bar {\n\tbottom: 0;\n\tposition: absolute;\n}\n\n/*Count Stars\n------------------------------------*/\n.stars-existing {\n\tcolor: #4765a0;\n\tcursor: pointer;\n}\n\n.star-lg {\n\tfont-size: 30px;\n}\n\n.star-sm {\n\tfont-size: 25px;\n}\n\n.star-xs {\n\tfont-size: 20px;\n}\n\n.star-default {\n\tfont-size: 16px;\n}\n\n/*Media (Audio/Videos and Images)\n------------------------------------*/\n/*Images*/\nimg.img-bordered {\n\tpadding: 3px !important;\n\tborder: solid 1px #eee !important;\n}\n\nimg.img-circle {\n\tborder-radius: 50% !important;\n}\n\nimg.image-sm {\n\twidth: 50px;\n\theight: 50px;\n}\n\nimg.image-md {\n\twidth: 100px;\n\theight: 100px;\n}\n\n/*Responsive Video*/\n.responsive-video {\n height: 0;\n padding-top: 1px;\n position: relative;\n padding-bottom: 56.25%; /*16:9*/\n}\n\n.responsive-video iframe {\n top: 0;\n left: 0;\n width: 100%;\n height: 100%;\n position: absolute;\n}\n\n/*Column Sizes\n------------------------------------*/\n/*Remove the Gutter Padding from Columns*/\n.no-gutter > [class*='col-'] {\n\tpadding-right: 0;\n\tpadding-left: 0;\n}\n\n.no-gutter.no-gutter-boxed {\n\tpadding-right: 15px;\n\tpadding-left: 15px;\n}\n\n/*Heights\n------------------------------------*/\n.height-100 { min-height: 100px;}\n.height-150 { min-height: 150px;}\n.height-200 { min-height: 200px;}\n.height-250 { min-height: 250px;}\n.height-300 { min-height: 300px;}\n.height-350 { min-height: 350px;}\n.height-400 { min-height: 400px;}\n.height-450 { min-height: 450px;}\n.height-500 { min-height: 500px !important;}\n\n/*Spaces\n------------------------------------*/\n.no-padding {\n\tpadding: 0 !important;\n}\n\n.no-margin {\n\tmargin: 0;\n}\n\n.no-top-space {\n\tmargin-top: 0 !important;\n\tpadding-top: 0 !important;\n}\n\n.no-bottom-space {\n\tmargin-bottom: 0 !important;\n\tpadding-bottom: 0 !important;\n}\n\n.no-margin-bottom {\n\tmargin-bottom: 0 !important;\n}\n\n.no-padding-bottom {\n\tpadding-bottom: 0 !important;\n}\n\n.content-xs {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n}\n\n.content {\n\tpadding-top: 40px;\n\tpadding-bottom: 40px;\n}\n\n.content-sm {\n\tpadding-top: 60px;\n\tpadding-bottom: 60px;\n}\n\n.content-md {\n\tpadding-top: 80px;\n\tpadding-bottom: 80px;\n}\n\n.content-lg {\n\tpadding-top: 100px;\n\tpadding-bottom: 100px;\n}\n\n.content-xlg {\n\tpadding-top: 150px;\n\tpadding-bottom: 150px;\n}\n\n.space-md-hor {\n\tpadding-left: 40px;\n\tpadding-right: 40px;\n}\n\n.space-lg-hor {\n\tpadding-left: 60px;\n\tpadding-right: 60px;\n}\n\n.space-xlg-hor {\n\tpadding-left: 100px;\n\tpadding-right: 100px;\n}\n\n.margin-bottom-5,\n.margin-bottom-10,\n.margin-bottom-15,\n.margin-bottom-20,\n.margin-bottom-25,\n.margin-bottom-30,\n.margin-bottom-35,\n.margin-bottom-40,\n.margin-bottom-45,\n.margin-bottom-50,\n.margin-bottom-55,\n.margin-bottom-60,\n.margin-bottom-100 {\n\t clear:both;\n}\n.margin-bottom-5  { margin-bottom:5px;}\n.margin-bottom-10 { margin-bottom:10px;}\n.margin-bottom-15 { margin-bottom:15px;}\n.margin-bottom-20 { margin-bottom:20px;}\n.margin-bottom-25 { margin-bottom:25px;}\n.margin-bottom-30 { margin-bottom:30px;}\n.margin-bottom-35 { margin-bottom:35px;}\n.margin-bottom-40 { margin-bottom:40px;}\n.margin-bottom-45 { margin-bottom:45px;}\n.margin-bottom-50 { margin-bottom:50px;}\n.margin-bottom-55 { margin-bottom:55px;}\n.margin-bottom-60 { margin-bottom:60px;}\n.margin-bottom-70 { margin-bottom:70px;}\n.margin-bottom-80 { margin-bottom:80px;}\n.margin-bottom-90 { margin-bottom:90px;}\n.margin-bottom-100 { margin-bottom:100px;}\n\n@media (max-width: 768px) {\n\t.sm-margin-bottom-10 {\n\t\tmargin-bottom: 10px;\n\t}\n\t.sm-margin-bottom-20 {\n\t\tmargin-bottom: 20px;\n\t}\n\t.sm-margin-bottom-30 {\n\t\tmargin-bottom: 30px;\n\t}\n\t.sm-margin-bottom-40 {\n\t\tmargin-bottom: 40px;\n\t}\n\t.sm-margin-bottom-50 {\n\t\tmargin-bottom: 50px;\n\t}\n\t.sm-margin-bottom-60 {\n\t\tmargin-bottom: 60px;\n\t}\n}\n\n@media (max-width: 992px) {\n\t.md-margin-bottom-10 {\n\t\tmargin-bottom: 10px;\n\t}\n\t.md-margin-bottom-20 {\n\t\tmargin-bottom: 20px;\n\t}\n\t.md-margin-bottom-30 {\n\t\tmargin-bottom: 30px;\n\t}\n\t.md-margin-bottom-40 {\n\t\tmargin-bottom: 40px;\n\t}\n\t.md-margin-bottom-50 {\n\t\tmargin-bottom: 50px;\n\t}\n\t.md-margin-bottom-60 {\n\t\tmargin-bottom: 60px;\n\t}\n}\n\n/*Other Spaces*/\n.margin-top-20 { margin-top: 20px;}\n.margin-left-5 { margin-left: 5px;}\n.margin-left-10 { margin-left: 10px;}\n.margin-right-5 { margin-right: 5px;}\n.margin-right-10 { margin-right: 10px;}\n.margin-right-20 { margin-right: 20px;}\n\n.padding-sm { padding: 40px 40px;}\n.padding-top-5 { padding-top: 5px;}\n.padding-left-5 { padding-left: 5px;}\n\n/*Text Colors\n------------------------------------*/\n.color-sea { color: #1abc9c;}\n.color-red { color: #e74c3c;}\n.color-aqua { color: #27d7e7;}\n.color-blue { color: #3498db;}\n.color-grey { color: #95a5a6;}\n.color-dark { color: #555;}\n/*.color-dark1 { color: #444;}*/\n.color-darker { color: #444;}\n.color-green { color: #4765a0;}\n.color-brown { color: #9c8061;}\n.color-light { color: #ffffff;}\n.color-orange { color: #e67e22;}\n.color-yellow { color: #f1c40f;}\n.color-green1 { color: #2ecc71;}\n.color-purple { color: #9b6bcc;}\n.color-inherit { color: inherit;}\n.color-dark-blue { color: #4765a0;}\n.color-light-grey { color: #585f69;}\n.color-light-green { color: #79d5b3;}\n.color-teal { color: #18ba9b;}\n\n/*Background Colors\n------------------------------------*/\n.bg-color-dark,\n.bg-color-darker,\n.bg-color-sea,\n.bg-color-red,\n.bg-color-aqua,\n.bg-color-blue,\n.bg-color-grey,\n.bg-color-light,\n.bg-color-green,\n.bg-color-brown,\n.bg-color-orange,\n.bg-color-green1,\n.bg-color-purple,\n.bg-color-dark-blue,\n.bg-color-light-grey,\n.bg-color-light-green,\n.bg-color-primary {\n\tcolor: #fff;\n}\n.bg-color-white {\n\tcolor: #555;\n}\n.bg-color-primary { background-color: #4765a0 !important;}\n.bg-color-dark { background-color: #555 !important;}\n.bg-color-darker { background-color: #222 !important;}\n.bg-color-white { background-color: #fff !important;}\n.bg-color-sea { background-color: #1abc9c !important;}\n.bg-color-red { background-color: #e74c3c !important;}\n.bg-color-aqua { background-color: #27d7e7 !important;}\n.bg-color-blue { background-color: #3498db !important;}\n.bg-color-grey { background-color: #95a5a6 !important;}\n.bg-color-light { background-color: #f7f7f7 !important;}\n.bg-color-green { background-color: #4765a0 !important;}\n.bg-color-brown { background-color: #9c8061 !important;}\n.bg-color-orange { background-color: #e67e22 !important;}\n.bg-color-green1 { background-color: #2ecc71 !important;}\n.bg-color-purple { background-color: #9b6bcc !important;}\n.bg-color-dark-blue { background-color: #4765a0 !important;}\n.bg-color-light-grey { background-color: #585f69 !important;}\n.bg-color-light-green { background-color: #79d5b3 !important;}\n.bg-color-teal { background-color: #18ba9b !important; }\n\n.rgba-red { background-color: rgba(231,76,60,0.8)}\n.rgba-blue { background-color: rgba(52,152,219,0.8);}\n.rgba-aqua { background-color: rgba(39,215,231,0.8);}\n.rgba-yellow { background-color: rgba(241,196,15,0.8);}\n.rgba-default { background-color: rgba(114,192,44,0.8);}\n.rgba-purple { background-color: rgba(155,107,204,0.8);}\n\n/*Grey Backroud*/\n.bg-grey {\n\tbackground: #f7f7f7;\n\tborder-top: solid 1px #eee;\n\tborder-bottom: solid 1px #eee;\n}\n\n/*Rounded and Circle Classes\n------------------------------------*/\n.no-rounded { border-radius: 0 !important;}\n.rounded { border-radius: 4px !important;}\n.rounded-x { border-radius: 50% !important;}\n.rounded-2x { border-radius: 10px !important;}\n.rounded-3x { border-radius: 15px !important;}\n.rounded-4x { border-radius: 20px !important;}\n.rounded-sm { border-radius: 2px !important;}\n.rounded-md { border-radius: 3px !important;}\n.rounded-top { border-radius: 4px 4px 0 0 !important;}\n.rounded-left { border-radius: 4px 0 0 4px !important;}\n.rounded-right { border-radius: 0 4px 4px 0 !important;}\n.rounded-bottom { border-radius: 0 0 4px 4px !important;}\n\n/*Others\n------------------------------------*/\n.overflow-h { overflow: hidden;}\n.overflow-a { overflow: auto;}\n.overflow-hidden { overflow: hidden;}\n\n.clear-both { clear: both;}\n\n/*Display*/\n.dp-none { display: none;}\n.dp-block { display: block;}\n.dp-table { display: table;}\n.dp-inline-block { display: inline-block;}\n.dp-table-cell {\n\tdisplay: table-cell;\n\tvertical-align: middle;\n}\n\n/*Font Size*/\n.text-light {\n\tfont-weight: 200;\n}\n.text-normal {\n\tfont-weight: 400;\n}\n.text-bold {\n\tfont-weight: 600 !important;\n}\n\n/*Full Width*/\n.full-width {\n\twidth: 100%;\n}\n\n/*Equal Height Columns*/\n@media (max-width: 767px) {\n\t.equal-height-column {\n\t\theight: auto !important;\n\t}\n}\n\n/*Image Classes*/\n.img-width-60 { width: 60px;}\n.img-width-200 { width: 200px;}\n.lft-img-margin { margin:0 20px 5px 0;}\n.rgt-img-margin { margin:0 0 5px 10px;}\n\nimg.img-center,\n.img-center img {\n\tmargin-left: auto;\n\tmargin-right: auto;\n}\n\n/*Background Light*/\n.bg-light {\n padding: 10px 15px;\n margin-bottom: 10px;\n background: #fcfcfc;\n border: solid 1px #e5e5e5;\n}\n.bg-light:hover {\n\t border: solid 1px #bbb;\n}\n\n/*CSS3 Hover Effects*/\n.hover-effect {\n transition: all 0.4s ease-in-out;\n}\n\n.hover-effect-kenburn {\n left:10px;\n margin-left:-10px;\n position:relative;\n transition: all 0.8s ease-in-out;\n}\n.hover-effect-kenburn:hover {\n transform: scale(2) rotate(5deg);\n}\n\n/*Scroll Icon*/\n.scroll-btn-icon,\n.scroll-btn-icon:before {\n\tposition: absolute;\n\tleft: 50%;\n}\n.scroll-btn-icon {\n\twidth: 30px;\n\tz-index: 2;\n\theight: 50px;\n\tbottom: 30px;\n\tmargin-left: -25px;\n\tborder-radius: 25px;\n\tbox-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);\n}\n.scroll-btn-icon-dark {\n\tbox-shadow: inset 0 0 0 1px rgba(0,0,0,0.5);\n}\n.scroll-btn-icon:before {\n\ttop: 8px;\n\twidth: 8px;\n\theight: 8px;\n\tcontent: '';\n\tbackground: #fff;\n\tmargin-left: -4px;\n\tborder-radius: 4px;\n\tanimation-name: scroll;\n\tanimation-duration: 1.5s;\n\t-webkit-animation-name: scroll;\n\t-webkit-animation-duration: 1.5s;\n\tanimation-iteration-count: infinite;\n\t-webkit-animation-iteration-count: infinite;\n}\n.scroll-btn-icon-dark:before {\n\tbackground: #333;\n}\n@-webkit-keyframes scroll {\n\t0% {\n\t\topacity: 1;\n\t}\n\t100% {\n\t\topacity: 0;\n\t\ttransform: translateY(36px);\n\t\t-webkit-transform: translateY(36px);\n\t}\n}\n@keyframes scroll {\n\t0% {\n\t\topacity: 1;\n\t}\n\t100% {\n\t\topacity: 0;\n\t\ttransform: translateY(36px);\n\t\t-webkit-transform: translateY(36px);\n\t}\n}\n", ""]);
+	exports.push([module.id, "/*\n * Template Name: Unify - Responsive Bootstrap Template\n * Description: Business, Corporate, Portfolio, E-commerce, Blog and One Page Template.\n * Version: 1.9.2\n * Author: @htmlstream\n * Website: http://htmlstream.com\n*/\n\n/*Thematic Break\n------------------------------------*/\nhr {\n\tmargin: 30px 0;\n}\n\nhr.hr-xs {\n\tmargin: 10px 0;\n}\n\nhr.hr-md {\n\tmargin: 20px 0;\n}\n\nhr.hr-lg {\n\tmargin: 40px 0;\n}\n\n/*Headings\n------------------------------------*/\nh1 {\n\tfont-size: 28px;\n\tline-height: 35px;\n}\nh2 {\n\tfont-size: 24px;\n\tline-height: 33px;\n}\nh3 {\n\tfont-size: 20px;\n\tline-height: 27px;\n}\nh4 {\n\tline-height: 25px;\n}\nh5 {\n\tline-height: 20px;\n}\nh6 {\n\tline-height: 18px;\n}\n\n.font-open-sans {\n\tfont-family: \"Open Sans\", Arial, sans-serif;\n}\n\nh1, h2, h3, h4, h5, h6 {\n\tcolor: #555;\n\tmargin-top: 5px;\n\ttext-shadow: none;\n\tfont-weight: normal;\n\tfont-family: \"Open Sans\", Arial, sans-serif;\n}\n\nh1 i, h2 i, h3 i, h4 i, h5 i, h6 i {\n\tmargin-right: 5px;\n}\n\n/*Block Headline*/\n.headline {\n\tdisplay: block;\n\tmargin: 10px 0 25px 0;\n\tborder-bottom: 1px dotted #e4e9f0;\n}\n\n.headline h2 {\n\tfont-size: 22px;\n}\n\n.headline h2,\n.headline h3,\n.headline h4 {\n\tmargin: 0 0 -2px 0;\n\tpadding-bottom: 5px;\n\tdisplay: inline-block;\n\tborder-bottom: 2px solid #4765a0;\n}\n\n.headline-md {\n\tmargin-bottom: 15px;\n}\n\n.headline-md h2 {\n\tfont-size: 21px;\n}\n\n/*Heading Options*/\n.heading {\n\ttext-align: center;\n}\n\n.heading h2 {\n\tpadding: 0 12px;\n\tposition: relative;\n\tdisplay: inline-block;\n\tline-height: 34px !important; /*For Tagline Boxes*/\n}\n\n.heading h2:before,\n.heading h2:after {\n\tcontent: ' ';\n\twidth: 70%;\n\tposition: absolute;\n\tborder-width: 1px;\n\tborder-color: #bbb;\n}\n\n.heading h2:before {\n\tright: 100%;\n}\n\n.heading h2:after {\n\tleft: 100%;\n}\n\n@media (max-width: 768px) {\n\t.heading h2:before,\n\t.heading h2:after {\n\t\twidth: 20%;\n\t}\n}\n\n/*Headline v1*/\n.heading-v1 h2:before,\n.heading-v1 h2:after {\n\ttop: 15px;\n\theight: 6px;\n\tborder-top-style: solid;\n\tborder-bottom-style: solid;\n}\n\n/*Headline v2*/\n.heading-v2 h2:before,\n.heading-v2 h2:after {\n\ttop: 15px;\n\theight: 6px;\n\tborder-top-style: dashed;\n\tborder-bottom-style: dashed;\n}\n\n/*Headline v3*/\n.heading-v3 h2:before,\n.heading-v3 h2:after {\n\ttop: 15px;\n\theight: 6px;\n\tborder-top-style: dotted;\n\tborder-bottom-style: dotted;\n}\n\n/*Headline v4*/\n.heading-v4 h2:before,\n.heading-v4 h2:after {\n\ttop: 17px;\n\tborder-bottom-style: solid;\n}\n\n/*Headline v5*/\n.heading-v5 h2:before,\n.heading-v5 h2:after {\n\ttop: 17px;\n\tborder-bottom-style: dashed;\n}\n\n/*Headline v6*/\n.heading-v6 h2:before,\n.heading-v6 h2:after {\n\ttop: 17px;\n\tborder-bottom-style: dotted;\n}\n\n/*Heading Titles v1*/\n.title-v1 {\n\tz-index: 1;\n\tposition: relative;\n\ttext-align: center;\n\tmargin-bottom: 60px;\n}\n\n.title-v1 h1,\n.title-v1 h2 {\n\tcolor: #444;\n\tfont-size: 28px;\n\tposition: relative;\n\tmargin-bottom: 15px;\n\tpadding-bottom: 20px;\n\ttext-transform: uppercase;\n\tfont-family: \"Open Sans\", Arial, sans-serif;\n}\n\n.title-v1 h1:after,\n.title-v1 h2:after {\n\tbottom: 0;\n\tleft: 50%;\n\theight: 1px;\n\twidth: 70px;\n\tcontent: \" \";\n\tmargin-left: -35px;\n\tposition: absolute;\n\tbackground: #4765a0;\n}\n\n.title-v1 p {\n\tfont-size: 17px;\n\tfont-weight: 200;\n}\n\n/*Heading Titles v2*/\nh2.title-v2 {\n\tcolor: #555;\n\tposition: relative;\n\tmargin-bottom: 30px;\n}\n\nh2.title-v2:after {\n\tleft: 0;\n\twidth: 70px;\n\theight: 2px;\n\tcontent: \" \";\n\tbottom: -10px;\n\tbackground: #555;\n\tposition: absolute;\n}\n\nh1.title-v2.title-center,\nh2.title-v2.title-center,\nh3.title-v2.title-center {\n\ttext-align: center;\n}\n\nh1.title-v2.title-center:after,\nh2.title-v2.title-center:after,\nh3.title-v2.title-center:after {\n\tleft: 50%;\n\twidth: 70px;\n\tmargin-left: -35px;\n}\n\nh1.title-light,\nh2.title-light,\nh3.title-light {\n\tcolor: #fff;\n}\n\nh2.title-light:after {\n\tbackground: #fff;\n}\n\n/*Heading Title v3*/\nh1[class^=\"title-v3-\"],\nh2[class^=\"title-v3-\"],\nh3[class^=\"title-v3-\"] {\n\tcolor: #555;\n}\n\nh2.title-v3-xlg {\n\tfont-size: 28px;\n\tline-height: 32px;\n}\n\nh1.title-v3-lg,\nh2.title-v3-lg {\n\tfont-size: 24px;\n\tline-height: 28px;\n}\n\nh1.title-v3-md,\nh2.title-v3-md {\n\tfont-size: 20px;\n\tline-height: 24px;\n}\n\nh2.title-v3-sm,\nh3.title-v3-md {\n\tfont-size: 18px;\n\tline-height: 24px;\n}\n\nh3.title-v3-md {\n\tline-height: 22px;\n}\n\nh3.title-v3-sm {\n\tfont-size: 16px;\n\tline-height: 20px;\n}\n\nh2.title-v3-xs {\n\tfont-size: 16px;\n\tline-height: 22px;\n}\n\nh3.title-v3-xs {\n\tfont-size: 14px;\n\tmargin-bottom: 0;\n}\n\n/*Title v4*/\n.title-v4 {\n\tfont-size: 18px;\n\tmargin: 0 0 20px;\n\tfont-weight: bold;\n\tposition: relative;\n\ttext-transform: uppercase;\n\tborder-bottom: 3px solid #333;\n}\n\n/*Headline Center*/\n.headline-center {\n\ttext-align: center;\n\tposition: relative;\n}\n\n.headline-center h2 {\n\tcolor: #555;\n\tfont-size: 24px;\n\tposition: relative;\n\tmargin-bottom: 20px;\n\tpadding-bottom: 15px;\n}\n\n.headline-center h2:after {\n\tleft: 50%;\n\tz-index: 1;\n\twidth: 30px;\n\theight: 2px;\n\tcontent: \" \";\n\tbottom: -5px;\n\tmargin-left: -15px;\n\ttext-align: center;\n\tposition: absolute;\n\tbackground: #4765a0;\n}\n\n.headline-center p {\n\t/*color: #999;*/\n\tfont-size: 14px;\n\t/*padding: 0 150px;*/\n}\n\n@media (max-width: 991px) {\n\t.headline-center p {\n\t\tpadding: 0 50px;\n\t}\n}\n\n.headline-center.headline-light h2 {\n\tcolor: #fff;\n}\n\n.headline-center.headline-light p {\n\tcolor: #eee;\n}\n\n/*Headline Center v2*/\n.headline-center-v2 {\n\tz-index: 0;\n\ttext-align: center;\n\tposition: relative;\n}\n\n.headline-center-v2 h2 {\n\tcolor: #555;\n\tfont-size: 24px;\n\tmargin-bottom: 20px;\n\ttext-transform: uppercase;\n}\n\n.headline-center-v2 span.bordered-icon {\n\tcolor: #fff;\n\tpadding: 0 10px;\n\tfont-size: 15px;\n\tline-height: 18px;\n\tposition: relative;\n\tmargin-bottom: 25px;\n\tdisplay: inline-block;\n}\n\n.headline-center-v2 span.bordered-icon:before,\n.headline-center-v2 span.bordered-icon:after {\n\ttop: 8px;\n\theight: 1px;\n\tcontent: \" \";\n\twidth: 100px;\n\tbackground: #fff;\n\tposition: absolute;\n}\n\n.headline-center-v2 span.bordered-icon:before {\n\tleft: 100%;\n}\n\n.headline-center-v2 span.bordered-icon:after {\n\tright: 100%;\n}\n\n.headline-center-v2 p {\n\tcolor: #555;\n\tfont-size: 14px;\n\tpadding: 0 70px;\n}\n\n.headline-center-v2.headline-center-v2-dark p {\n\tcolor: #666;\n}\n\n.headline-center-v2.headline-center-v2-dark span.bordered-icon {\n\tcolor: #666;\n}\n\n.headline-center-v2.headline-center-v2-dark span.bordered-icon:before,\n.headline-center-v2.headline-center-v2-dark span.bordered-icon:after {\n\tbackground: #666;\n}\n\n/*Headline Left*/\n.headline-left {\n\tposition: relative;\n}\n\n.headline-left .headline-brd {\n\tcolor: #555;\n\tposition: relative;\n\tmargin-bottom: 25px;\n\tpadding-bottom: 10px;\n}\n\n.headline-left .headline-brd:after {\n\tleft: 1px;\n\tz-index: 1;\n\twidth: 30px;\n\theight: 2px;\n\tcontent: \" \";\n\tbottom: -5px;\n\tposition: absolute;\n\tbackground: #4765a0;\n}\n\n/*Headline v2\n------------------------------------*/\n.headline-v2 {\n\tdisplay: block;\n\tbackground: #fff;\n\tpadding: 1px 10px;\n\tmargin: 0 0 20px 0;\n\tborder-left: 2px solid #000;\n}\n\n.headline-v2 h2 {\n\tmargin: 3px 0;\n\tfont-size: 20px;\n\tfont-weight: 200;\n}\n\n/*Heading Sizes\n------------------------------------*/\nh2.heading-md {\n\tfont-size: 20px;\n\tline-height: 24px;\n}\n\nh2.heading-sm,\nh3.heading-md {\n\tfont-size: 18px;\n\tline-height: 24px;\n}\n\nh3.heading-md {\n\tline-height: 22px;\n}\n\nh3.heading-sm {\n\tfont-size: 16px;\n\tline-height: 20px;\n}\n\nh2.heading-xs {\n\tfont-size: 16px;\n\tline-height: 22px;\n}\n\nh3.heading-xs {\n\tfont-size: 14px;\n\tmargin-bottom: 0;\n}\n\n/*Devider\n------------------------------------*/\n.devider.devider-dotted {\n\tborder-top: 2px dotted #eee;\n}\n.devider.devider-dashed {\n\tborder-top: 2px dashed #eee;\n}\n\n.devider.devider-db {\n\theight: 5px;\n\tborder-top: 1px solid #eee;\n\tborder-bottom: 1px solid #eee;\n}\n.devider.devider-db-dashed {\n\theight: 5px;\n\tborder-top: 1px dashed #ddd;\n\tborder-bottom: 1px dashed #ddd;\n}\n.devider.devider-db-dotted {\n\theight: 5px;\n\tborder-top: 1px dotted #ddd;\n\tborder-bottom: 1px dotted #ddd;\n}\n\n/*Tables\n------------------------------------*/\n/*Basic Tables*/\n.table thead > tr > th {\n\tborder-bottom: none;\n}\n\n@media (max-width: 768px) {\n\t.table th.hidden-sm,\n\t.table td.hidden-sm {\n\t\tdisplay: none !important;\n\t}\n}\n\n/*Forms\n------------------------------------*/\n.form-control {\n\tbox-shadow: none;\n\tborder-radius: 0;\n}\n\n.input-group-addon {\n\tborder-radius: 0;\n}\n\n.form-control:focus {\n\tborder-color: #bbb;\n\tbox-shadow: 0 0 2px #c9c9c9;\n}\n\n/*Form Spacing*/\n.form-spacing .form-control {\n\tmargin-bottom: 15px;\n}\n\n/*Form Icons*/\n.input-group-addon {\n\tcolor: #b3b3b3;\n\tfont-size: 14px;\n\tbackground: #fff;\n}\n\n/*Navigation\n------------------------------------*/\n.dropdown-menu,\n.navbar-toggle {\n\tborder-radius: 0;\n}\n\n/*Button Styles\n------------------------------------*/\n.btn {\n\tbox-shadow: none;\n\tborder-radius: 0;\n}\n.btn-u {\n\tborder: 0;\n\tcolor: #fff;\n\tfont-size: 14px;\n\tcursor: pointer;\n\tfont-weight: 400;\n\tpadding: 6px 13px;\n\tposition: relative;\n\tbackground: #4765a0;\n\twhite-space: nowrap;\n\tdisplay: inline-block;\n\ttext-decoration: none;\n}\n.btn-u:hover {\n\tcolor: #fff;\n\ttext-decoration: none;\n\ttransition: all 0.3s ease-in-out;\n}\n\n.btn-u.btn-block {\n\ttext-align: center;\n}\n\n.btn-u-sm,\na.btn-u-sm {\n\tpadding: 3px 12px;\n}\n\n.btn-u-md,\na.btn-u-md {\n\tpadding: 10px 20px;\n}\n\n.btn-u-lg,\na.btn-u-lg {\n\tfont-size: 18px;\n\tpadding: 10px 25px;\n}\n\n.btn-u-xs,\na.btn-u-xs {\n\tfont-size: 12px;\n\tpadding: 2px 12px;\n\tline-height: 18px;\n}\n\n/*Button Groups*/\n.btn-group .dropdown-menu > li > a {\n\tpadding: 3px 13px;\n}\n\n.btn-group > .btn-u,\n.btn-group-vertical > .btn-u {\n\tfloat: left;\n\tposition: relative;\n}\n\n.btn-group > .btn-u:first-child {\n\tmargin-left: 0;\n}\n\n/*For FF Only*/\n@-moz-document url-prefix() {\n\t.footer-subsribe .btn-u {\n\t\tpadding-bottom: 4px;\n\t}\n}\n@media (max-width: 768px) {\n\t@-moz-document url-prefix() {\n\t\t.btn-u {\n\t\t\tpadding-bottom: 6px;\n\t\t}\n\t}\n}\n\n/*Buttons Color*/\n.btn-u:hover,\n.btn-u:focus,\n.btn-u:active,\n.btn-u.active,\n.open .dropdown-toggle.btn-u {\n\tbackground: #5fb611;\n}\n.btn-u-split.dropdown-toggle {\n\tborder-left: solid 1px #5fb611;\n}\n\n.btn-u.btn-u-blue {\n\tbackground: #3498db;\n}\n.btn-u.btn-u-blue:hover,\n.btn-u.btn-u-blue:focus,\n.btn-u.btn-u-blue:active,\n.btn-u.btn-u-blue.active,\n.open .dropdown-toggle.btn-u.btn-u-blue {\n\tbackground: #2980b9;\n}\n.btn-u.btn-u-split-blue.dropdown-toggle {\n\tborder-left: solid 1px #2980b9;\n}\n\n.btn-u.btn-u-red {\n\tbackground: #e74c3c;\n}\n.btn-u.btn-u-red:hover,\n.btn-u.btn-u-red:focus,\n.btn-u.btn-u-red:active,\n.btn-u.btn-u-red.active,\n.open .dropdown-toggle.btn-u.btn-u-red {\n\tbackground: #c0392b;\n}\n.btn-u.btn-u-split-red.dropdown-toggle {\n\tborder-left: solid 1px #c0392b;\n}\n\n.btn-u.btn-u-orange {\n\tbackground: #e67e22;\n}\n.btn-u.btn-u-orange:hover,\n.btn-u.btn-u-orange:focus,\n.btn-u.btn-u-orange:active,\n.btn-u.btn-u-orange.active,\n.open .dropdown-toggle.btn-u.btn-u-orange {\n\tbackground: #d35400;\n}\n.btn-u.btn-u-split-orange.dropdown-toggle {\n\tborder-left: solid 1px #d35400;\n}\n\n.btn-u.btn-u-sea {\n\tbackground: #1abc9c;\n}\n.btn-u.btn-u-sea:hover,\n.btn-u.btn-u-sea:focus,\n.btn-u.btn-u-sea:active,\n.btn-u.btn-u-sea.active,\n.open .dropdown-toggle.btn-u.btn-u-sea {\n\tbackground: #16a085;\n}\n.btn-u.btn-u-split-sea.dropdown-toggle {\n\tborder-left: solid 1px #16a085;\n}\n\n.btn-u.btn-u-green {\n\tbackground: #2ecc71;\n}\n.btn-u.btn-u-green:hover,\n.btn-u.btn-u-green:focus,\n.btn-u.btn-u-green:active,\n.btn-u.btn-u-green.active,\n.open .dropdown-toggle.btn-u.btn-u-green {\n\tbackground: #27ae60;\n}\n.btn-u.btn-u-split-green.dropdown-toggle {\n\tborder-left: solid 1px #27ae60;\n}\n\n.btn-u.btn-u-yellow {\n\tbackground: #f1c40f;\n}\n.btn-u.btn-u-yellow:hover,\n.btn-u.btn-u-yellow:focus,\n.btn-u.btn-u-yellow:active,\n.btn-u.btn-u-yellow.active,\n.open .dropdown-toggle.btn-u.btn-u-yellow {\n\tbackground: #f39c12;\n}\n.btn-u.btn-u-split-yellow.dropdown-toggle {\n\tborder-left: solid 1px #f39c12;\n}\n\n.btn-u.btn-u-default {\n\tbackground: #95a5a6;\n}\n.btn-u.btn-u-default:hover,\n.btn-u.btn-u-default:focus,\n.btn-u.btn-u-default:active,\n.btn-u.btn-u-default.active,\n.open .dropdown-toggle.btn-u.btn-u-default {\n\tbackground: #7f8c8d;\n}\n.btn-u.btn-u-split-default.dropdown-toggle {\n\tborder-left: solid 1px #7f8c8d;\n}\n\n.btn-u.btn-u-purple {\n\tbackground: #9b6bcc;\n}\n.btn-u.btn-u-purple:hover,\n.btn-u.btn-u-purple:focus,\n.btn-u.btn-u-purple:active,\n.btn-u.btn-u-purple.active,\n.open .dropdown-toggle.btn-u.btn-u-purple {\n\tbackground: #814fb5;\n}\n.btn-u.btn-u-split-purple.dropdown-toggle {\n\tborder-left: solid 1px #814fb5;\n}\n\n.btn-u.btn-u-aqua {\n\tbackground: #27d7e7;\n}\n.btn-u.btn-u-aqua:hover,\n.btn-u.btn-u-aqua:focus,\n.btn-u.btn-u-aqua:active,\n.btn-u.btn-u-aqua.active,\n.open .dropdown-toggle.btn-u.btn-u-aqua {\n\tbackground: #26bac8;\n}\n.btn-u.btn-u-split-aqua.dropdown-toggle {\n\tborder-left: solid 1px #26bac8;\n}\n\n.btn-u.btn-u-brown {\n\tbackground: #9c8061;\n}\n.btn-u.btn-u-brown:hover,\n.btn-u.btn-u-brown:focus,\n.btn-u.btn-u-brown:active,\n.btn-u.btn-u-brown.active,\n.open .dropdown-toggle.btn-u.btn-u-brown {\n\tbackground: #81674b;\n}\n.btn-u.btn-u-split-brown.dropdown-toggle {\n\tborder-left: solid 1px #81674b;\n}\n\n.btn-u.btn-u-dark-blue {\n\tbackground: #4765a0;\n}\n.btn-u.btn-u-dark-blue:hover,\n.btn-u.btn-u-dark-blue:focus,\n.btn-u.btn-u-dark-blue:active,\n.btn-u.btn-u-dark-blue.active,\n.open .dropdown-toggle.btn-u.btn-u-dark-blue {\n\tbackground: #324c80;\n}\n.btn-u.btn-u-split-dark.dropdown-toggle {\n\tborder-left: solid 1px #324c80;\n}\n\n.btn-u.btn-u-light-green {\n\tbackground: #79d5b3;\n}\n.btn-u.btn-u-light-green:hover,\n.btn-u.btn-u-light-green:focus,\n.btn-u.btn-u-light-green:active,\n.btn-u.btn-u-light-green.active,\n.open .dropdown-toggle.btn-u.btn-u-light-green {\n\tbackground: #59b795;\n}\n.btn-u.btn-u-split-light-green.dropdown-toggle {\n\tborder-left: solid 1px #59b795;\n}\n\n.btn-u.btn-u-dark {\n\tbackground: #555;\n}\n.btn-u.btn-u-dark:hover,\n.btn-u.btn-u-dark:focus,\n.btn-u.btn-u-dark:active,\n.btn-u.btn-u-dark.active,\n.open .dropdown-toggle.btn-u.btn-u-dark {\n\tbackground: #333;\n}\n.btn-u.btn-u-split-dark.dropdown-toggle {\n\tborder-left: solid 1px #333;\n}\n\n.btn-u.btn-u-light-grey {\n\tbackground: #585f69;\n}\n.btn-u.btn-u-light-grey:hover,\n.btn-u.btn-u-light-grey:focus,\n.btn-u.btn-u-light-grey:active,\n.btn-u.btn-u-light-grey.active,\n.open .dropdown-toggle.btn-u.btn-u-light-grey {\n\tbackground: #484f58;\n}\n.btn-u.btn-u-split-light-grey.dropdown-toggle {\n\tborder-left: solid 1px #484f58;\n}\n\n/*Bordered Buttons*/\n.btn-u.btn-brd {\n\tcolor: #555;\n\tbackground: none;\n\tpadding: 5px 13px;\n\tborder: solid 1px transparent;\n}\n.btn-u.btn-brd-width-2 {\n\tpadding: 7px 18px;\n\tborder-width: 2px;\n}\n.btn-u.btn-brd:hover {\n\tbackground: none;\n}\n.btn-u.btn-brd:focus {\n\tbackground: none;\n}\n.btn-u.btn-brd.btn-brd-hover:hover {\n\tcolor: #fff !important;\n}\n\n.btn-u.btn-brd {\n\tborder-color: #4765a0;\n}\n.btn-u.btn-brd:hover {\n\tcolor: #5fb611;\n\tborder-color: #5fb611;\n}\n.btn-u.btn-brd.btn-brd-hover:hover {\n\tbackground: #5fb611;\n}\n\n.btn-u.btn-brd.btn-u-blue {\n\tborder-color: #3498db;\n}\n.btn-u.btn-brd.btn-u-blue:hover {\n\tcolor: #2980b9;\n\tborder-color: #2980b9;\n}\n.btn-u.btn-brd.btn-u-blue.btn-brd-hover:hover {\n\tbackground: #2980b9;\n}\n\n.btn-u.btn-brd.btn-u-red {\n\tborder-color: #e74c3c;\n}\n.btn-u.btn-brd.btn-u-red:hover {\n\tcolor: #c0392b;\n\tborder-color: #c0392b;\n}\n.btn-u.btn-brd.btn-u-red.btn-brd-hover:hover {\n\tbackground: #c0392b;\n}\n\n.btn-u.btn-brd.btn-u-orange {\n\tborder-color: #e67e22;\n}\n.btn-u.btn-brd.btn-u-orange:hover {\n\tcolor: #d35400;\n\tborder-color: #d35400;\n}\n.btn-u.btn-brd.btn-u-orange.btn-brd-hover:hover {\n\t background: #d35400;\n}\n\n.btn-u.btn-brd.btn-u-sea {\n\tborder-color: #1abc9c;\n}\n.btn-u.btn-brd.btn-u-sea:hover {\n\tcolor: #16a085;\n\tborder-color: #16a085;\n}\n.btn-u.btn-brd.btn-u-sea.btn-brd-hover:hover {\n\tbackground: #16a085;\n}\n\n.btn-u.btn-brd.btn-u-green {\n\tborder-color: #2ecc71;\n}\n.btn-u.btn-brd.btn-u-green:hover {\n\tcolor: #27ae60;\n\tborder-color: #27ae60;\n}\n.btn-u.btn-brd.btn-u-green.btn-brd-hover:hover {\n\tbackground: #27ae60;\n}\n\n.btn-u.btn-brd.btn-u-yellow {\n\tborder-color: #f1c40f;\n}\n.btn-u.btn-brd.btn-u-yellow:hover {\n\tcolor: #f39c12;\n\tborder-color: #f39c12;\n}\n.btn-u.btn-brd.btn-u-yellow.btn-brd-hover:hover {\n\tbackground: #f39c12;\n}\n\n.btn-u.btn-brd.btn-u-default {\n\tborder-color: #95a5a6;\n}\n.btn-u.btn-brd.btn-u-default:hover {\n\tcolor: #7f8c8d;\n\tborder-color: #7f8c8d;\n}\n.btn-u.btn-brd.btn-u-default.btn-brd-hover:hover {\n\tbackground: #7f8c8d;\n}\n\n.btn-u.btn-brd.btn-u-dark {\n\tborder-color: #555;\n}\n.btn-u.btn-brd.btn-u-dark:hover {\n\tcolor: #333;\n\tborder-color: #333;\n}\n.btn-u.btn-brd.btn-u-dark.btn-brd-hover:hover {\n\tbackground: #333;\n}\n\n.btn-u.btn-brd.btn-u-light-grey {\n\tborder-color: #585f69;\n}\n.btn-u.btn-brd.btn-u-light-grey:hover {\n\tcolor: #484f58;\n\tborder-color: #484f58;\n}\n.btn-u.btn-brd.btn-u-light-grey.btn-brd-hover:hover {\n\tbackground: #484f58;\n}\n\n.btn-u.btn-brd.btn-u-purple {\n\tborder-color: #9b6bcc;\n}\n.btn-u.btn-brd.btn-u-purple:hover {\n\tcolor: #814fb5;\n\tborder-color: #814fb5;\n}\n.btn-u.btn-brd.btn-u-purple.btn-brd-hover:hover {\n\tbackground: #814fb5;\n}\n\n.btn-u.btn-brd.btn-u-aqua {\n\tborder-color: #27d7e7;\n}\n.btn-u.btn-brd.btn-u-aqua:hover {\n\tcolor: #26bac8;\n\tborder-color: #26bac8;\n}\n.btn-u.btn-brd.btn-u-aqua.btn-brd-hover:hover {\n\tbackground: #26bac8;\n}\n\n.btn-u.btn-brd.btn-u-brown {\n\tborder-color: #9c8061;\n}\n.btn-u.btn-brd.btn-u-brown:hover {\n\tcolor: #81674b;\n\tborder-color: #81674b;\n}\n.btn-u.btn-brd.btn-u-brown.btn-brd-hover:hover {\n\tbackground: #81674b;\n}\n\n.btn-u.btn-brd.btn-u-dark-blue {\n\tborder-color: #4765a0;\n}\n.btn-u.btn-brd.btn-u-dark-blue:hover {\n\tcolor: #324c80;\n\tborder-color: #324c80;\n}\n.btn-u.btn-brd.btn-u-dark-blue.btn-brd-hover:hover {\n\tbackground: #324c80;\n}\n\n.btn-u.btn-brd.btn-u-light-green {\n\tborder-color: #79d5b3;\n}\n.btn-u.btn-brd.btn-u-light-green:hover {\n\tcolor: #59b795;\n\tborder-color: #59b795;\n}\n.btn-u.btn-brd.btn-u-light-green.btn-brd-hover:hover {\n\tbackground: #59b795;\n}\n\n.btn-u.btn-brd.btn-u-light {\n\tcolor: #fff;\n\tborder-color: #fff;\n}\n.btn-u.btn-brd.btn-u-light:hover {\n\tborder-color: #fff;\n}\n.btn-u.btn-brd.btn-u-light.btn-brd-hover:hover {\n background: #fff;\n color: #555 !important;\n}\n\n/*Dropdown Buttons\n------------------------------------*/\n.dropdown-show {\n\tbox-shadow: 0 0 4px #eee;\n\tdisplay: inline-block;\n\tposition: relative;\n}\n\n/*Badges and Labels\n------------------------------------*/\n.badge,\n.label {\n\tborder-radius: 0;\n}\n\n/*Labels*/\nspan.label {\n\tfont-size: 11px;\n\tfont-weight: 400;\n\tpadding: 4px 7px;\n}\n\n/*Badges*/\nspan.badge,\n.list-group-item.active>.badge {\n\tcolor: #fff;\n\tfont-weight: 400;\n\tpadding: 4px 7px;\n}\n\nspan.label-u,\nspan.badge-u,\n.list-group-item.active>.badge.badge-u {\n\tbackground: #4765a0;\n}\n\nspan.label-blue,\nspan.badge-blue,\n.list-group-item.active>.badge {\n\tbackground: #3498db;\n}\n\nspan.label-red,\nspan.badge-red,\n.list-group-item.active>.badge {\n\tbackground: #e74c3c;\n}\n\nspan.label-green,\nspan.badge-green,\n.list-group-item.active>.badge.badge-green {\n\tbackground: #2ecc71;\n}\n\nspan.label-sea,\nspan.badge-sea,\n.list-group-item.active>.badge.badge-sea {\n\tbackground: #1abc9c;\n}\n\nspan.label-orange,\nspan.badge-orange,\n.list-group-item.active>.badge.badge-orange {\n\tbackground: #e67e22;\n}\n\nspan.label-yellow,\nspan.badge-yellow,\n.list-group-item.active>.badge.badge-yellow {\n\tbackground: #f1c40f;\n}\n\nspan.label-purple,\nspan.badge-purple,\n.list-group-item.active>.badge.badge-purple {\n\tbackground: #9b6bcc;\n}\n\nspan.label-aqua,\nspan.badge-aqua,\n.list-group-item.active>.badge.badge-aqua {\n\tbackground: #27d7e7;\n}\n\nspan.label-brown,\nspan.badge-brown,\n.list-group-item.active>.badge.badge-brown {\n\tbackground: #9c8061;\n}\n\nspan.label-dark-blue,\nspan.badge-dark-blue,\n.list-group-item.active>.badge.badge-dark-blue {\n\tbackground: #4765a0;\n}\n\nspan.label-light-green,\nspan.badge-light-green,\n.list-group-item.active>.badge.badge-light-green {\n\tbackground: #79d5b3;\n}\n\nspan.label-light,\nspan.badge-light,\n.list-group-item.active>.badge.badge-light {\n\tcolor: #777;\n\tbackground: #ecf0f1;\n}\n\nspan.label-dark,\nspan.badge-dark,\n.list-group-item.active>.badge.badge-dark {\n\tbackground: #555;\n}\n\n/*Badge Lists*/\n.badge-lists li {\n\tposition: relative;\n}\n\n.badge-lists span.badge {\n\ttop: -10px;\n\tright: -6px;\n\tposition: absolute;\n}\n\n/*Badge Icons*/\n.badge-lists.badge-icons span.badge {\n\tmin-width: 12px;\n\tpadding: 3px 6px;\n }\n\n.badge-lists.badge-icons i {\n\tfont-size: 18px;\n\tmin-width: 25px;\n}\n\n/*Badge Box v1*/\n.badge-box-v1 a {\n\tcolor: #777;\n\tmin-width: 40px;\n\tfont-size: 18px;\n\tpadding: 8px 9px;\n\tdisplay: inline-block;\n\tborder: solid 1px #eee;\n}\n\n/*Badge Box v2*/\n.badge-box-v2 a {\n\tcolor: #777;\n\tfont-size: 12px;\n\tpadding: 10px;\n\tmin-width: 70px;\n\ttext-align: center;\n\tdisplay: inline-block;\n\tborder: solid 1px #eee;\n}\n\n.badge-box-v2 a i {\n\tfont-size: 20px;\n}\n\n/*General Badge Box*/\n.badge-box-v1 a i,\n.badge-box-v2 a i {\n\tdisplay: block;\n\tmargin: 1px auto 2px;\n}\n\n.badge-box-v1 a:hover,\n.badge-box-v2 a:hover {\n\tcolor: #555;\n\tborder-color: #555;\n\ttext-decoration: none;\n\ttransition: all 0.2s ease-in-out;\n}\n\n/*Icons\n------------------------------------*/\n/*Social Icons*/\n.social-icons {\n\tmargin: 0;\n\tpadding: 0;\n}\n\n.social-icons li {\n\tlist-style: none;\n\tmargin-right: 3px;\n\tmargin-bottom: 5px;\n\ttext-indent: -9999px;\n\tdisplay: inline-block;\n}\n\n.social-icons li a, a.social-icon {\n\twidth: 28px;\n\theight: 28px;\n\tdisplay: block;\n\tbackground-position: 0 0;\n\tbackground-repeat: no-repeat;\n\ttransition: all 0.3s ease-in-out;\n}\n\n.social-icons li:hover a {\n\t background-position: 0 -38px;\n}\n\n.social-icons-color li a {\n\topacity: 0.7;\n\tbackground-position: 0 -38px !important;\n\t-webkit-backface-visibility: hidden; /*For Chrome*/\n}\n\n.social-icons-color li a:hover {\n\topacity: 1;\n}\n\n.social_amazon {background: url(" + __webpack_require__(19) + ") no-repeat;}\n.social_behance {background: url(" + __webpack_require__(20) + ") no-repeat;}\n.social_blogger {background: url(" + __webpack_require__(21) + ") no-repeat;}\n.social_deviantart {background: url(" + __webpack_require__(22) + ") no-repeat;}\n.social_dribbble {background: url(" + __webpack_require__(23) + ") no-repeat;}\n.social_dropbox {background: url(" + __webpack_require__(24) + ") no-repeat;}\n.social_evernote {background: url(" + __webpack_require__(25) + ") no-repeat;}\n.social_facebook {background: url(" + __webpack_require__(26) + ") no-repeat;}\n.social_forrst {background: url(" + __webpack_require__(27) + ") no-repeat;}\n.social_github {background: url(" + __webpack_require__(28) + ") no-repeat;}\n.social_googleplus {background: url(" + __webpack_require__(29) + ") no-repeat;}\n.social_jolicloud {background: url(" + __webpack_require__(30) + ") no-repeat;}\n.social_last-fm {background: url(" + __webpack_require__(31) + ") no-repeat;}\n.social_linkedin {background: url(" + __webpack_require__(32) + ") no-repeat;}\n.social_picasa {background: url(" + __webpack_require__(33) + ") no-repeat;}\n.social_pintrest {background: url(" + __webpack_require__(34) + ") no-repeat;}\n.social_rss {background: url(" + __webpack_require__(35) + ") no-repeat;}\n.social_skype {background: url(" + __webpack_require__(36) + ") no-repeat;}\n.social_spotify {background: url(" + __webpack_require__(37) + ") no-repeat;}\n.social_stumbleupon {background: url(" + __webpack_require__(38) + ") no-repeat;}\n.social_tumblr {background: url(" + __webpack_require__(39) + ") no-repeat;}\n.social_twitter {background: url(" + __webpack_require__(40) + ") no-repeat;}\n.social_vimeo {background: url(" + __webpack_require__(41) + ") no-repeat;}\n.social_wordpress {background: url(" + __webpack_require__(42) + ") no-repeat;}\n.social_xing {background: url(" + __webpack_require__(43) + ") no-repeat;}\n.social_yahoo {background: url(" + __webpack_require__(44) + ") no-repeat;}\n.social_youtube {background: url(" + __webpack_require__(45) + ") no-repeat;}\n.social_vk {background: url(" + __webpack_require__(46) + ") no-repeat;}\n.social_instagram {background: url(" + __webpack_require__(47) + ") no-repeat;}\n\n/*Font Awesome Icon Styles*/\ni.icon-custom {\n\tcolor: #555;\n\twidth: 40px;\n\theight: 40px;\n\tfont-size: 20px;\n\tline-height: 40px;\n\tmargin-bottom: 5px;\n\ttext-align: center;\n\tdisplay: inline-block;\n\tborder: solid 1px #555;\n}\n\ni.icon-sm {\n width: 35px;\n height: 35px;\n font-size: 16px;\n line-height: 35px;\n}\n\ni.icon-md {\n\twidth: 55px;\n\theight: 55px;\n\tfont-size: 22px;\n\tline-height: 55px;\n}\n\ni.icon-lg {\n\twidth: 60px;\n\theight: 60px;\n\tfont-size: 31px;\n\tline-height: 60px;\n\tmargin-bottom: 10px;\n}\n\ni.icon-2x {\n\tfont-size: 30px;\n}\ni.icon-3x {\n\tfont-size: 40px;\n}\ni.icon-4x {\n\tfont-size: 50px;\n}\n\n/*Line Icons*/\ni.icon-line {\n\tfont-size: 17px;\n}\ni.icon-sm.icon-line {\n\tfont-size: 14px;\n}\ni.icon-md.icon-line {\n\tfont-size: 22px;\n}\ni.icon-lg.icon-line {\n\tfont-size: 28px;\n}\n\ni.icon-2x.icon-line {\n\tfont-size: 27px;\n}\ni.icon-3x.icon-line {\n\tfont-size: 36px;\n}\ni.icon-4x.icon-line {\n\tfont-size: 47px;\n}\n\n/*Icon Styles For Links*/\n.link-icon,\n.link-bg-icon {\n\tcolor: #555;\n}\n\n.link-icon:hover,\n.link-bg-icon:hover {\n\tborder: none;\n\ttext-decoration: none;\n}\n\n.link-icon:hover i {\n\tcolor: #4765a0;\n\tbackground: none;\n\tborder: solid 1px #4765a0;\n}\n\n.link-bg-icon:hover i {\n\tcolor: #4765a0;\n\tbackground: #4765a0;\n\tborder-color: #4765a0;\n\tcolor: #fff !important;\n}\n\n/*Icons Color*/\ni.icon-color-u,\ni.icon-color-red,\ni.icon-color-sea,\ni.icon-color-dark,\ni.icon-color-grey,\ni.icon-color-blue,\ni.icon-color-green,\ni.icon-color-yellow,\ni.icon-color-orange,\ni.icon-color-purple,\ni.icon-color-aqua,\ni.icon-color-brown,\ni.icon-color-dark-blue,\ni.icon-color-light-grey,\ni.icon-color-light-green {\n\tbackground: none;\n}\n\ni.icon-color-u {\n\tcolor: #4765a0;\n\tborder: solid 1px #4765a0;\n}\ni.icon-color-blue {\n\tcolor: #3498db;\n\tborder: solid 1px #3498db;\n}\ni.icon-color-red {\n\tcolor: #e74c3c;\n\tborder: solid 1px #e74c3c;\n}\ni.icon-color-sea {\n\tcolor: #1abc9c;\n\tborder: solid 1px #1abc9c;\n}\ni.icon-color-green {\n\tcolor: #2ecc71;\n\tborder: solid 1px #2ecc71;\n}\ni.icon-color-yellow {\n\tcolor: #f1c40f;\n\tborder: solid 1px #f1c40f;\n}\ni.icon-color-orange {\n\tcolor: #e67e22;\n\tborder: solid 1px #e67e22;\n}\ni.icon-color-grey {\n\tcolor: #95a5a6;\n\tborder: solid 1px #95a5a6;\n}\ni.icon-color-purple {\n\tcolor: #9b6bcc;\n\tborder: solid 1px #9b6bcc;\n}\ni.icon-color-aqua {\n\tcolor: #27d7e7;\n\tborder: solid 1px #27d7e7;\n}\ni.icon-color-brown {\n\tcolor: #9c8061;\n\tborder: solid 1px #9c8061;\n}\ni.icon-color-dark-blue {\n\tcolor: #4765a0;\n\tborder: solid 1px #4765a0;\n}\ni.icon-color-light-green {\n\tcolor: #79d5b3;\n\tborder: solid 1px #79d5b3;\n}\ni.icon-color-light {\n\tcolor: #fff;\n\tborder: solid 1px #fff;\n}\ni.icon-color-light-grey {\n\tcolor: #585f69;\n\tborder: solid 1px #585f69;\n}\n\n/*Icons Backgroun Color*/\ni.icon-bg-u,\ni.icon-bg-red,\ni.icon-bg-sea,\ni.icon-bg-dark,\ni.icon-bg-darker,\ni.icon-bg-grey,\ni.icon-bg-blue,\ni.icon-bg-green,\ni.icon-bg-yellow,\ni.icon-bg-orange,\ni.icon-bg-purple,\ni.icon-bg-aqua,\ni.icon-bg-brown,\ni.icon-bg-dark-blue,\ni.icon-bg-light-grey,\ni.icon-bg-light-green {\n\tcolor: #fff;\n\tborder-color: transparent;\n}\n\ni.icon-bg-u {\n\tbackground: #4765a0;\n}\ni.icon-bg-blue {\n\tbackground: #3498db;\n}\ni.icon-bg-red {\n\tbackground: #e74c3c;\n}\ni.icon-bg-sea {\n\tbackground: #1abc9c;\n}\ni.icon-bg-green {\n\tbackground: #2ecc71;\n}\ni.icon-bg-yellow {\n\tbackground: #f1c40f;\n}\ni.icon-bg-orange {\n\tbackground: #e67e22;\n}\ni.icon-bg-grey {\n\tbackground: #95a5a6;\n}\ni.icon-bg-dark {\n\tbackground: #555;\n}\ni.icon-bg-darker {\n\tbackground: #333;\n}\ni.icon-bg-purple {\n\tbackground: #9b6bcc;\n}\ni.icon-bg-aqua {\n\tbackground: #27d7e7;\n}\ni.icon-bg-brown {\n\tbackground: #9c8061;\n}\ni.icon-bg-dark-blue {\n\tbackground: #4765a0;\n}\ni.icon-bg-light-green {\n\tbackground: #79d5b3;\n}\ni.icon-bg-light {\n\tbackground: #fff;\n\tborder-color: transparent;\n}\ni.icon-bg-light-grey {\n\tbackground: #585f69;\n\tborder-color: transparent;\n}\n\n/* Make Font Awesome icons fixed width */\n.fa-fixed [class^=\"fa\"],\n.fa-fixed [class*=\" fa\"] {\n\twidth: 1.25em;\n\ttext-align: center;\n\tdisplay: inline-block;\n}\n.fa-fixed [class^=\"fa\"].fa-lg,\n.fa-fixed [class*=\" fa\"].fa-lg {\n\t/* increased font size for fa-lg */\n\twidth: 1.5625em;\n}\n\n/*Typography\n------------------------------------*/\n.text-justify p { text-align: justify;}\n.text-transform-uppercase { text-transform: uppercase;}\n.text-transform-normal { text-transform: inherit !important;}\n\n.font-bold { font-weight: 600;}\n.font-light { font-weight: 200;}\n.font-normal { font-weight: 400 !important;}\n\n/*Text Dropcap*/\n.dropcap {\n\tfloat: left;\n\tcolor: #4765a0;\n\tpadding: 5px 0;\n\tfont-size: 45px;\n\tfont-weight: 200;\n\tline-height: 30px;\n\tmargin: 0px 5px 0 0;\n}\n\n.dropcap-bg {\n\tfloat: left;\n\tcolor: #fff;\n\tpadding: 7px 0;\n\tmin-width: 50px;\n\tfont-size: 35px;\n\tfont-weight: 200;\n\tline-height: 35px;\n\ttext-align: center;\n\tbackground: #4765a0;\n\tmargin: 4px 10px 0 0;\n}\n\n/*Text Highlights*/\n.text-highlights {\n\tcolor: #fff;\n\tfont-weight: 200;\n\tpadding: 0px 5px;\n\tbackground: #555;\n}\n\n.text-highlights-green {\n\tbackground: #4765a0;\n}\n.text-highlights-blue {\n\tbackground: #3498db;\n}\n.text-highlights-red {\n\tbackground: #e74c3c;\n}\n.text-highlights-sea {\n\tbackground: #1abc9c;\n}\n.text-highlights-orange {\n\tbackground: #e67e22;\n}\n.text-highlights-yellow {\n\tbackground: #f1c40f;\n}\n.text-highlights-purple {\n\tbackground: #9b6bcc;\n}\n.text-highlights-aqua {\n\tbackground: #27d7e7;\n}\n.text-highlights-brown {\n\tbackground: #9c8061;\n}\n.text-highlights-dark-blue {\n\tbackground: #4765a0;\n}\n.text-highlights-light-green {\n\tbackground: #79d5b3;\n}\n\n/*Text Borders*/\n.text-border {\n\tborder-bottom: dashed 1px #555;\n}\n\n.text-border-default {\n\tborder-color: #95a5a6;\n}\n.text-border-green {\n\tborder-color: #4765a0;\n}\n.text-border-blue {\n\tborder-color: #3498db;\n}\n.text-border-red {\n\tborder-color: #e74c3c;\n}\n.text-border-yellow {\n\tborder-color: #f1c40f;\n}\n.text-border-purple {\n\tborder-color: #9b6bcc;\n}\n\n/*List Styles*/\n.list-styles li {\n\tmargin-bottom: 8px;\n}\n\n/*Contextual Backgrounds*/\n.contex-bg p {\n\topacity: 0.8;\n\tpadding: 8px 10px;\n}\n.contex-bg p:hover {\n\topacity: 1;\n}\n\n/*Blockquote*/\nblockquote {\n\tpadding: 5px 15px;\n\tborder-left-width: 2px;\n}\n\nblockquote p {\n\tfont-size: 14px;\n\tfont-weight: 400;\n}\n\nblockquote h1,\nblockquote h2,\nblockquote span {\n\tfont-size: 18px;\n\tmargin: 0 0 8px;\n\tline-height: 24px;\n}\n\n/*Blockquote Styles*/\nblockquote.bq-text-lg p,\nblockquote.bq-text-lg small {\n\ttext-transform: uppercase;\n}\n\nblockquote.bq-text-lg p {\n\tfont-size: 22px;\n\tfont-weight: 300;\n\tline-height: 32px;\n}\n\nblockquote.text-right,\nblockquote.hero.text-right {\n\tborder-left: none;\n\tborder-right: 2px solid #eee;\n}\n\nblockquote.hero.text-right,\nblockquote.hero.text-right:hover {\n\tborder-color: #555;\n}\n\nblockquote:hover,\nblockquote.text-right:hover {\n\tborder-color: #4765a0;\n\ttransition: all 0.4s ease-in-out;\n}\n\nblockquote.bq-dark,\nblockquote.bq-dark:hover {\n\tborder-color: #585f69;\n}\n\nblockquote.bq-green {\n\tborder-color: #4765a0;\n}\n\n/*Blockquote Hero Styles*/\nblockquote.hero {\n\tborder: none;\n\tpadding: 18px;\n\tfont-size: 16px;\n\tbackground: #f3f3f3;\n\tborder-left: solid 2px #666;\n}\n\nblockquote.hero:hover {\n\tbackground: #eee;\n\tborder-left-color: #666;\n}\n\nblockquote.hero.hero-dark,\nblockquote.hero.hero-default {\n\tborder: none;\n}\n\nblockquote.hero.hero-dark {\n\tbackground: #444;\n}\n\nblockquote.hero.hero-dark:hover {\n\tbackground: #555;\n}\n\nblockquote.hero.hero-default {\n\tbackground: #4765a0;\n}\n\nblockquote.hero.hero-default:hover {\n\tbackground: #5fb611;\n}\n\nblockquote.hero.hero-dark p,\nblockquote.hero.hero-dark h2,\nblockquote.hero.hero-dark small,\nblockquote.hero.hero-default p,\nblockquote.hero.hero-default h2,\nblockquote.hero.hero-default small {\n\tcolor: #fff;\n\tfont-weight: 200;\n}\n\n/*Lists\n------------------------------------*/\n.list-row {\n\tpadding: 0;\n\tmargin-bottom: 0;\n\tlist-style: none;\n}\n\n/*Lists v1*/\n.lists-v1 li {\n\tmargin-bottom: 10px;\n}\n\n.lists-v1 i {\n\tcolor: #fff;\n\twidth: 15px;\n\theight: 15px;\n\tpadding: 1px;\n\tfont-size: 13px;\n\tmargin-right: 7px;\n\ttext-align: center;\n\tbackground: #4765a0;\n\tdisplay: inline-block;\n\tborder-radius: 50% !important;\n}\n\n/*Lists v2*/\n.lists-v2 li {\n\tmargin-bottom: 10px;\n}\n\n.lists-v2 i {\n\tcolor: #4765a0;\n\tfont-size: 13px;\n\tmargin-right: 7px;\n\tdisplay: inline-block;\n}\n\n/*Alerts\n------------------------------------*/\n.alert {\n\tborder-radius: 0;\n}\n\n/*Thumbnails\n------------------------------------*/\n.thumbnail {\n\tborder-radius: 0;\n}\n\n/*Panels (Portlets)\n------------------------------------*/\n.panel,\n.panel-heading,\n.panel-group .panel {\n\tborder-radius: 0;\n}\n\n.panel-heading {\n\tcolor: #fff;\n\tpadding: 5px 15px;\n}\n\n/*Panel Table*/\n.panel .table {\n\tmargin-bottom: 0;\n}\n\n/*Panel Unify*/\n.panel-u {\n\tborder-color: #4765a0;\n}\n\n.panel-u > .panel-heading {\n\tbackground: #4765a0;\n}\n\n/*Panel Blue*/\n.panel-blue {\n\tborder-color: #3498db;\n}\n\n.panel-blue > .panel-heading {\n\tbackground: #3498db;\n}\n\n/*Panel Red*/\n.panel-red {\n\tborder-color: #e74c3c;\n}\n\n.panel-red > .panel-heading {\n\tbackground: #e74c3c;\n}\n\n/*Panel Green*/\n.panel-green {\n\tborder-color: #2ecc71;\n}\n\n.panel-green > .panel-heading {\n\tbackground: #2ecc71;\n}\n\n/*Panel Sea*/\n.panel-sea {\n\tborder-color: #1abc9c;\n}\n\n.panel-sea > .panel-heading {\n\tbackground: #1abc9c;\n}\n\n/*Panel Orange*/\n.panel-orange {\n\tborder-color: #e67e22;\n}\n\n.panel-orange > .panel-heading {\n\tbackground: #e67e22;\n}\n\n/*Panel Yellow*/\n.panel-yellow {\n\tborder-color: #f1c40f;\n}\n\n.panel-yellow > .panel-heading {\n\tbackground: #f1c40f;\n}\n\n/*Panel Grey*/\n.panel-grey {\n\tborder-color: #95a5a6;\n}\n\n.panel-grey > .panel-heading {\n\tbackground: #95a5a6;\n}\n\n/*Panel Dark*/\n.panel-dark {\n\tborder-color: #555;\n}\n\n.panel-dark > .panel-heading {\n\tbackground: #555;\n}\n\n/*Panel Purple*/\n.panel-purple {\n\tborder-color: #9b6bcc;\n}\n\n.panel-purple > .panel-heading {\n\tbackground: #9b6bcc;\n}\n\n/*Panel Aqua*/\n.panel-aqua {\n\tborder-color: #27d7e7;\n}\n\n.panel-aqua > .panel-heading {\n\tbackground: #27d7e7;\n}\n\n/*Panel Brown*/\n.panel-brown {\n\tborder-color: #9c8061;\n}\n\n.panel-brown > .panel-heading {\n\tbackground: #9c8061;\n}\n\n/*Panel Dark Blue*/\n.panel-dark-blue {\n\tborder-color: #4765a0;\n}\n\n.panel-dark-blue > .panel-heading {\n\tbackground: #4765a0;\n}\n\n/*Panel Light Green*/\n.panel-light-green {\n\tborder-color: #79d5b3;\n}\n\n.panel-light-green > .panel-heading {\n\tbackground: #79d5b3;\n}\n\n/*Panel Default Dark*/\n.panel-default-dark {\n\tborder-color: #585f69;\n}\n\n.panel-default-dark > .panel-heading {\n\tbackground: #585f69;\n}\n\n/*Progress Bar\n------------------------------------*/\n.progress {\n\tborder-radius: 0;\n}\n\n.progress-u {\n\tbox-shadow: none;\n}\n\n.progress-u .progress-bar {\n\tbox-shadow: none;\n}\n\n/*progress-bar (sizes)*/\n.progress-lg {\n\theight: 25px;\n}\n.progress-lg p {\n\tpadding-top: 3px;\n}\n\n.progress-sm {\n\theight: 12px;\n}\n\n.progress-xs {\n\theight: 7px;\n}\n\n.progress-xxs {\n\theight: 3px;\n}\n\n/*progress-bar (colors)*/\n.progress {\n\tbackground: #e5e5e5;\n}\n\n.progress-bar-u {\n\tbackground: #4765a0;\n}\n\n.progress-bar-blue {\n\tbackground: #3498db;\n}\n\n.progress-bar-orange {\n\tbackground: #e67e22;\n}\n\n.progress-bar-red {\n\tbackground: #e74c3c;\n}\n\n.progress-bar-purple {\n\tbackground: #9b6bcc;\n}\n\n.progress-bar-aqua {\n\tbackground: #27d7e7;\n}\n\n.progress-bar-brown {\n\tbackground: #9c8061;\n}\n\n.progress-bar-dark-blue {\n\tbackground: #4765a0;\n}\n\n.progress-bar-light-green {\n\tbackground: #79d5b3;\n}\n\n.progress-bar-dark {\n\tbackground: #555;\n}\n\n/*Progress Bar Animation\n------------------------------------*/\n.progress {\n\t\tposition: relative;\n}\n\n.progress .progress-bar {\n\toverflow: hidden;\n\tline-height: 20px;\n}\n\n.progress-box .progress-bar {\n\ttransition: all 3s ease-in;\n}\n\n/*Vertical Progress Bar*/\n.progress.vertical {\n\tfloat: left;\n\twidth: 100%;\n\theight: 200px;\n\tmargin-right: 20px;\n}\n\n.progress.vertical.bottom {\n\tposition: relative;\n}\n\n.progress.vertical .progress-bar {\n\theight: 0;\n\twidth: 100%;\n\ttransition: height 3s ease;\n}\n\n.progress.vertical.bottom .progress-bar {\n\tbottom: 0;\n\tposition: absolute;\n}\n\n/*Count Stars\n------------------------------------*/\n.stars-existing {\n\tcolor: #4765a0;\n\tcursor: pointer;\n}\n\n.star-lg {\n\tfont-size: 30px;\n}\n\n.star-sm {\n\tfont-size: 25px;\n}\n\n.star-xs {\n\tfont-size: 20px;\n}\n\n.star-default {\n\tfont-size: 16px;\n}\n\n/*Media (Audio/Videos and Images)\n------------------------------------*/\n/*Images*/\nimg.img-bordered {\n\tpadding: 3px !important;\n\tborder: solid 1px #eee !important;\n}\n\nimg.img-circle {\n\tborder-radius: 50% !important;\n}\n\nimg.image-sm {\n\twidth: 50px;\n\theight: 50px;\n}\n\nimg.image-md {\n\twidth: 100px;\n\theight: 100px;\n}\n\n/*Responsive Video*/\n.responsive-video {\n height: 0;\n padding-top: 1px;\n position: relative;\n padding-bottom: 56.25%; /*16:9*/\n}\n\n.responsive-video iframe {\n top: 0;\n left: 0;\n width: 100%;\n height: 100%;\n position: absolute;\n}\n\n/*Column Sizes\n------------------------------------*/\n/*Remove the Gutter Padding from Columns*/\n.no-gutter > [class*='col-'] {\n\tpadding-right: 0;\n\tpadding-left: 0;\n}\n\n.no-gutter.no-gutter-boxed {\n\tpadding-right: 15px;\n\tpadding-left: 15px;\n}\n\n/*Heights\n------------------------------------*/\n.height-100 { min-height: 100px;}\n.height-150 { min-height: 150px;}\n.height-200 { min-height: 200px;}\n.height-250 { min-height: 250px;}\n.height-300 { min-height: 300px;}\n.height-350 { min-height: 350px;}\n.height-400 { min-height: 400px;}\n.height-450 { min-height: 450px;}\n.height-500 { min-height: 500px !important;}\n\n/*Spaces\n------------------------------------*/\n.no-padding {\n\tpadding: 0 !important;\n}\n\n.no-margin {\n\tmargin: 0;\n}\n\n.no-top-space {\n\tmargin-top: 0 !important;\n\tpadding-top: 0 !important;\n}\n\n.no-bottom-space {\n\tmargin-bottom: 0 !important;\n\tpadding-bottom: 0 !important;\n}\n\n.no-margin-bottom {\n\tmargin-bottom: 0 !important;\n}\n\n.no-padding-bottom {\n\tpadding-bottom: 0 !important;\n}\n\n.content-xs {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n}\n\n.content {\n\tpadding-top: 40px;\n\tpadding-bottom: 40px;\n}\n\n.content-sm {\n\tpadding-top: 60px;\n\tpadding-bottom: 60px;\n}\n\n.content-md {\n\tpadding-top: 80px;\n\tpadding-bottom: 80px;\n}\n\n.content-lg {\n\tpadding-top: 100px;\n\tpadding-bottom: 100px;\n}\n\n.content-xlg {\n\tpadding-top: 150px;\n\tpadding-bottom: 150px;\n}\n\n.space-md-hor {\n\tpadding-left: 40px;\n\tpadding-right: 40px;\n}\n\n.space-lg-hor {\n\tpadding-left: 60px;\n\tpadding-right: 60px;\n}\n\n.space-xlg-hor {\n\tpadding-left: 100px;\n\tpadding-right: 100px;\n}\n\n.margin-bottom-5,\n.margin-bottom-10,\n.margin-bottom-15,\n.margin-bottom-20,\n.margin-bottom-25,\n.margin-bottom-30,\n.margin-bottom-35,\n.margin-bottom-40,\n.margin-bottom-45,\n.margin-bottom-50,\n.margin-bottom-55,\n.margin-bottom-60,\n.margin-bottom-100 {\n\t clear:both;\n}\n.margin-bottom-5  { margin-bottom:5px;}\n.margin-bottom-10 { margin-bottom:10px;}\n.margin-bottom-15 { margin-bottom:15px;}\n.margin-bottom-20 { margin-bottom:20px !important;}\n.margin-bottom-25 { margin-bottom:25px;}\n.margin-bottom-30 { margin-bottom:30px;}\n.margin-bottom-35 { margin-bottom:35px;}\n.margin-bottom-40 { margin-bottom:40px;}\n.margin-bottom-45 { margin-bottom:45px;}\n.margin-bottom-50 { margin-bottom:50px;}\n.margin-bottom-55 { margin-bottom:55px;}\n.margin-bottom-60 { margin-bottom:60px;}\n.margin-bottom-70 { margin-bottom:70px;}\n.margin-bottom-80 { margin-bottom:80px;}\n.margin-bottom-90 { margin-bottom:90px;}\n.margin-bottom-100 { margin-bottom:100px;}\n\n@media (max-width: 768px) {\n\t.sm-margin-bottom-10 {\n\t\tmargin-bottom: 10px;\n\t}\n\t.sm-margin-bottom-20 {\n\t\tmargin-bottom: 20px;\n\t}\n\t.sm-margin-bottom-30 {\n\t\tmargin-bottom: 30px;\n\t}\n\t.sm-margin-bottom-40 {\n\t\tmargin-bottom: 40px;\n\t}\n\t.sm-margin-bottom-50 {\n\t\tmargin-bottom: 50px;\n\t}\n\t.sm-margin-bottom-60 {\n\t\tmargin-bottom: 60px;\n\t}\n}\n\n@media (max-width: 992px) {\n\t.md-margin-bottom-10 {\n\t\tmargin-bottom: 10px;\n\t}\n\t.md-margin-bottom-20 {\n\t\tmargin-bottom: 20px;\n\t}\n\t.md-margin-bottom-30 {\n\t\tmargin-bottom: 30px;\n\t}\n\t.md-margin-bottom-40 {\n\t\tmargin-bottom: 40px;\n\t}\n\t.md-margin-bottom-50 {\n\t\tmargin-bottom: 50px;\n\t}\n\t.md-margin-bottom-60 {\n\t\tmargin-bottom: 60px;\n\t}\n}\n\n/*Other Spaces*/\n.margin-top-20 { margin-top: 20px;}\n.margin-left-5 { margin-left: 5px;}\n.margin-left-10 { margin-left: 10px;}\n.margin-right-5 { margin-right: 5px;}\n.margin-right-10 { margin-right: 10px;}\n.margin-right-20 { margin-right: 20px;}\n\n.padding-sm { padding: 40px 40px;}\n.padding-top-5 { padding-top: 5px;}\n.padding-left-5 { padding-left: 5px;}\n\n/*Text Colors\n------------------------------------*/\n.color-sea { color: #1abc9c;}\n.color-red { color: #e74c3c;}\n.color-aqua { color: #27d7e7;}\n.color-blue { color: #3498db;}\n.color-grey { color: #95a5a6;}\n.color-dark { color: #555;}\n/*.color-dark1 { color: #444;}*/\n.color-darker { color: #444;}\n.color-green { color: #4765a0;}\n.color-brown { color: #9c8061;}\n.color-light { color: #ffffff;}\n.color-orange { color: #e67e22;}\n.color-yellow { color: #f1c40f;}\n.color-green1 { color: #2ecc71;}\n.color-purple { color: #9b6bcc;}\n.color-inherit { color: inherit;}\n.color-dark-blue { color: #4765a0;}\n.color-light-grey { color: #585f69;}\n.color-light-green { color: #79d5b3;}\n.color-teal { color: #18ba9b;}\n\n/*Background Colors\n------------------------------------*/\n.bg-color-dark,\n.bg-color-darker,\n.bg-color-sea,\n.bg-color-red,\n.bg-color-aqua,\n.bg-color-blue,\n.bg-color-grey,\n.bg-color-light,\n.bg-color-green,\n.bg-color-brown,\n.bg-color-orange,\n.bg-color-green1,\n.bg-color-purple,\n.bg-color-dark-blue,\n.bg-color-light-grey,\n.bg-color-light-green,\n.bg-color-primary {\n\tcolor: #fff;\n}\n.bg-color-white {\n\tcolor: #555;\n}\n.bg-color-primary { background-color: #4765a0 !important;}\n.bg-color-dark { background-color: #555 !important;}\n.bg-color-darker { background-color: #222 !important;}\n.bg-color-white { background-color: #fff !important;}\n.bg-color-sea { background-color: #1abc9c !important;}\n.bg-color-red { background-color: #e74c3c !important;}\n.bg-color-aqua { background-color: #27d7e7 !important;}\n.bg-color-blue { background-color: #3498db !important;}\n.bg-color-grey { background-color: #95a5a6 !important;}\n.bg-color-light { background-color: #f7f7f7 !important;}\n.bg-color-green { background-color: #4765a0 !important;}\n.bg-color-brown { background-color: #9c8061 !important;}\n.bg-color-orange { background-color: #e67e22 !important;}\n.bg-color-green1 { background-color: #2ecc71 !important;}\n.bg-color-purple { background-color: #9b6bcc !important;}\n.bg-color-dark-blue { background-color: #4765a0 !important;}\n.bg-color-light-grey { background-color: #585f69 !important;}\n.bg-color-light-green { background-color: #79d5b3 !important;}\n.bg-color-teal { background-color: #18ba9b !important; }\n\n.rgba-red { background-color: rgba(231,76,60,0.8)}\n.rgba-blue { background-color: rgba(52,152,219,0.8);}\n.rgba-aqua { background-color: rgba(39,215,231,0.8);}\n.rgba-yellow { background-color: rgba(241,196,15,0.8);}\n.rgba-default { background-color: rgba(114,192,44,0.8);}\n.rgba-purple { background-color: rgba(155,107,204,0.8);}\n\n/*Grey Backroud*/\n.bg-grey {\n\tbackground: #f7f7f7;\n\tborder-top: solid 1px #eee;\n\tborder-bottom: solid 1px #eee;\n}\n\n/*Rounded and Circle Classes\n------------------------------------*/\n.no-rounded { border-radius: 0 !important;}\n.rounded { border-radius: 4px !important;}\n.rounded-x { border-radius: 50% !important;}\n.rounded-2x { border-radius: 10px !important;}\n.rounded-3x { border-radius: 15px !important;}\n.rounded-4x { border-radius: 20px !important;}\n.rounded-sm { border-radius: 2px !important;}\n.rounded-md { border-radius: 3px !important;}\n.rounded-top { border-radius: 4px 4px 0 0 !important;}\n.rounded-left { border-radius: 4px 0 0 4px !important;}\n.rounded-right { border-radius: 0 4px 4px 0 !important;}\n.rounded-bottom { border-radius: 0 0 4px 4px !important;}\n\n/*Others\n------------------------------------*/\n.overflow-h { overflow: hidden;}\n.overflow-a { overflow: auto;}\n.overflow-hidden { overflow: hidden;}\n\n.clear-both { clear: both;}\n\n/*Display*/\n.dp-none { display: none;}\n.dp-block { display: block;}\n.dp-table { display: table;}\n.dp-inline-block { display: inline-block;}\n.dp-table-cell {\n\tdisplay: table-cell;\n\tvertical-align: middle;\n}\n\n/*Font Size*/\n.text-light {\n\tfont-weight: 200;\n}\n.text-normal {\n\tfont-weight: 400;\n}\n.text-bold {\n\tfont-weight: 600 !important;\n}\n\n/*Full Width*/\n.full-width {\n\twidth: 100%;\n}\n\n/*Equal Height Columns*/\n@media (max-width: 767px) {\n\t.equal-height-column {\n\t\theight: auto !important;\n\t}\n}\n\n/*Image Classes*/\n.img-width-60 { width: 60px;}\n.img-width-200 { width: 200px;}\n.lft-img-margin { margin:0 20px 5px 0;}\n.rgt-img-margin { margin:0 0 5px 10px;}\n\nimg.img-center,\n.img-center img {\n\tmargin-left: auto;\n\tmargin-right: auto;\n}\n\n/*Background Light*/\n.bg-light {\n padding: 10px 15px;\n margin-bottom: 10px;\n background: #fcfcfc;\n border: solid 1px #e5e5e5;\n}\n.bg-light:hover {\n\t border: solid 1px #bbb;\n}\n\n/*CSS3 Hover Effects*/\n.hover-effect {\n transition: all 0.4s ease-in-out;\n}\n\n.hover-effect-kenburn {\n left:10px;\n margin-left:-10px;\n position:relative;\n transition: all 0.8s ease-in-out;\n}\n.hover-effect-kenburn:hover {\n transform: scale(2) rotate(5deg);\n}\n\n/*Scroll Icon*/\n.scroll-btn-icon,\n.scroll-btn-icon:before {\n\tposition: absolute;\n\tleft: 50%;\n}\n.scroll-btn-icon {\n\twidth: 30px;\n\tz-index: 2;\n\theight: 50px;\n\tbottom: 30px;\n\tmargin-left: -25px;\n\tborder-radius: 25px;\n\tbox-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);\n}\n.scroll-btn-icon-dark {\n\tbox-shadow: inset 0 0 0 1px rgba(0,0,0,0.5);\n}\n.scroll-btn-icon:before {\n\ttop: 8px;\n\twidth: 8px;\n\theight: 8px;\n\tcontent: '';\n\tbackground: #fff;\n\tmargin-left: -4px;\n\tborder-radius: 4px;\n\tanimation-name: scroll;\n\tanimation-duration: 1.5s;\n\t-webkit-animation-name: scroll;\n\t-webkit-animation-duration: 1.5s;\n\tanimation-iteration-count: infinite;\n\t-webkit-animation-iteration-count: infinite;\n}\n.scroll-btn-icon-dark:before {\n\tbackground: #333;\n}\n@-webkit-keyframes scroll {\n\t0% {\n\t\topacity: 1;\n\t}\n\t100% {\n\t\topacity: 0;\n\t\ttransform: translateY(36px);\n\t\t-webkit-transform: translateY(36px);\n\t}\n}\n@keyframes scroll {\n\t0% {\n\t\topacity: 1;\n\t}\n\t100% {\n\t\topacity: 0;\n\t\ttransform: translateY(36px);\n\t\t-webkit-transform: translateY(36px);\n\t}\n}\n", ""]);
 
 	// exports
 
@@ -39034,11 +39034,25 @@
 
 	__webpack_require__(320);
 
-	__webpack_require__(322);
-
 	var _react = __webpack_require__(80);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _user_card_detail = __webpack_require__(330);
+
+	var _user_card_detail2 = _interopRequireDefault(_user_card_detail);
+
+	var _user_loved_content = __webpack_require__(331);
+
+	var _user_loved_content2 = _interopRequireDefault(_user_loved_content);
+
+	var _user_loved_type_group = __webpack_require__(333);
+
+	var _user_loved_type_group2 = _interopRequireDefault(_user_loved_type_group);
+
+	var _user_loved_tag_group = __webpack_require__(334);
+
+	var _user_loved_tag_group2 = _interopRequireDefault(_user_loved_tag_group);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39072,345 +39086,20 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'profile-body' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'profile-bio' },
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'row' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'col-md-9' },
-	                                        _react2.default.createElement(
-	                                            'h2',
-	                                            null,
-	                                            'Edward Rooster ',
-	                                            this.props.params.userId
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'span',
-	                                            null,
-	                                            _react2.default.createElement(
-	                                                'strong',
-	                                                null,
-	                                                'Job:'
-	                                            ),
-	                                            ' Web Developer'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'span',
-	                                            null,
-	                                            _react2.default.createElement(
-	                                                'strong',
-	                                                null,
-	                                                'Position:'
-	                                            ),
-	                                            ' Web Designer'
-	                                        ),
-	                                        _react2.default.createElement('hr', null),
-	                                        _react2.default.createElement(
-	                                            'p',
-	                                            null,
-	                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget massa nec turpis congue bibendum. Integer nulla felis, porta suscipit nulla et, dignissim commodo nunc. Morbi a semper nulla.'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'p',
-	                                            null,
-	                                            'Proin mauris odio, pharetra quis ligula non, vulputate vehicula quam. Nunc in libero vitae nunc ultricies tincidunt ut sed leo. Sed luctus dui ut congue consequat. Cras consequat nisl ante, nec malesuada velit pellentesque ac. Pellentesque nec arcu in ipsum iaculis convallis.'
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'col-md-3' },
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'panel panel-profile' },
-	                                            _react2.default.createElement(
-	                                                'div',
-	                                                { className: 'panel-heading overflow-h' },
-	                                                _react2.default.createElement(
-	                                                    'h2',
-	                                                    { className: 'panel-title heading-sm pull-left' },
-	                                                    _react2.default.createElement('i', { className: 'fa fa-users' }),
-	                                                    ' Social Contacts'
-	                                                )
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                'div',
-	                                                { className: 'panel-body' },
-	                                                _react2.default.createElement(
-	                                                    'ul',
-	                                                    { className: 'list-unstyled social-contacts-v2' },
-	                                                    _react2.default.createElement(
-	                                                        'li',
-	                                                        null,
-	                                                        _react2.default.createElement('i', { className: 'rounded-x tw fa fa-twitter' }),
-	                                                        ' ',
-	                                                        _react2.default.createElement(
-	                                                            'a',
-	                                                            { href: '#' },
-	                                                            'edward.rooster'
-	                                                        )
-	                                                    ),
-	                                                    _react2.default.createElement(
-	                                                        'li',
-	                                                        null,
-	                                                        _react2.default.createElement('i', { className: 'rounded-x fb fa fa-facebook' }),
-	                                                        ' ',
-	                                                        _react2.default.createElement(
-	                                                            'a',
-	                                                            { href: '#' },
-	                                                            'Edward Rooster'
-	                                                        )
-	                                                    ),
-	                                                    _react2.default.createElement(
-	                                                        'li',
-	                                                        null,
-	                                                        _react2.default.createElement('i', { className: 'rounded-x sk fa fa-skype' }),
-	                                                        ' ',
-	                                                        _react2.default.createElement(
-	                                                            'a',
-	                                                            { href: '#' },
-	                                                            'edwardRooster77'
-	                                                        )
-	                                                    ),
-	                                                    _react2.default.createElement(
-	                                                        'li',
-	                                                        null,
-	                                                        _react2.default.createElement('i', { className: 'rounded-x gp fa fa-google-plus' }),
-	                                                        ' ',
-	                                                        _react2.default.createElement(
-	                                                            'a',
-	                                                            { href: '#' },
-	                                                            'rooster77edward'
-	                                                        )
-	                                                    ),
-	                                                    _react2.default.createElement(
-	                                                        'li',
-	                                                        null,
-	                                                        _react2.default.createElement('i', { className: 'rounded-x gm fa fa-envelope' }),
-	                                                        ' ',
-	                                                        _react2.default.createElement(
-	                                                            'a',
-	                                                            { href: '#' },
-	                                                            'edward77@gmail.com'
-	                                                        )
-	                                                    )
-	                                                )
-	                                            )
-	                                        )
-	                                    )
-	                                )
-	                            ),
+	                            _react2.default.createElement(_user_card_detail2.default, null),
 	                            _react2.default.createElement(
 	                                'div',
 	                                { className: 'row' },
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'col-md-9' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'panel panel-profile' },
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'panel-heading overflow-h' },
-	                                            _react2.default.createElement(
-	                                                'h2',
-	                                                { className: 'panel-title heading-sm pull-left' },
-	                                                _react2.default.createElement('i', { className: 'fa fa-heart red' }),
-	                                                ' Loved'
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                'a',
-	                                                { href: '#' },
-	                                                _react2.default.createElement('i', { className: 'fa fa-cog pull-right' })
-	                                            )
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'panel-body margin-bottom-40' },
-	                                            _react2.default.createElement(
-	                                                'ul',
-	                                                { className: 'timeline-v2 timeline-me' },
-	                                                _react2.default.createElement(
-	                                                    'li',
-	                                                    null,
-	                                                    _react2.default.createElement(
-	                                                        'time',
-	                                                        { dateTime: '', className: 'cbp_tmtime' },
-	                                                        _react2.default.createElement(
-	                                                            'span',
-	                                                            null,
-	                                                            'Mobile Design'
-	                                                        ),
-	                                                        ' ',
-	                                                        _react2.default.createElement(
-	                                                            'span',
-	                                                            null,
-	                                                            '2012 - Current'
-	                                                        )
-	                                                    ),
-	                                                    _react2.default.createElement('i', { className: 'cbp_tmicon rounded-x hidden-xs' }),
-	                                                    _react2.default.createElement(
-	                                                        'div',
-	                                                        { className: 'cbp_tmlabel' },
-	                                                        _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'BFC NYC Partners'
-	                                                        ),
-	                                                        _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Peasprouts wattle seed rutabaga okra yarrow cress avocado grape.'
-	                                                        )
-	                                                    )
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    'li',
-	                                                    null,
-	                                                    _react2.default.createElement(
-	                                                        'time',
-	                                                        { dateTime: '', className: 'cbp_tmtime' },
-	                                                        _react2.default.createElement(
-	                                                            'span',
-	                                                            null,
-	                                                            'Web Designer'
-	                                                        ),
-	                                                        ' ',
-	                                                        _react2.default.createElement(
-	                                                            'span',
-	                                                            null,
-	                                                            '2007 - 2012'
-	                                                        )
-	                                                    ),
-	                                                    _react2.default.createElement('i', { className: 'cbp_tmicon rounded-x hidden-xs' }),
-	                                                    _react2.default.createElement(
-	                                                        'div',
-	                                                        { className: 'cbp_tmlabel' },
-	                                                        _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Freelance'
-	                                                        ),
-	                                                        _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce.'
-	                                                        )
-	                                                    )
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    'li',
-	                                                    null,
-	                                                    _react2.default.createElement(
-	                                                        'time',
-	                                                        { dateTime: '', className: 'cbp_tmtime' },
-	                                                        _react2.default.createElement(
-	                                                            'span',
-	                                                            null,
-	                                                            'Photodesigner'
-	                                                        ),
-	                                                        ' ',
-	                                                        _react2.default.createElement(
-	                                                            'span',
-	                                                            null,
-	                                                            '2003 - 2007'
-	                                                        )
-	                                                    ),
-	                                                    _react2.default.createElement('i', { className: 'cbp_tmicon rounded-x hidden-xs' }),
-	                                                    _react2.default.createElement(
-	                                                        'div',
-	                                                        { className: 'cbp_tmlabel' },
-	                                                        _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Toren Condo'
-	                                                        ),
-	                                                        _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot.'
-	                                                        )
-	                                                    )
-	                                                )
-	                                            )
-	                                        )
-	                                    )
+	                                    _react2.default.createElement(_user_loved_content2.default, null)
 	                                ),
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'col-md-3' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'panel panel-profile' },
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'panel-heading overflow-h' },
-	                                            _react2.default.createElement(
-	                                                'h2',
-	                                                { className: 'panel-title heading-sm pull-left' },
-	                                                _react2.default.createElement('i', { className: 'fa fa-filter' }),
-	                                                ' Types'
-	                                            )
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'panel-body' },
-	                                            _react2.default.createElement(
-	                                                'form',
-	                                                { action: '#', className: 'sky-form' },
-	                                                _react2.default.createElement(
-	                                                    'ul',
-	                                                    { className: 'list-unstyled social-contacts-v2' },
-	                                                    _react2.default.createElement(
-	                                                        'li',
-	                                                        null,
-	                                                        _react2.default.createElement(
-	                                                            'label',
-	                                                            { className: 'checkbox' },
-	                                                            _react2.default.createElement('input', { type: 'checkbox' }),
-	                                                            _react2.default.createElement('i', null),
-	                                                            'Video'
-	                                                        )
-	                                                    ),
-	                                                    _react2.default.createElement(
-	                                                        'li',
-	                                                        null,
-	                                                        _react2.default.createElement(
-	                                                            'label',
-	                                                            { className: 'checkbox' },
-	                                                            _react2.default.createElement('input', { type: 'checkbox' }),
-	                                                            _react2.default.createElement('i', null),
-	                                                            'Video'
-	                                                        )
-	                                                    ),
-	                                                    _react2.default.createElement(
-	                                                        'li',
-	                                                        null,
-	                                                        _react2.default.createElement(
-	                                                            'label',
-	                                                            { className: 'checkbox' },
-	                                                            _react2.default.createElement('input', { type: 'checkbox' }),
-	                                                            _react2.default.createElement('i', null),
-	                                                            'Video'
-	                                                        )
-	                                                    ),
-	                                                    _react2.default.createElement(
-	                                                        'li',
-	                                                        null,
-	                                                        _react2.default.createElement(
-	                                                            'label',
-	                                                            { className: 'checkbox' },
-	                                                            _react2.default.createElement('input', { type: 'checkbox' }),
-	                                                            _react2.default.createElement('i', null),
-	                                                            'Video'
-	                                                        )
-	                                                    )
-	                                                )
-	                                            )
-	                                        )
-	                                    )
+	                                    _react2.default.createElement(_user_loved_type_group2.default, null),
+	                                    _react2.default.createElement(_user_loved_tag_group2.default, null)
 	                                )
 	                            )
 	                        )
@@ -39972,6 +39661,586 @@
 
 	// exports
 
+
+/***/ },
+/* 329 */,
+/* 330 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	__webpack_require__(320);
+
+	var _react = __webpack_require__(80);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var UserCardDetail = function (_React$Component) {
+	    _inherits(UserCardDetail, _React$Component);
+
+	    function UserCardDetail() {
+	        _classCallCheck(this, UserCardDetail);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(UserCardDetail).apply(this, arguments));
+	    }
+
+	    _createClass(UserCardDetail, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'profile-bio' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-md-9' },
+	                        _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            'Edward Rooster'
+	                        ),
+	                        _react2.default.createElement(
+	                            'span',
+	                            null,
+	                            _react2.default.createElement(
+	                                'strong',
+	                                null,
+	                                'Job:'
+	                            ),
+	                            ' Web Developer'
+	                        ),
+	                        _react2.default.createElement(
+	                            'span',
+	                            null,
+	                            _react2.default.createElement(
+	                                'strong',
+	                                null,
+	                                'Position:'
+	                            ),
+	                            ' Web Designer'
+	                        ),
+	                        _react2.default.createElement('hr', null),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget massa nec turpis congue bibendum. Integer nulla felis, porta suscipit nulla et, dignissim commodo nunc. Morbi a semper nulla.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Proin mauris odio, pharetra quis ligula non, vulputate vehicula quam. Nunc in libero vitae nunc ultricies tincidunt ut sed leo. Sed luctus dui ut congue consequat. Cras consequat nisl ante, nec malesuada velit pellentesque ac. Pellentesque nec arcu in ipsum iaculis convallis.'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-md-3' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'panel panel-profile' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'panel-heading overflow-h' },
+	                                _react2.default.createElement(
+	                                    'h2',
+	                                    { className: 'panel-title heading-sm pull-left' },
+	                                    _react2.default.createElement('i', { className: 'fa fa-users' }),
+	                                    ' Social Contacts'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'panel-body' },
+	                                _react2.default.createElement(
+	                                    'ul',
+	                                    { className: 'list-unstyled social-contacts-v2' },
+	                                    _react2.default.createElement(
+	                                        'li',
+	                                        null,
+	                                        _react2.default.createElement('i', { className: 'rounded-x tw fa fa-twitter' }),
+	                                        ' ',
+	                                        _react2.default.createElement(
+	                                            'a',
+	                                            { href: '#' },
+	                                            'edward.rooster'
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'li',
+	                                        null,
+	                                        _react2.default.createElement('i', { className: 'rounded-x fb fa fa-facebook' }),
+	                                        ' ',
+	                                        _react2.default.createElement(
+	                                            'a',
+	                                            { href: '#' },
+	                                            'Edward Rooster'
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'li',
+	                                        null,
+	                                        _react2.default.createElement('i', { className: 'rounded-x sk fa fa-skype' }),
+	                                        ' ',
+	                                        _react2.default.createElement(
+	                                            'a',
+	                                            { href: '#' },
+	                                            'edwardRooster77'
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'li',
+	                                        null,
+	                                        _react2.default.createElement('i', { className: 'rounded-x gp fa fa-google-plus' }),
+	                                        ' ',
+	                                        _react2.default.createElement(
+	                                            'a',
+	                                            { href: '#' },
+	                                            'rooster77edward'
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'li',
+	                                        null,
+	                                        _react2.default.createElement('i', { className: 'rounded-x gm fa fa-envelope' }),
+	                                        ' ',
+	                                        _react2.default.createElement(
+	                                            'a',
+	                                            { href: '#' },
+	                                            'edward77@gmail.com'
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return UserCardDetail;
+	}(_react2.default.Component);
+
+	exports.default = UserCardDetail;
+
+/***/ },
+/* 331 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	__webpack_require__(322);
+
+	var _react = __webpack_require__(80);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var UserLovedContent = function (_React$Component) {
+	    _inherits(UserLovedContent, _React$Component);
+
+	    function UserLovedContent() {
+	        _classCallCheck(this, UserLovedContent);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(UserLovedContent).apply(this, arguments));
+	    }
+
+	    _createClass(UserLovedContent, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'panel panel-profile' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'panel-heading overflow-h' },
+	                    _react2.default.createElement(
+	                        'h2',
+	                        { className: 'panel-title heading-sm pull-left' },
+	                        _react2.default.createElement('i', { className: 'fa fa-heart red' }),
+	                        ' Loved'
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '#' },
+	                        _react2.default.createElement('i', { className: 'fa fa-cog pull-right' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'panel-body margin-bottom-40' },
+	                    _react2.default.createElement(
+	                        'ul',
+	                        { className: 'timeline-v2 timeline-me' },
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            _react2.default.createElement(
+	                                'time',
+	                                { dateTime: '', className: 'cbp_tmtime' },
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Mobile Design'
+	                                ),
+	                                ' ',
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    '2012 - Current'
+	                                )
+	                            ),
+	                            _react2.default.createElement('i', { className: 'cbp_tmicon rounded-x hidden-xs' }),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'cbp_tmlabel' },
+	                                _react2.default.createElement(
+	                                    'h2',
+	                                    null,
+	                                    'BFC NYC Partners'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    'Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Peasprouts wattle seed rutabaga okra yarrow cress avocado grape.'
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            _react2.default.createElement(
+	                                'time',
+	                                { dateTime: '', className: 'cbp_tmtime' },
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Web Designer'
+	                                ),
+	                                ' ',
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    '2007 - 2012'
+	                                )
+	                            ),
+	                            _react2.default.createElement('i', { className: 'cbp_tmicon rounded-x hidden-xs' }),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'cbp_tmlabel' },
+	                                _react2.default.createElement(
+	                                    'h2',
+	                                    null,
+	                                    'Freelance'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    'Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce.'
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            _react2.default.createElement(
+	                                'time',
+	                                { dateTime: '', className: 'cbp_tmtime' },
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Photodesigner'
+	                                ),
+	                                ' ',
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    '2003 - 2007'
+	                                )
+	                            ),
+	                            _react2.default.createElement('i', { className: 'cbp_tmicon rounded-x hidden-xs' }),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'cbp_tmlabel' },
+	                                _react2.default.createElement(
+	                                    'h2',
+	                                    null,
+	                                    'Toren Condo'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    'Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot.'
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return UserLovedContent;
+	}(_react2.default.Component);
+
+	exports.default = UserLovedContent;
+
+/***/ },
+/* 332 */,
+/* 333 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(80);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var UserLovedTypeGroup = function (_React$Component) {
+	    _inherits(UserLovedTypeGroup, _React$Component);
+
+	    function UserLovedTypeGroup() {
+	        _classCallCheck(this, UserLovedTypeGroup);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(UserLovedTypeGroup).apply(this, arguments));
+	    }
+
+	    _createClass(UserLovedTypeGroup, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "panel panel-profile margin-bottom-20" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "panel-heading overflow-h" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        { className: "panel-title heading-sm pull-left" },
+	                        _react2.default.createElement("i", { className: "fa fa-filter" }),
+	                        " Types"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "panel-body" },
+	                    _react2.default.createElement(
+	                        "form",
+	                        { action: "#", className: "sky-form" },
+	                        _react2.default.createElement(
+	                            "ul",
+	                            { className: "list-unstyled social-contacts-v2" },
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "label",
+	                                    { className: "checkbox" },
+	                                    _react2.default.createElement("input", { type: "checkbox" }),
+	                                    _react2.default.createElement("i", null),
+	                                    "Video"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "label",
+	                                    { className: "checkbox" },
+	                                    _react2.default.createElement("input", { type: "checkbox" }),
+	                                    _react2.default.createElement("i", null),
+	                                    "Video"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "label",
+	                                    { className: "checkbox" },
+	                                    _react2.default.createElement("input", { type: "checkbox" }),
+	                                    _react2.default.createElement("i", null),
+	                                    "Video"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "label",
+	                                    { className: "checkbox" },
+	                                    _react2.default.createElement("input", { type: "checkbox" }),
+	                                    _react2.default.createElement("i", null),
+	                                    "Video"
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return UserLovedTypeGroup;
+	}(_react2.default.Component);
+
+	exports.default = UserLovedTypeGroup;
+
+/***/ },
+/* 334 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(80);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var UserLovedTagGroup = function (_React$Component) {
+	    _inherits(UserLovedTagGroup, _React$Component);
+
+	    function UserLovedTagGroup() {
+	        _classCallCheck(this, UserLovedTagGroup);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(UserLovedTagGroup).apply(this, arguments));
+	    }
+
+	    _createClass(UserLovedTagGroup, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "panel panel-profile" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "panel-heading overflow-h" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        { className: "panel-title heading-sm pull-left" },
+	                        _react2.default.createElement("i", { className: "fa fa-filter" }),
+	                        " Types"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "panel-body" },
+	                    _react2.default.createElement(
+	                        "form",
+	                        { action: "#", className: "sky-form" },
+	                        _react2.default.createElement(
+	                            "ul",
+	                            { className: "list-unstyled social-contacts-v2" },
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "label",
+	                                    { className: "checkbox" },
+	                                    _react2.default.createElement("input", { type: "checkbox" }),
+	                                    _react2.default.createElement("i", null),
+	                                    "Video"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "label",
+	                                    { className: "checkbox" },
+	                                    _react2.default.createElement("input", { type: "checkbox" }),
+	                                    _react2.default.createElement("i", null),
+	                                    "Video"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "label",
+	                                    { className: "checkbox" },
+	                                    _react2.default.createElement("input", { type: "checkbox" }),
+	                                    _react2.default.createElement("i", null),
+	                                    "Video"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "label",
+	                                    { className: "checkbox" },
+	                                    _react2.default.createElement("input", { type: "checkbox" }),
+	                                    _react2.default.createElement("i", null),
+	                                    "Video"
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return UserLovedTagGroup;
+	}(_react2.default.Component);
+
+	exports.default = UserLovedTagGroup;
 
 /***/ }
 /******/ ]);
