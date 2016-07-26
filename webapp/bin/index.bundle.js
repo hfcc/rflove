@@ -39506,46 +39506,6 @@
 	                                            'About us'
 	                                        ),
 	                                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            'a',
-	                                            { href: '#' },
-	                                            'Portfolio'
-	                                        ),
-	                                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            'a',
-	                                            { href: '#' },
-	                                            'Latest jobs'
-	                                        ),
-	                                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            'a',
-	                                            { href: '#' },
-	                                            'Community'
-	                                        ),
-	                                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            'a',
-	                                            { href: '#' },
-	                                            'Contact us'
-	                                        ),
-	                                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
 	                                    )
 	                                )
 	                            ),
@@ -39564,71 +39524,14 @@
 	                                _react2.default.createElement(
 	                                    'address',
 	                                    { className: 'md-margin-bottom-40' },
-	                                    _react2.default.createElement('i', { className: 'fa fa-home' }),
-	                                    '25, Lorem Lis Street, California, US ',
-	                                    _react2.default.createElement('br', null),
-	                                    _react2.default.createElement('i', { className: 'fa fa-phone' }),
-	                                    'Phone: 800 123 3456 ',
-	                                    _react2.default.createElement('br', null),
-	                                    _react2.default.createElement('i', { className: 'fa fa-globe' }),
-	                                    'Website: ',
-	                                    _react2.default.createElement(
-	                                        'a',
-	                                        { href: '#' },
-	                                        'www.htmlstream.com'
-	                                    ),
-	                                    ' ',
-	                                    _react2.default.createElement('br', null),
 	                                    _react2.default.createElement('i', { className: 'fa fa-envelope' }),
 	                                    'Email: ',
 	                                    _react2.default.createElement(
 	                                        'a',
-	                                        { href: 'mailto:info@anybiz.com' },
-	                                        'info@anybiz.com'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'ul',
-	                                    { className: 'social-icons' },
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement('a', { href: '#', 'data-original-title': 'Facebook', className: 'rounded-x social_facebook' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement('a', { href: '#', 'data-original-title': 'Twitter', className: 'rounded-x social_twitter' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement('a', { href: '#', 'data-original-title': 'Goole Plus', className: 'rounded-x social_googleplus' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement('a', { href: '#', 'data-original-title': 'Linkedin', className: 'rounded-x social_linkedin' })
+	                                        { href: 'mailto:hfcc8685@gmail.com' },
+	                                        'hfcc8685@gmail.com'
 	                                    )
 	                                )
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'copyright' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'container' },
-	                        _react2.default.createElement(
-	                            'p',
-	                            { className: 'text-center' },
-	                            '2015 © All Rights Reserved. Unify Theme by ',
-	                            _react2.default.createElement(
-	                                'a',
-	                                { target: '_blank', href: 'https://twitter.com/htmlstream' },
-	                                'Htmlstream'
 	                            )
 	                        )
 	                    )
