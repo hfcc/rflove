@@ -1,6 +1,7 @@
 import './../css/unify/css/headers/header-v4-centered.css';
 
 import React from 'react';
+import { Link } from 'react-router';
 
 export default class Header extends React.Component {
     render() {
@@ -27,9 +28,9 @@ export default class Header extends React.Component {
                 <div className="navbar navbar-default mega-menu" role="navigation">
                     <div className="container">
                         <div className="navbar-header">
-                            <a className="navbar-brand" href="index.html">
+                            <Link className="navbar-brand" to="/">
                                 <h1>Recommend Your Love Find Your Love</h1>
-                            </a>
+                            </Link>
 
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                                 <span className="full-width-menu">Menu Bar</span>
@@ -48,9 +49,9 @@ export default class Header extends React.Component {
                         <div className="container">
                             <ul className="nav navbar-nav">
                                 <li className="active">
-                                    <a href="javascript:void(0);">
+                                    <Link to="/">
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
