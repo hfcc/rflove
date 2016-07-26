@@ -70,6 +70,41 @@ router.get('/users', function(ctx, next) {
     ctx.body = userList;
 });
 
+router.get('/users/:id', function(ctx, next){
+    console.log("userId: ", ctx.params.id);
+
+    var user = {
+        id: 1,
+        name: "hanfeng",
+        description: "developer",
+        lovedTypes:[
+            {name: "music", count: 50},
+            {name: "video", count: 100}
+        ],
+        lovedTags: [
+            {name: "beyond", count: 10},
+            {name: "郭德纲", count: 100}
+        ],
+        socialContacts: [
+            {name: "hfcc8685@t", type: "twitter"},
+            {name: "hfcc8685@g", type: "github"},
+            {name: "hfcc8685@weibo", type: "weibo"},
+            {name: "hfcc8685@weixin", type: "weixin"}
+        ],
+        lovedList: [
+            {
+                time: "2016-06-01",
+                title: "光辉岁月",
+                link: "",
+                description: "非常喜欢这首歌曲",
+                type: "music",
+                tags: ["beyond"]
+            }
+        ]
+    };
+    ctx.body = user;
+});
+
 app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(3000);

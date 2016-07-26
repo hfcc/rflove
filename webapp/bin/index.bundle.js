@@ -39038,6 +39038,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _jquery = __webpack_require__(312);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
 	var _user_card_detail = __webpack_require__(330);
 
 	var _user_card_detail2 = _interopRequireDefault(_user_card_detail);
@@ -39065,13 +39069,27 @@
 	var User = function (_React$Component) {
 	    _inherits(User, _React$Component);
 
-	    function User() {
+	    function User(props) {
 	        _classCallCheck(this, User);
 
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(User).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(User).call(this, props));
+
+	        _this.state = { user: {} };
+	        return _this;
 	    }
 
 	    _createClass(User, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            var _this2 = this;
+
+	            var url = "http://localhost:3000/users/" + this.props.params.userId;
+	            console.log(url);
+	            _jquery2.default.get(url, function (user) {
+	                _this2.setState({ user: user });
+	            });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
@@ -39086,20 +39104,20 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'profile-body' },
-	                            _react2.default.createElement(_user_card_detail2.default, null),
+	                            _react2.default.createElement(_user_card_detail2.default, { user: this.state.user }),
 	                            _react2.default.createElement(
 	                                'div',
 	                                { className: 'row' },
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'col-md-9' },
-	                                    _react2.default.createElement(_user_loved_content2.default, null)
+	                                    _react2.default.createElement(_user_loved_content2.default, { user: this.state.user })
 	                                ),
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'col-md-3' },
-	                                    _react2.default.createElement(_user_loved_type_group2.default, null),
-	                                    _react2.default.createElement(_user_loved_tag_group2.default, null)
+	                                    _react2.default.createElement(_user_loved_type_group2.default, { user: this.state.user }),
+	                                    _react2.default.createElement(_user_loved_tag_group2.default, { user: this.state.user })
 	                                )
 	                            )
 	                        )
@@ -39681,6 +39699,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _lodash = __webpack_require__(314);
+
+	var _lodash2 = _interopRequireDefault(_lodash);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -39709,127 +39731,45 @@
 	                    { className: 'row' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'col-md-9' },
+	                        { className: 'col-md-12' },
 	                        _react2.default.createElement(
 	                            'h2',
 	                            null,
-	                            'Edward Rooster'
-	                        ),
-	                        _react2.default.createElement(
-	                            'span',
-	                            null,
-	                            _react2.default.createElement(
-	                                'strong',
-	                                null,
-	                                'Job:'
-	                            ),
-	                            ' Web Developer'
-	                        ),
-	                        _react2.default.createElement(
-	                            'span',
-	                            null,
-	                            _react2.default.createElement(
-	                                'strong',
-	                                null,
-	                                'Position:'
-	                            ),
-	                            ' Web Designer'
+	                            this.props.user.name
 	                        ),
 	                        _react2.default.createElement('hr', null),
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget massa nec turpis congue bibendum. Integer nulla felis, porta suscipit nulla et, dignissim commodo nunc. Morbi a semper nulla.'
+	                            this.props.user.description
 	                        ),
+	                        _react2.default.createElement('hr', null),
 	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Proin mauris odio, pharetra quis ligula non, vulputate vehicula quam. Nunc in libero vitae nunc ultricies tincidunt ut sed leo. Sed luctus dui ut congue consequat. Cras consequat nisl ante, nec malesuada velit pellentesque ac. Pellentesque nec arcu in ipsum iaculis convallis.'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'col-md-3' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'panel panel-profile' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-heading overflow-h' },
-	                                _react2.default.createElement(
-	                                    'h2',
-	                                    { className: 'panel-title heading-sm pull-left' },
-	                                    _react2.default.createElement('i', { className: 'fa fa-users' }),
-	                                    ' Social Contacts'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-body' },
-	                                _react2.default.createElement(
-	                                    'ul',
-	                                    { className: 'list-unstyled social-contacts-v2' },
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement('i', { className: 'rounded-x tw fa fa-twitter' }),
-	                                        ' ',
-	                                        _react2.default.createElement(
-	                                            'a',
-	                                            { href: '#' },
-	                                            'edward.rooster'
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement('i', { className: 'rounded-x fb fa fa-facebook' }),
-	                                        ' ',
-	                                        _react2.default.createElement(
-	                                            'a',
-	                                            { href: '#' },
-	                                            'Edward Rooster'
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement('i', { className: 'rounded-x sk fa fa-skype' }),
-	                                        ' ',
-	                                        _react2.default.createElement(
-	                                            'a',
-	                                            { href: '#' },
-	                                            'edwardRooster77'
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement('i', { className: 'rounded-x gp fa fa-google-plus' }),
-	                                        ' ',
-	                                        _react2.default.createElement(
-	                                            'a',
-	                                            { href: '#' },
-	                                            'rooster77edward'
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement('i', { className: 'rounded-x gm fa fa-envelope' }),
-	                                        ' ',
-	                                        _react2.default.createElement(
-	                                            'a',
-	                                            { href: '#' },
-	                                            'edward77@gmail.com'
-	                                        )
-	                                    )
-	                                )
-	                            )
+	                            'ul',
+	                            { className: 'list-inline' },
+	                            this.renderUserSocialContacts()
 	                        )
 	                    )
 	                )
 	            );
+	        }
+	    }, {
+	        key: 'renderUserSocialContacts',
+	        value: function renderUserSocialContacts() {
+	            return _lodash2.default.map(this.props.user.socialContacts, function (socialContact, index) {
+	                var className = "rounded-x fa fa-" + socialContact.type;
+	                return _react2.default.createElement(
+	                    'li',
+	                    { key: index },
+	                    _react2.default.createElement('i', { className: className }),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '#' },
+	                        ' ',
+	                        socialContact.name
+	                    )
+	                );
+	            });
 	        }
 	    }]);
 
@@ -39855,6 +39795,10 @@
 	var _react = __webpack_require__(80);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _lodash = __webpack_require__(314);
+
+	var _lodash2 = _interopRequireDefault(_lodash);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39900,111 +39844,44 @@
 	                    _react2.default.createElement(
 	                        'ul',
 	                        { className: 'timeline-v2 timeline-me' },
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
-	                            _react2.default.createElement(
-	                                'time',
-	                                { dateTime: '', className: 'cbp_tmtime' },
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    'Mobile Design'
-	                                ),
-	                                ' ',
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    '2012 - Current'
-	                                )
-	                            ),
-	                            _react2.default.createElement('i', { className: 'cbp_tmicon rounded-x hidden-xs' }),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'cbp_tmlabel' },
-	                                _react2.default.createElement(
-	                                    'h2',
-	                                    null,
-	                                    'BFC NYC Partners'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'p',
-	                                    null,
-	                                    'Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Peasprouts wattle seed rutabaga okra yarrow cress avocado grape.'
-	                                )
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
-	                            _react2.default.createElement(
-	                                'time',
-	                                { dateTime: '', className: 'cbp_tmtime' },
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    'Web Designer'
-	                                ),
-	                                ' ',
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    '2007 - 2012'
-	                                )
-	                            ),
-	                            _react2.default.createElement('i', { className: 'cbp_tmicon rounded-x hidden-xs' }),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'cbp_tmlabel' },
-	                                _react2.default.createElement(
-	                                    'h2',
-	                                    null,
-	                                    'Freelance'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'p',
-	                                    null,
-	                                    'Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce.'
-	                                )
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
-	                            _react2.default.createElement(
-	                                'time',
-	                                { dateTime: '', className: 'cbp_tmtime' },
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    'Photodesigner'
-	                                ),
-	                                ' ',
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    '2003 - 2007'
-	                                )
-	                            ),
-	                            _react2.default.createElement('i', { className: 'cbp_tmicon rounded-x hidden-xs' }),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'cbp_tmlabel' },
-	                                _react2.default.createElement(
-	                                    'h2',
-	                                    null,
-	                                    'Toren Condo'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'p',
-	                                    null,
-	                                    'Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot.'
-	                                )
-	                            )
-	                        )
+	                        this.renderTimeLine()
 	                    )
 	                )
 	            );
+	        }
+	    }, {
+	        key: 'renderTimeLine',
+	        value: function renderTimeLine() {
+	            return _lodash2.default.map(this.props.user.lovedList, function (loved, index) {
+	                return _react2.default.createElement(
+	                    'li',
+	                    { key: index },
+	                    _react2.default.createElement(
+	                        'time',
+	                        { dateTime: '', className: 'cbp_tmtime' },
+	                        _react2.default.createElement(
+	                            'span',
+	                            null,
+	                            loved.time
+	                        )
+	                    ),
+	                    _react2.default.createElement('i', { className: 'cbp_tmicon rounded-x hidden-xs' }),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'cbp_tmlabel' },
+	                        _react2.default.createElement(
+	                            'h2',
+	                            null,
+	                            loved.title
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            loved.description
+	                        )
+	                    )
+	                );
+	            });
 	        }
 	    }]);
 
@@ -40018,7 +39895,7 @@
 /* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -40029,6 +39906,10 @@
 	var _react = __webpack_require__(80);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _lodash = __webpack_require__(314);
+
+	var _lodash2 = _interopRequireDefault(_lodash);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40048,78 +39929,57 @@
 	    }
 
 	    _createClass(UserLovedTypeGroup, [{
-	        key: "render",
+	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
-	                "div",
-	                { className: "panel panel-profile margin-bottom-20" },
+	                'div',
+	                { className: 'panel panel-profile margin-bottom-20' },
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "panel-heading overflow-h" },
+	                    'div',
+	                    { className: 'panel-heading overflow-h' },
 	                    _react2.default.createElement(
-	                        "h2",
-	                        { className: "panel-title heading-sm pull-left" },
-	                        _react2.default.createElement("i", { className: "fa fa-filter" }),
-	                        " Types"
+	                        'h2',
+	                        { className: 'panel-title heading-sm pull-left' },
+	                        _react2.default.createElement('i', { className: 'fa fa-filter' }),
+	                        ' Types'
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "panel-body" },
+	                    'div',
+	                    { className: 'panel-body' },
 	                    _react2.default.createElement(
-	                        "form",
-	                        { action: "#", className: "sky-form" },
+	                        'form',
+	                        { action: '#', className: 'sky-form' },
 	                        _react2.default.createElement(
-	                            "ul",
-	                            { className: "list-unstyled social-contacts-v2" },
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "label",
-	                                    { className: "checkbox" },
-	                                    _react2.default.createElement("input", { type: "checkbox" }),
-	                                    _react2.default.createElement("i", null),
-	                                    "Video"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "label",
-	                                    { className: "checkbox" },
-	                                    _react2.default.createElement("input", { type: "checkbox" }),
-	                                    _react2.default.createElement("i", null),
-	                                    "Video"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "label",
-	                                    { className: "checkbox" },
-	                                    _react2.default.createElement("input", { type: "checkbox" }),
-	                                    _react2.default.createElement("i", null),
-	                                    "Video"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "label",
-	                                    { className: "checkbox" },
-	                                    _react2.default.createElement("input", { type: "checkbox" }),
-	                                    _react2.default.createElement("i", null),
-	                                    "Video"
-	                                )
-	                            )
+	                            'ul',
+	                            { className: 'list-unstyled social-contacts-v2' },
+	                            this.renderTypeList()
 	                        )
 	                    )
 	                )
 	            );
+	        }
+	    }, {
+	        key: 'renderTypeList',
+	        value: function renderTypeList() {
+	            return _lodash2.default.map(this.props.user.lovedTypes, function (lovedType, index) {
+	                return _react2.default.createElement(
+	                    'li',
+	                    { key: index },
+	                    _react2.default.createElement(
+	                        'label',
+	                        { className: 'checkbox' },
+	                        _react2.default.createElement('input', { type: 'checkbox' }),
+	                        _react2.default.createElement('i', null),
+	                        lovedType.name,
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'badge badge-dark-blue pull-right' },
+	                            lovedType.count
+	                        )
+	                    )
+	                );
+	            });
 	        }
 	    }]);
 
@@ -40132,7 +39992,7 @@
 /* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -40143,6 +40003,10 @@
 	var _react = __webpack_require__(80);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _lodash = __webpack_require__(314);
+
+	var _lodash2 = _interopRequireDefault(_lodash);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40162,78 +40026,57 @@
 	    }
 
 	    _createClass(UserLovedTagGroup, [{
-	        key: "render",
+	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
-	                "div",
-	                { className: "panel panel-profile" },
+	                'div',
+	                { className: 'panel panel-profile margin-bottom-20' },
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "panel-heading overflow-h" },
+	                    'div',
+	                    { className: 'panel-heading overflow-h' },
 	                    _react2.default.createElement(
-	                        "h2",
-	                        { className: "panel-title heading-sm pull-left" },
-	                        _react2.default.createElement("i", { className: "fa fa-filter" }),
-	                        " Types"
+	                        'h2',
+	                        { className: 'panel-title heading-sm pull-left' },
+	                        _react2.default.createElement('i', { className: 'fa fa-tags' }),
+	                        ' Tags'
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "panel-body" },
+	                    'div',
+	                    { className: 'panel-body' },
 	                    _react2.default.createElement(
-	                        "form",
-	                        { action: "#", className: "sky-form" },
+	                        'form',
+	                        { action: '#', className: 'sky-form' },
 	                        _react2.default.createElement(
-	                            "ul",
-	                            { className: "list-unstyled social-contacts-v2" },
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "label",
-	                                    { className: "checkbox" },
-	                                    _react2.default.createElement("input", { type: "checkbox" }),
-	                                    _react2.default.createElement("i", null),
-	                                    "Video"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "label",
-	                                    { className: "checkbox" },
-	                                    _react2.default.createElement("input", { type: "checkbox" }),
-	                                    _react2.default.createElement("i", null),
-	                                    "Video"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "label",
-	                                    { className: "checkbox" },
-	                                    _react2.default.createElement("input", { type: "checkbox" }),
-	                                    _react2.default.createElement("i", null),
-	                                    "Video"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "label",
-	                                    { className: "checkbox" },
-	                                    _react2.default.createElement("input", { type: "checkbox" }),
-	                                    _react2.default.createElement("i", null),
-	                                    "Video"
-	                                )
-	                            )
+	                            'ul',
+	                            { className: 'list-unstyled social-contacts-v2' },
+	                            this.renderTagList()
 	                        )
 	                    )
 	                )
 	            );
+	        }
+	    }, {
+	        key: 'renderTagList',
+	        value: function renderTagList() {
+	            return _lodash2.default.map(this.props.user.lovedTags, function (lovedTag, index) {
+	                return _react2.default.createElement(
+	                    'li',
+	                    { key: index },
+	                    _react2.default.createElement(
+	                        'label',
+	                        { className: 'checkbox' },
+	                        _react2.default.createElement('input', { type: 'checkbox' }),
+	                        _react2.default.createElement('i', null),
+	                        lovedTag.name,
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'badge badge-dark-blue pull-right' },
+	                            lovedTag.count
+	                        )
+	                    )
+	                );
+	            });
 	        }
 	    }]);
 
