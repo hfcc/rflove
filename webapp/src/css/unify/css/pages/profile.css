@@ -512,7 +512,7 @@
 
 /*Timeline*/
 .profile .timeline-v2.timeline-me:before {
-	left: 19%;
+	left: 13%;
 }
 
 .profile .timeline-v2.timeline-me p {
@@ -520,11 +520,11 @@
 }
 
 .profile .timeline-v2.timeline-me > li .cbp_tmtime {
-	width: 27%;
+	width: 20%;
 }
 
 .profile .timeline-v2.timeline-me > li .cbp_tmicon {
-	left: 19%;
+	left: 13%;
 }
 
 .profile .timeline-v2.timeline-me > li .cbp_tmtime span:first-child {
@@ -543,7 +543,7 @@
 .profile .timeline-v2.timeline-me > li .cbp_tmlabel {
 	padding: 0;
 	background: inherit;
-	margin: 0 0 20px 23%;
+	margin: 0 0 20px 15%;
 }
 
 .profile .timeline-v2.timeline-me > li .cbp_tmlabel:after {

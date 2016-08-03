@@ -28,7 +28,7 @@ export default class UserLovedTypeGroup extends React.Component{
                         <input type="checkbox"/>
                         <i></i>
                         {lovedType.name}
-                        <span className="badge badge-dark-blue pull-right">{lovedType.count}</span>
+                        <span className="badge badge-dark-blue pull-right margin-top-5">{lovedType.count}</span>
                     </label>
                 </li>
             );

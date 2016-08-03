@@ -99,6 +99,14 @@ router.get('/users/:id', function(ctx, next){
                 description: "非常喜欢这首歌曲",
                 type: "music",
                 tags: ["beyond"]
+            },
+            {
+                time: "2016-06-01",
+                title: "光辉岁月",
+                link: "",
+                description: "非常喜欢这首歌曲",
+                type: "music",
+                tags: ["beyond"]
             }
         ]
     };

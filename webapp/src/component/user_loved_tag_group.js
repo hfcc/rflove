@@ -28,7 +28,7 @@ export default class UserLovedTagGroup extends React.Component {
                         <input type="checkbox"/>
                         <i></i>
                         {lovedTag.name}
-                        <span className="badge badge-dark-blue pull-right">{lovedTag.count}</span>
+                        <span className="badge badge-dark-blue pull-right margin-top-5">{lovedTag.count}</span>
                     </label>
                 </li>
             );

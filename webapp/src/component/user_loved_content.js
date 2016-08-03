@@ -1,4 +1,5 @@
 import './../css/unify/css/pages/shortcode_timeline2.css';
+import './../css/unify/css/blocks.css';
 
 import React from 'react';
 import _ from 'lodash';
@@ -26,12 +27,26 @@ export default class UserLovedContent extends React.Component {
             return (
                 <li key={index}>
                     <time dateTime="" className="cbp_tmtime">
+                        <span>{loved.type}</span>
                         <span>{loved.time}</span>
                     </time>
                     <i className="cbp_tmicon rounded-x hidden-xs"></i>
                     <div className="cbp_tmlabel">
-                        <h2>{loved.title}</h2>
-                        <p>{loved.description}</p>
+                        <div className="tag-box tag-box-v2 box-shadow shadow-effect-1">
+                            <h2><a href={loved.link}>{loved.title}</a></h2>
+                            <div className="margin-bottom-5">
+                                <p>{loved.description}</p>
+                            </div>
+                            <div>
+                            {
+                                _.map(loved.tags, (tag, tagIndex) => {
+                                    return (
+                                        <span className="label label-dark-blue" key={tagIndex}>{tag}</span>
+                                    );
+                                })
+                            }
+                            </div>
+                        </div>
                     </div>
                 </li>
             );
