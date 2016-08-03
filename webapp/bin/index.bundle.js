@@ -39285,8 +39285,6 @@
 
 	__webpack_require__(324);
 
-	__webpack_require__(333);
-
 	var _react = __webpack_require__(80);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -39326,11 +39324,6 @@
 	                        { className: 'panel-title heading-sm pull-left' },
 	                        _react2.default.createElement('i', { className: 'fa fa-heart red' }),
 	                        ' Loved'
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: '#' },
-	                        _react2.default.createElement('i', { className: 'fa fa-cog pull-right' })
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -40017,32 +40010,6 @@
 
 	// exports
 
-
-/***/ },
-/* 333 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(48);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./blocks.css", function() {
-				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./blocks.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
 
 /***/ }
 /******/ ]);

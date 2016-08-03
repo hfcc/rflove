@@ -1,5 +1,4 @@
 import './../css/unify/css/pages/shortcode_timeline2.css';
-import './../css/unify/css/blocks.css';
 
 import React from 'react';
 import _ from 'lodash';
@@ -12,7 +11,6 @@ export default class UserLovedContent extends React.Component {
                     <h2 className="panel-title heading-sm pull-left">
                         <i className="fa fa-heart red"></i> Loved
                     </h2>
-                    <a href="#"><i className="fa fa-cog pull-right"></i></a>
                 </div>
                 <div className="panel-body margin-bottom-40">
                     <ul className="timeline-v2 timeline-me">
