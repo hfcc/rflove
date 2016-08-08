@@ -2,9 +2,9 @@ import './../css/unify/css/pages/profile.css';
 
 import React from 'react';
 import _ from 'lodash';
-import $ from 'jquery';
 
 import UserCardMain from './user_card_main.js';
+import userRepository from '../repository/user_repository.js';
 
 export default class UserList extends React.Component {
     constructor(props) {
@@ -12,7 +12,7 @@ export default class UserList extends React.Component {
         this.state = { userList: [] };
     }
     componentDidMount() {
-        $.get('users', (userList) => {
+        userRepository.getUserList((userList) => {
             this.setState({userList: userList});
         });
     }

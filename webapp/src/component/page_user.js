@@ -1,6 +1,5 @@
 import './../css/unify/css/pages/profile.css';
 
-import $ from 'jquery';
 import _ from 'lodash';
 import React from 'react';
 import { createStore } from 'redux';
@@ -11,6 +10,8 @@ import UserLovedFilterPanel from './user_loved_filter_panel.js'
 
 import {addTypeFilter, removeTypeFilter, addTagFilter, removeTagFilter} from '../action/user_loved_filter_action.js';
 import userLovedFilterReducer from '../reducer/user_loved_filter_reducer.js';
+
+import userRepository from '../repository/user_repository.js';
 
 const store = createStore(userLovedFilterReducer);
 
@@ -24,15 +25,14 @@ export default class User extends React.Component {
     }
 
     componentDidMount() {
-        let url = "http://localhost:3000/users/" + this.props.params.userId;
-        $.get(url, (user) => {
+        userRepository.getUser(this.props.params.userId, (user) => {
             this.setState({
                 user: user,
                 lovedList: user.lovedList
             });
         });
 
-         this.unsubscribe = store.subscribe(() => {
+        this.unsubscribe = store.subscribe(() => {
             let filterList = _.filter(this.state.user.lovedList, (loved) => {
                     let typeFilter = false;
                     if (store.getState().typeFilterList.length === 0) {

@@ -39036,10 +39036,6 @@
 
 	__webpack_require__(320);
 
-	var _jquery = __webpack_require__(312);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
 	var _lodash = __webpack_require__(314);
 
 	var _lodash2 = _interopRequireDefault(_lodash);
@@ -39067,6 +39063,10 @@
 	var _user_loved_filter_reducer = __webpack_require__(348);
 
 	var _user_loved_filter_reducer2 = _interopRequireDefault(_user_loved_filter_reducer);
+
+	var _user_repository = __webpack_require__(351);
+
+	var _user_repository2 = _interopRequireDefault(_user_repository);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39098,8 +39098,7 @@
 	        value: function componentDidMount() {
 	            var _this2 = this;
 
-	            var url = "http://localhost:3000/users/" + this.props.params.userId;
-	            _jquery2.default.get(url, function (user) {
+	            _user_repository2.default.getUser(this.props.params.userId, function (user) {
 	                _this2.setState({
 	                    user: user,
 	                    lovedList: user.lovedList
@@ -39460,13 +39459,13 @@
 
 	var _lodash2 = _interopRequireDefault(_lodash);
 
-	var _jquery = __webpack_require__(312);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
 	var _user_card_main = __webpack_require__(329);
 
 	var _user_card_main2 = _interopRequireDefault(_user_card_main);
+
+	var _user_repository = __webpack_require__(351);
+
+	var _user_repository2 = _interopRequireDefault(_user_repository);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39493,7 +39492,7 @@
 	        value: function componentDidMount() {
 	            var _this2 = this;
 
-	            _jquery2.default.get('users', function (userList) {
+	            _user_repository2.default.getUserList(function (userList) {
 	                _this2.setState({ userList: userList });
 	            });
 	        }
@@ -40993,6 +40992,40 @@
 	exports.removeTypeFilter = removeTypeFilter;
 	exports.addTagFilter = addTagFilter;
 	exports.removeTagFilter = removeTagFilter;
+
+/***/ },
+/* 351 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _jquery = __webpack_require__(312);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getUser = function getUser(userId, callBack) {
+	    var url = "http://localhost:3000/users/" + userId;
+	    _jquery2.default.get(url, function (user) {
+	        callBack(user);
+	    });
+	};
+
+	var getUserList = function getUserList(callBack) {
+	    _jquery2.default.get('users', function (userList) {
+	        callBack(userList);
+	    });
+	};
+
+	exports.default = {
+	    getUser: getUser,
+	    getUserList: getUserList
+	};
 
 /***/ }
 /******/ ]);
