@@ -39062,6 +39062,8 @@
 
 	var _user_loved_filter_panel2 = _interopRequireDefault(_user_loved_filter_panel);
 
+	var _user_loved_filter_action = __webpack_require__(350);
+
 	var _user_loved_filter_reducer = __webpack_require__(348);
 
 	var _user_loved_filter_reducer2 = _interopRequireDefault(_user_loved_filter_reducer);
@@ -39161,32 +39163,20 @@
 	                                        icon: 'fa-filter',
 	                                        filterList: this.state.user.lovedTypes,
 	                                        OnAddFilter: function OnAddFilter(filter) {
-	                                            store.dispatch({
-	                                                type: 'ADD_TYPE_FILTER',
-	                                                filter: filter
-	                                            });
+	                                            store.dispatch((0, _user_loved_filter_action.addTypeFilter)(filter));
 	                                        },
 	                                        OnRemoveFilter: function OnRemoveFilter(filter) {
-	                                            store.dispatch({
-	                                                type: 'REMOVE_TYPE_FILTER',
-	                                                filter: filter
-	                                            });
+	                                            store.dispatch((0, _user_loved_filter_action.removeTypeFilter)(filter));
 	                                        } }),
 	                                    _react2.default.createElement(_user_loved_filter_panel2.default, {
 	                                        name: 'Tags',
 	                                        icon: 'fa-tags',
 	                                        filterList: this.state.user.lovedTags,
 	                                        OnAddFilter: function OnAddFilter(filter) {
-	                                            store.dispatch({
-	                                                type: 'ADD_TAG_FILTER',
-	                                                filter: filter
-	                                            });
+	                                            store.dispatch((0, _user_loved_filter_action.addTagFilter)(filter));
 	                                        },
 	                                        OnRemoveFilter: function OnRemoveFilter(filter) {
-	                                            store.dispatch({
-	                                                type: 'REMOVE_TAG_FILTER',
-	                                                filter: filter
-	                                            });
+	                                            store.dispatch((0, _user_loved_filter_action.removeTagFilter)(filter));
 	                                        } })
 	                                )
 	                            )
@@ -40803,36 +40793,38 @@
 
 /***/ },
 /* 348 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 	exports.default = userLovedFilterReducer;
 
+	var _user_loved_filter_action = __webpack_require__(350);
+
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 	function userLovedFilterReducer(state, action) {
 	    switch (action.type) {
-	        case "ADD_TYPE_FILTER":
+	        case _user_loved_filter_action.userLovedFilterAction.addTypeFilter:
 	            return {
 	                typeFilterList: [].concat(_toConsumableArray(state.typeFilterList), [action.filter]),
 	                tagFilterList: state.tagFilterList
 	            };
-	        case "ADD_TAG_FILTER":
+	        case _user_loved_filter_action.userLovedFilterAction.addTagFilter:
 	            return {
 	                typeFilterList: state.typeFilterList,
 	                tagFilterList: [].concat(_toConsumableArray(state.tagFilterList), [action.filter])
 	            };
-	        case "REMOVE_TYPE_FILTER":
+	        case _user_loved_filter_action.userLovedFilterAction.removeTypeFilter:
 	            var typeIndex = _.indexOf(state.typeFilterList, action.filter);
 	            return {
 	                typeFilterList: [].concat(_toConsumableArray(state.typeFilterList.slice(0, typeIndex)), _toConsumableArray(state.typeFilterList.slice(typeIndex + 1))),
 	                tagFilterList: state.tagFilterList
 	            };
-	        case "REMOVE_TAG_FILTER":
+	        case _user_loved_filter_action.userLovedFilterAction.removeTagFilter:
 	            var tagIndex = _.indexOf(state.tagFilterList, action.filter);
 	            return {
 	                typeFilterList: state.typeFilterList,
@@ -40951,6 +40943,56 @@
 	}(_react2.default.Component);
 
 	exports.default = UserLovedFilterPanel;
+
+/***/ },
+/* 350 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var userLovedFilterAction = {
+	    addTypeFilter: "ADD_TYPE_FILTER",
+	    removeTypeFilter: "REMOVE_TYPE_FILTER",
+	    addTagFilter: "ADD_TAG_FILTER",
+	    removeTagFilter: "REMOVE_TAG_FILTER"
+	};
+
+	var addTypeFilter = function addTypeFilter(filter) {
+	    return {
+	        type: 'ADD_TYPE_FILTER',
+	        filter: filter
+	    };
+	};
+
+	var removeTypeFilter = function removeTypeFilter(filter) {
+	    return {
+	        type: 'REMOVE_TYPE_FILTER',
+	        filter: filter
+	    };
+	};
+
+	var addTagFilter = function addTagFilter(filter) {
+	    return {
+	        type: 'ADD_TAG_FILTER',
+	        filter: filter
+	    };
+	};
+
+	var removeTagFilter = function removeTagFilter(filter) {
+	    return {
+	        type: "REMOVE_TAG_FILTER",
+	        filter: filter
+	    };
+	};
+
+	exports.userLovedFilterAction = userLovedFilterAction;
+	exports.addTypeFilter = addTypeFilter;
+	exports.removeTypeFilter = removeTypeFilter;
+	exports.addTagFilter = addTagFilter;
+	exports.removeTagFilter = removeTagFilter;
 
 /***/ }
 /******/ ]);

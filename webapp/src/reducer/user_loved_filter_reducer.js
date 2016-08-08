@@ -1,22 +1,24 @@
+import { userLovedFilterAction } from '../action/user_loved_filter_action.js';
+
 export default function userLovedFilterReducer(state, action){
     switch (action.type) {
-        case "ADD_TYPE_FILTER":
+        case userLovedFilterAction.addTypeFilter:
             return {
                 typeFilterList: [...state.typeFilterList, action.filter],
                 tagFilterList: state.tagFilterList
             };
-        case "ADD_TAG_FILTER":
+        case userLovedFilterAction.addTagFilter:
             return {
                 typeFilterList: state.typeFilterList,
                 tagFilterList: [...state.tagFilterList, action.filter]
             };
-        case "REMOVE_TYPE_FILTER":
+        case userLovedFilterAction.removeTypeFilter:
             let typeIndex = _.indexOf(state.typeFilterList, action.filter);
             return {
                 typeFilterList: [...state.typeFilterList.slice(0, typeIndex), ...state.typeFilterList.slice(typeIndex + 1)],
                 tagFilterList: state.tagFilterList
             };
-        case "REMOVE_TAG_FILTER":
+        case userLovedFilterAction.removeTagFilter:
             let tagIndex = _.indexOf(state.tagFilterList, action.filter);
             return {
                 typeFilterList: state.typeFilterList,

@@ -9,6 +9,7 @@ import UserCardDetail from './user_card_detail.js';
 import UserLovedContent from './user_loved_content.js';
 import UserLovedFilterPanel from './user_loved_filter_panel.js'
 
+import {addTypeFilter, removeTypeFilter, addTagFilter, removeTagFilter} from '../action/user_loved_filter_action.js';
 import userLovedFilterReducer from '../reducer/user_loved_filter_reducer.js';
 
 const store = createStore(userLovedFilterReducer);
@@ -74,32 +75,20 @@ export default class User extends React.Component {
                                         icon = "fa-filter"
                                         filterList = {this.state.user.lovedTypes}
                                         OnAddFilter = { (filter) => {
-                                            store.dispatch({
-                                                type: 'ADD_TYPE_FILTER',
-                                                filter: filter
-                                            });
+                                            store.dispatch(addTypeFilter(filter));
                                         }}
                                         OnRemoveFilter = {(filter) => {
-                                            store.dispatch({
-                                                type: 'REMOVE_TYPE_FILTER',
-                                                filter: filter
-                                            });
+                                            store.dispatch(removeTypeFilter(filter));
                                         }}/>
                                     <UserLovedFilterPanel
                                         name = "Tags"
                                         icon = "fa-tags"
                                         filterList = { this.state.user.lovedTags}
                                         OnAddFilter = { (filter) => {
-                                            store.dispatch({
-                                                type: 'ADD_TAG_FILTER',
-                                                filter: filter
-                                            });
+                                            store.dispatch(addTagFilter(filter));
                                         }}
                                         OnRemoveFilter = {(filter) => {
-                                            store.dispatch({
-                                                type: 'REMOVE_TAG_FILTER',
-                                                filter: filter
-                                            });
+                                            store.dispatch(removeTagFilter(filter));
                                         }}/>
                                 </div>
                             </div>
