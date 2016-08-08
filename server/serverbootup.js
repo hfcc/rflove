@@ -105,8 +105,8 @@ router.get('/users/:id', function(ctx, next){
                 title: "光辉岁月",
                 link: "",
                 description: "非常喜欢这首歌曲",
-                type: "music",
-                tags: ["beyond"]
+                type: "video",
+                tags: ["郭德纲"]
             }
         ]
     };

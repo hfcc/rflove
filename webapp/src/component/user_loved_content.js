@@ -11,7 +11,7 @@ export default class UserLovedContent extends React.Component {
                     </h2>
                 </div>
                 <div className="panel-body margin-bottom-40">
-                    <UserLovedTree lovedList={this.props.user.lovedList}/>
+                    <UserLovedTree lovedList={this.props.lovedList}/>
                 </div>
             </div>
         );
