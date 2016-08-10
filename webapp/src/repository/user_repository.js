@@ -1,11 +1,6 @@
 import $ from 'jquery';
 
-const getUser = (userId, callBack) => {
-    let url = "http://localhost:3000/users/" + userId;
-    $.get(url, (user) => {
-        callBack(user);
-    });
-}
+const baseUrl = "http://localhost:3000/";
 
 const getUserList = (callBack) => {
     $.get('users', (userList) => {
@@ -13,7 +8,30 @@ const getUserList = (callBack) => {
     });
 }
 
+const getUser = (userId, callBack) => {
+    let url = baseUrl + "users/" + userId;
+    $.get(url, (user) => {
+        callBack(user);
+    });
+}
+
+const getUserUnfollowUserList = (userId, callBack) => {
+    let url = baseUrl + "users/" + userId + "/userList";
+    $.get(url, (userList) => {
+        callBack(userList);
+    });
+}
+
+const getUserFollowingRecommend = (userId, callBack) => {
+    let url = baseUrl + "users/" + userId + "/following";
+    $.get(url, (data) => {
+        callBack(data);
+    });
+}
+
 export default {
-    getUser: getUser,
-    getUserList: getUserList
+    getUser,
+    getUserList,
+    getUserFollowingRecommend,
+    getUserUnfollowUserList
 }

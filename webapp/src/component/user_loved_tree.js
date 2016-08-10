@@ -2,6 +2,7 @@ import './../css/unify/css/pages/shortcode_timeline2.css';
 
 import React from 'react';
 import _ from 'lodash';
+import { Link } from 'react-router';
 
 export default class UserLovedTree extends React.Component {
     render() {
@@ -16,15 +17,24 @@ export default class UserLovedTree extends React.Component {
             return (
                 <li key={index}>
                     <time dateTime="" className="cbp_tmtime">
-                        <span>{loved.type}</span>
+                        <span>{ loved.type }</span>
                         <span>{loved.time}</span>
                     </time>
                     <i className="cbp_tmicon rounded-x hidden-xs"></i>
                     <div className="cbp_tmlabel">
                         <div className="tag-box tag-box-v2 box-shadow shadow-effect-1">
-                            <h2><a href={loved.link}>{loved.title}</a></h2>
+                            <h2>
+                                <a href={loved.link}>{loved.title}</a>
+                            </h2>
                             <div className="margin-bottom-5">
-                                <p>{loved.description}</p>
+                                <p>
+                                    {
+                                        !!loved.userName
+                                        ? <Link to={`/user/` + loved.userId}>{ "@" + loved.userName + ": "}</Link>
+                                        : null
+                                    }
+                                    { loved.description }
+                                </p>
                             </div>
                             <div>
                             {

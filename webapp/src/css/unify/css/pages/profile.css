@@ -534,7 +534,7 @@
 	line-height: 20px;
 }
 
-.profile .timeline-v2.timeline-me > li .cbp_tmtime span:last-child {
+.profile .timeline-v2.timeline-me > li .cbp_tmtime span {
 	color: #999;
 	font-size: 14px;
 	text-align: left;

@@ -3,6 +3,8 @@ import './../css/unify/css/headers/header-v4-centered.css';
 import React from 'react';
 import { Link } from 'react-router';
 
+import userAuthentication from '../helper/user_authentication.js';
+
 export default class Header extends React.Component {
     render() {
         return (
@@ -51,6 +53,21 @@ export default class Header extends React.Component {
                                 <li className="active">
                                     <Link to="/">
                                         Home
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to={`/user/1`}>
+                                        My Recommend
+                                    </Link>
+                                </li>
+                                 <li>
+                                    <Link to={`/user/1/following`}>
+                                        Following Recommend
+                                    </Link>
+                                </li>
+                                 <li>
+                                    <Link to="/user/1/userlist">
+                                        unFollow Users
                                     </Link>
                                 </li>
                             </ul>

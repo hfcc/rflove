@@ -12,9 +12,16 @@ export default class UserList extends React.Component {
         this.state = { userList: [] };
     }
     componentDidMount() {
-        userRepository.getUserList((userList) => {
-            this.setState({userList: userList});
-        });
+        console.log();
+        if(this.props.params.userId){
+            userRepository.getUserUnfollowUserList(this.props.params.userId, (userList) => {
+                this.setState({userList: userList});
+            });
+        } else {
+            userRepository.getUserList((userList) => {
+                this.setState({userList: userList});
+            });
+        }
     }
     render() {
         return (

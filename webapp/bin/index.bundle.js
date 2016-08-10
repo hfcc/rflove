@@ -92,6 +92,10 @@
 
 	var _page_user_list2 = _interopRequireDefault(_page_user_list);
 
+	var _page_user_following_recommend = __webpack_require__(353);
+
+	var _page_user_following_recommend2 = _interopRequireDefault(_page_user_following_recommend);
+
 	var _footer = __webpack_require__(330);
 
 	var _footer2 = _interopRequireDefault(_footer);
@@ -136,7 +140,9 @@
 	        _reactRouter.Route,
 	        { path: '/', component: Main },
 	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _page_user_list2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/user/:userId', component: _page_user2.default })
+	        _react2.default.createElement(_reactRouter.Route, { path: '/user/:userId/userList', component: _page_user_list2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/user/:userId', component: _page_user2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/user/:userId/following', component: _page_user_following_recommend2.default })
 	    )
 	), document.getElementById('root'));
 
@@ -38812,6 +38818,10 @@
 
 	var _reactRouter = __webpack_require__(249);
 
+	var _user_authentication = __webpack_require__(352);
+
+	var _user_authentication2 = _interopRequireDefault(_user_authentication);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38967,6 +38977,33 @@
 	                                        _reactRouter.Link,
 	                                        { to: '/' },
 	                                        'Home'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/user/1' },
+	                                        'My Recommend'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/user/1/following' },
+	                                        'Following Recommend'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/user/1/userlist' },
+	                                        'unFollow Users'
 	                                    )
 	                                )
 	                            )
@@ -39226,7 +39263,7 @@
 
 
 	// module
-	exports.push([module.id, "/*Profile\r\n------------------------------------*/\r\n.profile .list-group i {\r\n\tmin-width: 20px;\r\n\tmargin-right: 5px;\r\n\ttext-align: center;\r\n}\r\n\r\n.profile .heading-sm-v2 {\r\n\tfont-size: 16px;\r\n}\r\n\r\n.profile .profile-body {\r\n\tpadding: 10px;\r\n\tbackground: #f7f7f7;\r\n}\r\n\r\n/*Scrollbar*/\r\n.mCustomScrollbar {\r\n\theight: 320px;\r\n}\r\n\r\n/*Panel Title Box*/\r\n.profile .panel-profile {\r\n\tborder: none;\r\n\tmargin-bottom: 0;\r\n\tbox-shadow: none;\r\n}\r\n.profile .panel-profile.no-bg {\r\n\tbackground: inherit;\r\n}\r\n\r\n.profile .panel-heading {\r\n\tcolor: #585f69;\r\n\tbackground: #fff;\r\n\tpadding: 7px 15px;\r\n\tborder-bottom: solid 3px #f7f7f7;\r\n}\r\n\r\n.profile .panel-heading-v2.overflow-h i.pull-right,\r\n.profile .panel-heading.overflow-h i.pull-right {\r\n\ttop: 7px;\r\n\tposition: relative;\r\n}\r\n\r\n.profile .panel-heading-v2.overflow-h i.pull-right,\r\n.profile .panel-heading.overflow-h a i {\r\n\tcolor: #777;\r\n}\r\n\r\n.profile .panel-heading-v2.overflow-h i.pull-right,\r\n.profile .panel-heading.overflow-h a:hover i {\r\n\tcolor: #555;\r\n}\r\n\r\n.profile .panel-title {\r\n\tfont-size: 16px;\r\n}\r\n\r\n/*Notification*/\r\n.profile .notification {\r\n\toverflow: hidden;\r\n\tmargin-bottom: 10px;\r\n\tpadding: 15px 15px 0 0;\r\n\tborder-top: 1px solid #eee;\r\n}\r\n\r\n.profile .notification:first-child {\r\n\tborder-top: none;\r\n}\r\n\r\n.profile .notification img,\r\n.profile .notification i {\r\n\tfloat: left;\r\n\tmargin-right: 10px;\r\n}\r\n\r\n.profile .notification img {\r\n\twidth: 35px;\r\n\theight: 35px;\r\n}\r\n\r\n.profile .notification span {\r\n\tcolor: #777;\r\n\tdisplay: block;\r\n}\r\n\r\n.profile .notification small {\r\n\tcolor: #999;\r\n\tfont-size: 11px;\r\n}\r\n\r\n.profile .notification h4 {\r\n\tmargin: 0 0 3px;\r\n\tfont-size: 14px;\r\n}\r\n\r\n.profile .notification p {\r\n\tcolor: #777;\r\n\tfont-size: 12px;\r\n}\r\n\r\n/*Profile Post*/\r\n.profile .profile-post {\r\n\tbackground: #fff;\r\n\tmargin-bottom: 2px;\r\n\tpadding: 7px 7px 7px 0;\r\n}\r\n\r\n.profile .profile-post.color-one {\r\n\tborder-left: 2px solid #4765a0;\r\n}\r\n.profile .profile-post.color-two {\r\n\tborder-left: 2px solid #3498db;\r\n}\r\n.profile .profile-post.color-three {\r\n\tborder-left: 2px solid #e74c3c;\r\n}\r\n.profile .profile-post.color-four {\r\n\tborder-left: 2px solid #9b6bcc;\r\n}\r\n.profile .profile-post.color-five {\r\n\tborder-left: 2px solid #555;\r\n}\r\n.profile .profile-post.color-six {\r\n\tborder-left: 2px solid #f1c40f;\r\n}\r\n.profile .profile-post.color-seven {\r\n\tborder-left: 2px solid #27d7e7;\r\n}\r\n\r\n.profile .profile-post span.profile-post-numb {\r\n\tfloat: left;\r\n\tcolor: #999;\r\n\tfont-size: 20px;\r\n\tfont-weight: 200;\r\n\tpadding: 5px 12px;\r\n}\r\n\r\n.profile .profile-post:hover span.profile-post-numb {\r\n\tcolor: #4765a0;\r\n}\r\n\r\n.profile .profile-post-in {\r\n\toverflow: hidden;\r\n}\r\n\r\n.profile .profile-post-in h3 a {\r\n\tcolor: #555;\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.profile .profile-post-in p {\r\n\tcolor: #999;\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n/*Profile Event*/\r\n.profile .profile-event .heading-xs {\r\n\tmargin-top: 0;\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.profile .profile-event {\r\n\tbackground: #fff;\r\n\tpadding: 10px 15px;\r\n\tmargin-bottom: 2px;\r\n}\r\n\r\n.profile .profile-event p {\r\n\tcolor: #999;\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n.profile .date-formats {\r\n\tcolor: #fff;\r\n\tfloat: left;\r\n\ttext-align: center;\r\n\tbackground: #4765a0;\r\n\tmargin: 7px 13px 0 0;\r\n\tpadding: 7px 10px 4px;\r\n}\r\n\r\n.profile .date-formats span {\r\n\tdisplay: block;\r\n\tfont-size: 22px;\r\n\tfont-weight: 200;\r\n\tline-height: 25px;\r\n}\r\n\r\n/*Table*/\r\n.profile .table {\r\n\tbackground: #fff;\r\n}\r\n\r\n.profile .table th {\r\n\tmin-width: 100px;\r\n}\r\n\r\n.profile .table td {\r\n\tvertical-align: middle;\r\n}\r\n\r\n.profile .table h3 {\r\n\tmargin-top: 0;\r\n\tfont-size: 16px;\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n.profile .table a {\r\n\tcolor: #555;\r\n}\r\n\r\n.profile .table-search-v2 td img {\r\n\twidth: 70px;\r\n\theight: 70px;\r\n\tmargin: 0 auto;\r\n\tdisplay: block;\r\n}\r\n\r\n.profile .table > thead > tr > th,\r\n.profile .table > tbody > tr > th,\r\n.profile .table > tfoot > tr > th,\r\n.profile .table > thead > tr > td,\r\n.profile .table > tbody > tr > td,\r\n.profile .table > tfoot > tr > td {\r\n\tpadding: 11px;\r\n}\r\n\r\n/*Comment*/\r\n.profile .comment {\r\n\tborder-bottom: 1px solid #eee;\r\n\tpadding: 15px 15px 5px;\r\n}\r\n\r\n.profile .comment img {\r\n\tfloat: left;\r\n\twidth: 50px;\r\n\theight: 50px;\r\n\tmargin-right: 15px;\r\n}\r\n\r\n.profile .comment strong {\r\n\tdisplay: block;\r\n\tline-height: 15px;\r\n\tmargin-bottom: 3px;\r\n}\r\n\r\n.profile .comment p {\r\n\tfont-size: 12px;\r\n\tmargin-bottom: 0;\r\n\tline-height: 17px;\r\n}\r\n\r\n.profile .comment small {\r\n\tcolor: #bbb;\r\n\tfont-weight: 200;\r\n}\r\n\r\n.profile .comment-list li {\r\n\tcolor: #999;\r\n\tfont-size: 11px;\r\n}\r\n\r\n.profile .comment-list li a {\r\n\tcolor: #555;\r\n}\r\n\r\n.profile .comment-list li a:hover {\r\n\tcolor: #555;\r\n\ttext-decoration: none;\r\n}\r\n\r\n.profile .comment-list li:hover i {\r\n\tcolor: #4765a0;\r\n}\r\n\r\n/*Image Post*/\r\n.profile .img-post {\r\n\tposition: relative;\r\n}\r\n\r\n.profile .img-post:before {\r\n\ttop: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tcontent: \" \";\r\n\tposition: absolute;\r\n\tbackground: rgba(0,0,0,0.4);\r\n}\r\n\r\n.profile .img-post-in {\r\n\tleft: 0;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tpadding: 20px;\r\n\tposition: absolute;\r\n}\r\n\r\n.profile .img-post-in h3 {\r\n\tcolor: #fff;\r\n\tmargin: 0 auto;\r\n\tfont-weight: 200;\r\n}\r\n\r\n.profile .img-post-in small {\r\n\tcolor: #999;\r\n\tdisplay: block;\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.profile .img-post-in p {\r\n\tcolor: #bbb;\r\n}\r\n\r\n.profile .img-post-list {\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.profile .img-post-list li a,\r\n.profile .img-post-list li a:hover {\r\n\tcolor: #fff;\r\n\ttext-decoration: none;\r\n}\r\n.profile .img-post-list li a:hover i {\r\n\tcolor: #4765a0;\r\n}\r\n\r\n/*Media*/\r\n.profile .media.media-v2 {\r\n\tmargin-top: 0;\r\n\tpadding: 25px 0 20px;\r\n\tborder-top: 1px solid #eee;\r\n}\r\n\r\n.profile .media.media-v2:first-child {\r\n\tborder-top: none;\r\n}\r\n\r\n.profile .media.media-v2 .media.media-v2 {\r\n\tmargin-top: 20px;\r\n\tpadding-bottom: 0;\r\n}\r\n\r\n.profile .media.media-v2 img.media-object {\r\n\twidth: 50px;\r\n\theight: 50px;\r\n\tmargin-right: 10px;\r\n}\r\n\r\n/*Media Body*/\r\n.profile .media.media-v2 .media-body {\r\n\toverflow: hidden;\r\n}\r\n\r\n.profile .media.media-v2 .media-body p {\r\n\tcolor: #777;\r\n\tline-height: 1.4;\r\n}\r\n\r\n/*Media Heading*/\r\n.profile .media.media-v2 .media-heading {\r\n\tmargin: 0 0 5px;\r\n\tfont-size: 13px;\r\n\tposition: relative;\r\n}\r\n\r\n.profile .media.media-v2 .media-heading a,\r\n.profile .media.media-v2 .media-heading a:hover {\r\n\tcolor: #555;\r\n}\r\n\r\n.profile .media.media-v2 .media-heading strong {\r\n\tpadding-right: 5px;\r\n}\r\n\r\n.profile .media.media-v2 .media-heading small {\r\n\ttop: 7px;\r\n\tright: 0;\r\n\tcolor: #999;\r\n\tfont-size: 12px;\r\n\tposition: absolute;\r\n}\r\n\r\n/*Results List*/\r\n.profile .results-list {\r\n\tmargin-top: 4px;\r\n}\r\n\r\n.profile .results-list li a {\r\n\tcolor: #999;\r\n}\r\n\r\n/*Expand List*/\r\n.profile i.expand-list {\r\n\tcolor: #777;\r\n\tpadding: 5px;\r\n\tmin-width: 20px;\r\n\tfont-size: 12px;\r\n\ttext-align: center;\r\n\tdisplay: inline-block;\r\n\tborder: 1px solid #777;\r\n}\r\n\r\n.profile i.expand-list:hover {\r\n\tcolor: #999;\r\n\tborder-color: #999;\r\n}\r\n\r\n/*Image Uploaded*/\r\n.profile .img-uploaded img {\r\n\twidth: 120px;\r\n\theight: auto;\r\n}\r\n\r\n/*Alert Blocks*/\r\n.alert-blocks {\r\n\tmargin: 0 15px 5px;\r\n\tbackground: #f7f7f7;\r\n\tpadding: 10px 10px 13px;\r\n}\r\n\r\n.alert-blocks:first-child {\r\n\tmargin-top: 15px;\r\n}\r\n\r\n.alert-blocks-pending {\r\n\tbackground: #fffdcc;\r\n}\r\n\r\n.alert-blocks-success {\r\n\tbackground: #e1febc;\r\n}\r\n\r\n.alert-blocks-pending {\r\n\tbackground: #fffdcc;\r\n}\r\n\r\n.alert-blocks-error {\r\n\tbackground: #fee0e0;\r\n}\r\n\r\n.alert-blocks-info {\r\n\tbackground: #e0f3fe;\r\n}\r\n\r\n.alert-blocks.alert-dismissable {\r\n  \tpadding-right: 35px;\r\n}\r\n\r\n.alert-blocks i {\r\n\tfloat: left;\r\n\tmargin-right: 15px;\r\n}\r\n\r\n.alert-blocks img {\r\n\tfloat: left;\r\n\twidth: 40px;\r\n\theight: 40px;\r\n\tmargin-right: 15px;\r\n}\r\n\r\n.alert-blocks strong small {\r\n\tcolor: #a3a3a3;\r\n\tfont-weight: 200;\r\n}\r\n\r\n.alert-blocks p {\r\n\tcolor: #999;\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n/*Profile Me\r\n------------------------------------*/\r\n/*Profile Biography*/\r\n.profile .profile-bio {\r\n\tbackground: #fff;\r\n\tposition: relative;\r\n\tpadding: 15px 10px 5px 15px;\r\n\tmargin-bottom: 30px;\r\n}\r\n\r\n.profile .profile-bio h2 {\r\n\tmargin-top: 0;\r\n\tfont-weight: 200;\r\n}\r\n\r\n.profile .profile-bio span {\r\n\tdisplay: block;\r\n}\r\n\r\n.profile .profile-bio hr {\r\n\tmargin: 12px 0 10px;\r\n}\r\n\r\n.profile .p-chart {\r\n\ttext-align: center;\r\n}\r\n\r\n.profile .p-chart h3 {\r\n\tline-height: 20px;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n/*Circle in Responsive*/\r\n@media (max-width: 450px) {\r\n\t.p-chart.col-xs-6 {\r\n\t\twidth: 100%;\r\n\t}\r\n}\r\n\r\n/*Timeline*/\r\n.profile .timeline-v2.timeline-me:before {\r\n\tleft: 13%;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me p {\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmtime {\r\n\twidth: 20%;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmicon {\r\n\tleft: 13%;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmtime span:first-child {\r\n\tcolor: #585f69;\r\n\tfont-size: 16px;\r\n\ttext-align: left;\r\n\tline-height: 20px;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmtime span:last-child {\r\n\tcolor: #999;\r\n\tfont-size: 14px;\r\n\ttext-align: left;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmlabel {\r\n\tpadding: 0;\r\n\tbackground: inherit;\r\n\tmargin: 0 0 20px 15%;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmlabel:after {\r\n\tborder-color: inherit;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmlabel h2 {\r\n\tmargin: 0 auto;\r\n\tfont-size: 17px;\r\n\tline-height: 20px;\r\n\tborder-bottom: none;\r\n}\r\n\r\n/*Social Contacts v2*/\r\n.profile .social-contacts-v2 {\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.profile .social-contacts-v2 li {\r\n\tpadding: 7px 0;\r\n\tborder-top: 1px solid #f0f0f0;\r\n}\r\n\r\n.profile .social-contacts-v2 li:first-child {\r\n\tborder-top: none;\r\n}\r\n\r\n.profile .social-contacts-v2 li i {\r\n\tfont-size: 16px;\r\n\tmin-width: 25px;\r\n\tmargin-right: 7px;\r\n\ttext-align: center;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.profile .social-contacts-v2 li i.tw {\r\n\tcolor: #159ceb;\r\n}\r\n.profile .social-contacts-v2 li i.fb {\r\n\tcolor: #4862a3;\r\n}\r\n.profile .social-contacts-v2 li i.sk {\r\n\tcolor: #00aceb;\r\n}\r\n.profile .social-contacts-v2 li i.gp {\r\n\tcolor: #dc4a38;\r\n}\r\n.profile .social-contacts-v2 li i.gm {\r\n\tcolor: #c6574b;\r\n}\r\n\r\n/*Social Contacts v3*/\r\n.profile .social-contacts-v3 {\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.profile .social-contacts-v3 li {\r\n\tpadding: 12px 0;\r\n\tborder-top: 1px solid #f0f0f0;\r\n}\r\n\r\n.profile .social-contacts-v3 li:first-child {\r\n\tpadding-top: 0;\r\n\tborder-top: none;\r\n}\r\n\r\n.profile .social-contacts-v3 li:last-child {\r\n\tpadding-bottom: 0;\r\n}\r\n\r\n.profile .social-contacts-v3 li i {\r\n\tcolor: #fff;\r\n\twidth: 25px;\r\n\theight: 25px;\r\n\tline-height: 25px;\r\n\tmargin-right: 7px;\r\n\ttext-align: center;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.profile .social-contacts-v3 li i.tw {\r\n\tbackground: #159ceb;\r\n}\r\n.profile .social-contacts-v3 li i.fb {\r\n\tbackground: #4862a3;\r\n}\r\n.profile .social-contacts-v3 li i.sk {\r\n\tbackground: #00aceb;\r\n}\r\n.profile .social-contacts-v3 li i.gp {\r\n\tbackground: #dc4a38;\r\n}\r\n.profile .social-contacts-v3 li i.gm {\r\n\tbackground: #c6574b;\r\n}\r\n\r\n/*Profile Blog\r\n------------------------------------*/\r\n.profile .blog-border {\r\n\tborder: 1px solid #f0f0f0;\r\n}\r\n\r\n.profile .profile-blog {\r\n\tpadding: 20px;\r\n\tbackground: #fff;\r\n}\r\n\r\n.profile .profile-blog img {\r\n\tfloat: left;\r\n\twidth: 50px;\r\n\theight: 50px;\r\n\tmargin-right: 20px;\r\n}\r\n\r\n.profile .profile-blog hr {\r\n\tmargin: 12px 0 10px;\r\n}\r\n\r\n.profile .user-name {\r\n\toverflow: hidden;\r\n}\r\n\r\n.profile .user-name a {\r\n\tcolor: #555;\r\n\tdisplay: block;\r\n\tfont-size: 16px;\r\n}\r\n\r\n.profile .user-name a:hover {\r\n\tcolor: #4765a0;\r\n}\r\n\r\n/*Profile Projects\r\n------------------------------------*/\r\n.profile .projects {\r\n\tbackground: #fff;\r\n\tpadding: 20px 20px 10px;\r\n}\r\n\r\n.profile .projects h2 {\r\n\tmargin: 0 0 5px;\r\n\tfont-size: 22px;\r\n\tfont-weight: 200;\r\n}\r\n\r\n.profile .projects h3 {\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n.profile .projects .progress {\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.profile .blog-info-v2 {\r\n\tmargin-left: 0;\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.profile .blog-info-v2 li {\r\n\tfont-size: 12px;\r\n\tpadding-left: 8px;\r\n\tline-height: 12px;\r\n\tborder-left: 1px solid #eee;\r\n}\r\n\r\n.profile .blog-info-v2 li:first-child {\r\n\tpadding-left: 0;\r\n\tborder-left: none;\r\n}\r\n\r\n.profile .blog-info-v2 li i {\r\n\tmargin-right: 3px;\r\n}\r\n\r\n.profile .project-share {\r\n\toverflow: hidden;\r\n\tbackground: #fff;\r\n\tpadding: 10px 20px;\r\n\tborder-top: 1px solid #eee;\r\n}\r\n\r\n.profile .project-share ul {\r\n\tmargin-left: 0;\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.profile .comment-list-v2 li {\r\n\tcolor: #999;\r\n\tfont-size: 14px;\r\n\tpadding: 0 10px 0 0;\r\n}\r\n\r\n.profile .comment-list-v2 li a {\r\n\tcolor: #555;\r\n}\r\n\r\n.profile .comment-list-v2 li i {\r\n\tmargin-right: 3px;\r\n}\r\n\r\n.profile .comment-list-v2 li a:hover {\r\n\tcolor: #555;\r\n\ttext-decoration: none;\r\n}\r\n\r\n.profile .comment-list-v2 li:hover i {\r\n\tcolor: #4765a0;\r\n}\r\n\r\n.profile .star-vote li {\r\n\tpadding: 0;\r\n\tfont-size: 15px;\r\n}\r\n\r\n/*Profile History\r\n------------------------------------*/\r\n.profile .timeline-v2:before {\r\n\tbackground: #eee;\r\n}\r\n\r\n.profile .timeline-v2 > li .cbp_tmlabel {\r\n\tbackground: #fff;\r\n}\r\n\r\n.profile .timeline-v2 > li .cbp_tmlabel:after {\r\n\tborder-right-color: #fff;\r\n}\r\n\r\n@media screen and (max-width: 767px) {\r\n\t.profile .timeline-v2 > li .cbp_tmlabel:after {\r\n\t\tborder-bottom-color: #fff;\r\n\t\tborder-right-color: transparent;\r\n\t}\r\n}\r\n\r\n@media screen (min-width: 768px) and (max-width: 992px) {\r\n\t.profile .timeline-v2 > li .cbp_tmlabel:after {\r\n\t\tborder-bottom-color: #fff;\r\n\t\tborder-right-color: transparent;\r\n\t}\r\n}\r\n\r\n/*Profile Settings\r\n------------------------------------*/\r\n/*Profile Edit*/\r\n.profile .profile-edit {\r\n\tpadding: 20px;\r\n\tbackground: #fff;\r\n}\r\n\r\n.profile .profile-edit h2 {\r\n\tfont-weight: 200;\r\n}\r\n\r\n.profile .profile-edit dt {\r\n\ttext-align: inherit;\r\n}\r\n\r\n.profile .profile-edit hr {\r\n\tmargin: 17px 0 15px;\r\n}\r\n\r\n/*Tab*/\r\n.profile .tab-content {\r\n\tpadding: 0;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n\t.profile .tab-v1 .nav-tabs {\r\n\t  \tborder-bottom: none;\r\n\t}\r\n}\r\n\r\n/*Sky Form*/\r\n.profile .sky-form {\r\n\tborder: none;\r\n}\r\n\r\n.profile .sky-form .toggle-change i {\r\n\tleft: 180px;\r\n}\r\n", ""]);
+	exports.push([module.id, "/*Profile\r\n------------------------------------*/\r\n.profile .list-group i {\r\n\tmin-width: 20px;\r\n\tmargin-right: 5px;\r\n\ttext-align: center;\r\n}\r\n\r\n.profile .heading-sm-v2 {\r\n\tfont-size: 16px;\r\n}\r\n\r\n.profile .profile-body {\r\n\tpadding: 10px;\r\n\tbackground: #f7f7f7;\r\n}\r\n\r\n/*Scrollbar*/\r\n.mCustomScrollbar {\r\n\theight: 320px;\r\n}\r\n\r\n/*Panel Title Box*/\r\n.profile .panel-profile {\r\n\tborder: none;\r\n\tmargin-bottom: 0;\r\n\tbox-shadow: none;\r\n}\r\n.profile .panel-profile.no-bg {\r\n\tbackground: inherit;\r\n}\r\n\r\n.profile .panel-heading {\r\n\tcolor: #585f69;\r\n\tbackground: #fff;\r\n\tpadding: 7px 15px;\r\n\tborder-bottom: solid 3px #f7f7f7;\r\n}\r\n\r\n.profile .panel-heading-v2.overflow-h i.pull-right,\r\n.profile .panel-heading.overflow-h i.pull-right {\r\n\ttop: 7px;\r\n\tposition: relative;\r\n}\r\n\r\n.profile .panel-heading-v2.overflow-h i.pull-right,\r\n.profile .panel-heading.overflow-h a i {\r\n\tcolor: #777;\r\n}\r\n\r\n.profile .panel-heading-v2.overflow-h i.pull-right,\r\n.profile .panel-heading.overflow-h a:hover i {\r\n\tcolor: #555;\r\n}\r\n\r\n.profile .panel-title {\r\n\tfont-size: 16px;\r\n}\r\n\r\n/*Notification*/\r\n.profile .notification {\r\n\toverflow: hidden;\r\n\tmargin-bottom: 10px;\r\n\tpadding: 15px 15px 0 0;\r\n\tborder-top: 1px solid #eee;\r\n}\r\n\r\n.profile .notification:first-child {\r\n\tborder-top: none;\r\n}\r\n\r\n.profile .notification img,\r\n.profile .notification i {\r\n\tfloat: left;\r\n\tmargin-right: 10px;\r\n}\r\n\r\n.profile .notification img {\r\n\twidth: 35px;\r\n\theight: 35px;\r\n}\r\n\r\n.profile .notification span {\r\n\tcolor: #777;\r\n\tdisplay: block;\r\n}\r\n\r\n.profile .notification small {\r\n\tcolor: #999;\r\n\tfont-size: 11px;\r\n}\r\n\r\n.profile .notification h4 {\r\n\tmargin: 0 0 3px;\r\n\tfont-size: 14px;\r\n}\r\n\r\n.profile .notification p {\r\n\tcolor: #777;\r\n\tfont-size: 12px;\r\n}\r\n\r\n/*Profile Post*/\r\n.profile .profile-post {\r\n\tbackground: #fff;\r\n\tmargin-bottom: 2px;\r\n\tpadding: 7px 7px 7px 0;\r\n}\r\n\r\n.profile .profile-post.color-one {\r\n\tborder-left: 2px solid #4765a0;\r\n}\r\n.profile .profile-post.color-two {\r\n\tborder-left: 2px solid #3498db;\r\n}\r\n.profile .profile-post.color-three {\r\n\tborder-left: 2px solid #e74c3c;\r\n}\r\n.profile .profile-post.color-four {\r\n\tborder-left: 2px solid #9b6bcc;\r\n}\r\n.profile .profile-post.color-five {\r\n\tborder-left: 2px solid #555;\r\n}\r\n.profile .profile-post.color-six {\r\n\tborder-left: 2px solid #f1c40f;\r\n}\r\n.profile .profile-post.color-seven {\r\n\tborder-left: 2px solid #27d7e7;\r\n}\r\n\r\n.profile .profile-post span.profile-post-numb {\r\n\tfloat: left;\r\n\tcolor: #999;\r\n\tfont-size: 20px;\r\n\tfont-weight: 200;\r\n\tpadding: 5px 12px;\r\n}\r\n\r\n.profile .profile-post:hover span.profile-post-numb {\r\n\tcolor: #4765a0;\r\n}\r\n\r\n.profile .profile-post-in {\r\n\toverflow: hidden;\r\n}\r\n\r\n.profile .profile-post-in h3 a {\r\n\tcolor: #555;\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.profile .profile-post-in p {\r\n\tcolor: #999;\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n/*Profile Event*/\r\n.profile .profile-event .heading-xs {\r\n\tmargin-top: 0;\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.profile .profile-event {\r\n\tbackground: #fff;\r\n\tpadding: 10px 15px;\r\n\tmargin-bottom: 2px;\r\n}\r\n\r\n.profile .profile-event p {\r\n\tcolor: #999;\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n.profile .date-formats {\r\n\tcolor: #fff;\r\n\tfloat: left;\r\n\ttext-align: center;\r\n\tbackground: #4765a0;\r\n\tmargin: 7px 13px 0 0;\r\n\tpadding: 7px 10px 4px;\r\n}\r\n\r\n.profile .date-formats span {\r\n\tdisplay: block;\r\n\tfont-size: 22px;\r\n\tfont-weight: 200;\r\n\tline-height: 25px;\r\n}\r\n\r\n/*Table*/\r\n.profile .table {\r\n\tbackground: #fff;\r\n}\r\n\r\n.profile .table th {\r\n\tmin-width: 100px;\r\n}\r\n\r\n.profile .table td {\r\n\tvertical-align: middle;\r\n}\r\n\r\n.profile .table h3 {\r\n\tmargin-top: 0;\r\n\tfont-size: 16px;\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n.profile .table a {\r\n\tcolor: #555;\r\n}\r\n\r\n.profile .table-search-v2 td img {\r\n\twidth: 70px;\r\n\theight: 70px;\r\n\tmargin: 0 auto;\r\n\tdisplay: block;\r\n}\r\n\r\n.profile .table > thead > tr > th,\r\n.profile .table > tbody > tr > th,\r\n.profile .table > tfoot > tr > th,\r\n.profile .table > thead > tr > td,\r\n.profile .table > tbody > tr > td,\r\n.profile .table > tfoot > tr > td {\r\n\tpadding: 11px;\r\n}\r\n\r\n/*Comment*/\r\n.profile .comment {\r\n\tborder-bottom: 1px solid #eee;\r\n\tpadding: 15px 15px 5px;\r\n}\r\n\r\n.profile .comment img {\r\n\tfloat: left;\r\n\twidth: 50px;\r\n\theight: 50px;\r\n\tmargin-right: 15px;\r\n}\r\n\r\n.profile .comment strong {\r\n\tdisplay: block;\r\n\tline-height: 15px;\r\n\tmargin-bottom: 3px;\r\n}\r\n\r\n.profile .comment p {\r\n\tfont-size: 12px;\r\n\tmargin-bottom: 0;\r\n\tline-height: 17px;\r\n}\r\n\r\n.profile .comment small {\r\n\tcolor: #bbb;\r\n\tfont-weight: 200;\r\n}\r\n\r\n.profile .comment-list li {\r\n\tcolor: #999;\r\n\tfont-size: 11px;\r\n}\r\n\r\n.profile .comment-list li a {\r\n\tcolor: #555;\r\n}\r\n\r\n.profile .comment-list li a:hover {\r\n\tcolor: #555;\r\n\ttext-decoration: none;\r\n}\r\n\r\n.profile .comment-list li:hover i {\r\n\tcolor: #4765a0;\r\n}\r\n\r\n/*Image Post*/\r\n.profile .img-post {\r\n\tposition: relative;\r\n}\r\n\r\n.profile .img-post:before {\r\n\ttop: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tcontent: \" \";\r\n\tposition: absolute;\r\n\tbackground: rgba(0,0,0,0.4);\r\n}\r\n\r\n.profile .img-post-in {\r\n\tleft: 0;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tpadding: 20px;\r\n\tposition: absolute;\r\n}\r\n\r\n.profile .img-post-in h3 {\r\n\tcolor: #fff;\r\n\tmargin: 0 auto;\r\n\tfont-weight: 200;\r\n}\r\n\r\n.profile .img-post-in small {\r\n\tcolor: #999;\r\n\tdisplay: block;\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.profile .img-post-in p {\r\n\tcolor: #bbb;\r\n}\r\n\r\n.profile .img-post-list {\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.profile .img-post-list li a,\r\n.profile .img-post-list li a:hover {\r\n\tcolor: #fff;\r\n\ttext-decoration: none;\r\n}\r\n.profile .img-post-list li a:hover i {\r\n\tcolor: #4765a0;\r\n}\r\n\r\n/*Media*/\r\n.profile .media.media-v2 {\r\n\tmargin-top: 0;\r\n\tpadding: 25px 0 20px;\r\n\tborder-top: 1px solid #eee;\r\n}\r\n\r\n.profile .media.media-v2:first-child {\r\n\tborder-top: none;\r\n}\r\n\r\n.profile .media.media-v2 .media.media-v2 {\r\n\tmargin-top: 20px;\r\n\tpadding-bottom: 0;\r\n}\r\n\r\n.profile .media.media-v2 img.media-object {\r\n\twidth: 50px;\r\n\theight: 50px;\r\n\tmargin-right: 10px;\r\n}\r\n\r\n/*Media Body*/\r\n.profile .media.media-v2 .media-body {\r\n\toverflow: hidden;\r\n}\r\n\r\n.profile .media.media-v2 .media-body p {\r\n\tcolor: #777;\r\n\tline-height: 1.4;\r\n}\r\n\r\n/*Media Heading*/\r\n.profile .media.media-v2 .media-heading {\r\n\tmargin: 0 0 5px;\r\n\tfont-size: 13px;\r\n\tposition: relative;\r\n}\r\n\r\n.profile .media.media-v2 .media-heading a,\r\n.profile .media.media-v2 .media-heading a:hover {\r\n\tcolor: #555;\r\n}\r\n\r\n.profile .media.media-v2 .media-heading strong {\r\n\tpadding-right: 5px;\r\n}\r\n\r\n.profile .media.media-v2 .media-heading small {\r\n\ttop: 7px;\r\n\tright: 0;\r\n\tcolor: #999;\r\n\tfont-size: 12px;\r\n\tposition: absolute;\r\n}\r\n\r\n/*Results List*/\r\n.profile .results-list {\r\n\tmargin-top: 4px;\r\n}\r\n\r\n.profile .results-list li a {\r\n\tcolor: #999;\r\n}\r\n\r\n/*Expand List*/\r\n.profile i.expand-list {\r\n\tcolor: #777;\r\n\tpadding: 5px;\r\n\tmin-width: 20px;\r\n\tfont-size: 12px;\r\n\ttext-align: center;\r\n\tdisplay: inline-block;\r\n\tborder: 1px solid #777;\r\n}\r\n\r\n.profile i.expand-list:hover {\r\n\tcolor: #999;\r\n\tborder-color: #999;\r\n}\r\n\r\n/*Image Uploaded*/\r\n.profile .img-uploaded img {\r\n\twidth: 120px;\r\n\theight: auto;\r\n}\r\n\r\n/*Alert Blocks*/\r\n.alert-blocks {\r\n\tmargin: 0 15px 5px;\r\n\tbackground: #f7f7f7;\r\n\tpadding: 10px 10px 13px;\r\n}\r\n\r\n.alert-blocks:first-child {\r\n\tmargin-top: 15px;\r\n}\r\n\r\n.alert-blocks-pending {\r\n\tbackground: #fffdcc;\r\n}\r\n\r\n.alert-blocks-success {\r\n\tbackground: #e1febc;\r\n}\r\n\r\n.alert-blocks-pending {\r\n\tbackground: #fffdcc;\r\n}\r\n\r\n.alert-blocks-error {\r\n\tbackground: #fee0e0;\r\n}\r\n\r\n.alert-blocks-info {\r\n\tbackground: #e0f3fe;\r\n}\r\n\r\n.alert-blocks.alert-dismissable {\r\n  \tpadding-right: 35px;\r\n}\r\n\r\n.alert-blocks i {\r\n\tfloat: left;\r\n\tmargin-right: 15px;\r\n}\r\n\r\n.alert-blocks img {\r\n\tfloat: left;\r\n\twidth: 40px;\r\n\theight: 40px;\r\n\tmargin-right: 15px;\r\n}\r\n\r\n.alert-blocks strong small {\r\n\tcolor: #a3a3a3;\r\n\tfont-weight: 200;\r\n}\r\n\r\n.alert-blocks p {\r\n\tcolor: #999;\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n/*Profile Me\r\n------------------------------------*/\r\n/*Profile Biography*/\r\n.profile .profile-bio {\r\n\tbackground: #fff;\r\n\tposition: relative;\r\n\tpadding: 15px 10px 5px 15px;\r\n\tmargin-bottom: 30px;\r\n}\r\n\r\n.profile .profile-bio h2 {\r\n\tmargin-top: 0;\r\n\tfont-weight: 200;\r\n}\r\n\r\n.profile .profile-bio span {\r\n\tdisplay: block;\r\n}\r\n\r\n.profile .profile-bio hr {\r\n\tmargin: 12px 0 10px;\r\n}\r\n\r\n.profile .p-chart {\r\n\ttext-align: center;\r\n}\r\n\r\n.profile .p-chart h3 {\r\n\tline-height: 20px;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n/*Circle in Responsive*/\r\n@media (max-width: 450px) {\r\n\t.p-chart.col-xs-6 {\r\n\t\twidth: 100%;\r\n\t}\r\n}\r\n\r\n/*Timeline*/\r\n.profile .timeline-v2.timeline-me:before {\r\n\tleft: 13%;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me p {\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmtime {\r\n\twidth: 20%;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmicon {\r\n\tleft: 13%;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmtime span:first-child {\r\n\tcolor: #585f69;\r\n\tfont-size: 16px;\r\n\ttext-align: left;\r\n\tline-height: 20px;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmtime span {\r\n\tcolor: #999;\r\n\tfont-size: 14px;\r\n\ttext-align: left;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmlabel {\r\n\tpadding: 0;\r\n\tbackground: inherit;\r\n\tmargin: 0 0 20px 15%;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmlabel:after {\r\n\tborder-color: inherit;\r\n}\r\n\r\n.profile .timeline-v2.timeline-me > li .cbp_tmlabel h2 {\r\n\tmargin: 0 auto;\r\n\tfont-size: 17px;\r\n\tline-height: 20px;\r\n\tborder-bottom: none;\r\n}\r\n\r\n/*Social Contacts v2*/\r\n.profile .social-contacts-v2 {\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.profile .social-contacts-v2 li {\r\n\tpadding: 7px 0;\r\n\tborder-top: 1px solid #f0f0f0;\r\n}\r\n\r\n.profile .social-contacts-v2 li:first-child {\r\n\tborder-top: none;\r\n}\r\n\r\n.profile .social-contacts-v2 li i {\r\n\tfont-size: 16px;\r\n\tmin-width: 25px;\r\n\tmargin-right: 7px;\r\n\ttext-align: center;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.profile .social-contacts-v2 li i.tw {\r\n\tcolor: #159ceb;\r\n}\r\n.profile .social-contacts-v2 li i.fb {\r\n\tcolor: #4862a3;\r\n}\r\n.profile .social-contacts-v2 li i.sk {\r\n\tcolor: #00aceb;\r\n}\r\n.profile .social-contacts-v2 li i.gp {\r\n\tcolor: #dc4a38;\r\n}\r\n.profile .social-contacts-v2 li i.gm {\r\n\tcolor: #c6574b;\r\n}\r\n\r\n/*Social Contacts v3*/\r\n.profile .social-contacts-v3 {\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.profile .social-contacts-v3 li {\r\n\tpadding: 12px 0;\r\n\tborder-top: 1px solid #f0f0f0;\r\n}\r\n\r\n.profile .social-contacts-v3 li:first-child {\r\n\tpadding-top: 0;\r\n\tborder-top: none;\r\n}\r\n\r\n.profile .social-contacts-v3 li:last-child {\r\n\tpadding-bottom: 0;\r\n}\r\n\r\n.profile .social-contacts-v3 li i {\r\n\tcolor: #fff;\r\n\twidth: 25px;\r\n\theight: 25px;\r\n\tline-height: 25px;\r\n\tmargin-right: 7px;\r\n\ttext-align: center;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.profile .social-contacts-v3 li i.tw {\r\n\tbackground: #159ceb;\r\n}\r\n.profile .social-contacts-v3 li i.fb {\r\n\tbackground: #4862a3;\r\n}\r\n.profile .social-contacts-v3 li i.sk {\r\n\tbackground: #00aceb;\r\n}\r\n.profile .social-contacts-v3 li i.gp {\r\n\tbackground: #dc4a38;\r\n}\r\n.profile .social-contacts-v3 li i.gm {\r\n\tbackground: #c6574b;\r\n}\r\n\r\n/*Profile Blog\r\n------------------------------------*/\r\n.profile .blog-border {\r\n\tborder: 1px solid #f0f0f0;\r\n}\r\n\r\n.profile .profile-blog {\r\n\tpadding: 20px;\r\n\tbackground: #fff;\r\n}\r\n\r\n.profile .profile-blog img {\r\n\tfloat: left;\r\n\twidth: 50px;\r\n\theight: 50px;\r\n\tmargin-right: 20px;\r\n}\r\n\r\n.profile .profile-blog hr {\r\n\tmargin: 12px 0 10px;\r\n}\r\n\r\n.profile .user-name {\r\n\toverflow: hidden;\r\n}\r\n\r\n.profile .user-name a {\r\n\tcolor: #555;\r\n\tdisplay: block;\r\n\tfont-size: 16px;\r\n}\r\n\r\n.profile .user-name a:hover {\r\n\tcolor: #4765a0;\r\n}\r\n\r\n/*Profile Projects\r\n------------------------------------*/\r\n.profile .projects {\r\n\tbackground: #fff;\r\n\tpadding: 20px 20px 10px;\r\n}\r\n\r\n.profile .projects h2 {\r\n\tmargin: 0 0 5px;\r\n\tfont-size: 22px;\r\n\tfont-weight: 200;\r\n}\r\n\r\n.profile .projects h3 {\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n.profile .projects .progress {\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.profile .blog-info-v2 {\r\n\tmargin-left: 0;\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.profile .blog-info-v2 li {\r\n\tfont-size: 12px;\r\n\tpadding-left: 8px;\r\n\tline-height: 12px;\r\n\tborder-left: 1px solid #eee;\r\n}\r\n\r\n.profile .blog-info-v2 li:first-child {\r\n\tpadding-left: 0;\r\n\tborder-left: none;\r\n}\r\n\r\n.profile .blog-info-v2 li i {\r\n\tmargin-right: 3px;\r\n}\r\n\r\n.profile .project-share {\r\n\toverflow: hidden;\r\n\tbackground: #fff;\r\n\tpadding: 10px 20px;\r\n\tborder-top: 1px solid #eee;\r\n}\r\n\r\n.profile .project-share ul {\r\n\tmargin-left: 0;\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.profile .comment-list-v2 li {\r\n\tcolor: #999;\r\n\tfont-size: 14px;\r\n\tpadding: 0 10px 0 0;\r\n}\r\n\r\n.profile .comment-list-v2 li a {\r\n\tcolor: #555;\r\n}\r\n\r\n.profile .comment-list-v2 li i {\r\n\tmargin-right: 3px;\r\n}\r\n\r\n.profile .comment-list-v2 li a:hover {\r\n\tcolor: #555;\r\n\ttext-decoration: none;\r\n}\r\n\r\n.profile .comment-list-v2 li:hover i {\r\n\tcolor: #4765a0;\r\n}\r\n\r\n.profile .star-vote li {\r\n\tpadding: 0;\r\n\tfont-size: 15px;\r\n}\r\n\r\n/*Profile History\r\n------------------------------------*/\r\n.profile .timeline-v2:before {\r\n\tbackground: #eee;\r\n}\r\n\r\n.profile .timeline-v2 > li .cbp_tmlabel {\r\n\tbackground: #fff;\r\n}\r\n\r\n.profile .timeline-v2 > li .cbp_tmlabel:after {\r\n\tborder-right-color: #fff;\r\n}\r\n\r\n@media screen and (max-width: 767px) {\r\n\t.profile .timeline-v2 > li .cbp_tmlabel:after {\r\n\t\tborder-bottom-color: #fff;\r\n\t\tborder-right-color: transparent;\r\n\t}\r\n}\r\n\r\n@media screen (min-width: 768px) and (max-width: 992px) {\r\n\t.profile .timeline-v2 > li .cbp_tmlabel:after {\r\n\t\tborder-bottom-color: #fff;\r\n\t\tborder-right-color: transparent;\r\n\t}\r\n}\r\n\r\n/*Profile Settings\r\n------------------------------------*/\r\n/*Profile Edit*/\r\n.profile .profile-edit {\r\n\tpadding: 20px;\r\n\tbackground: #fff;\r\n}\r\n\r\n.profile .profile-edit h2 {\r\n\tfont-weight: 200;\r\n}\r\n\r\n.profile .profile-edit dt {\r\n\ttext-align: inherit;\r\n}\r\n\r\n.profile .profile-edit hr {\r\n\tmargin: 17px 0 15px;\r\n}\r\n\r\n/*Tab*/\r\n.profile .tab-content {\r\n\tpadding: 0;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n\t.profile .tab-v1 .nav-tabs {\r\n\t  \tborder-bottom: none;\r\n\t}\r\n}\r\n\r\n/*Sky Form*/\r\n.profile .sky-form {\r\n\tborder: none;\r\n}\r\n\r\n.profile .sky-form .toggle-change i {\r\n\tleft: 180px;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -39430,7 +39467,7 @@
 
 
 	// module
-	exports.push([module.id, "/*Timeline v2\r\n------------------------------------*/\r\n.timeline-v2 {\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n\tposition: relative;\r\n}\r\n\r\n/* The line */\r\n.timeline-v2 > li{\r\n\tposition: relative;\r\n}\r\n\r\n.timeline-v2:before {\r\n\ttop: 0;\r\n\tbottom: 0;\r\n\tleft: 22%;\r\n\twidth: 4px;\r\n\tcontent: '';\r\n\tbackground: #f3f3f3;\r\n\tposition: absolute;\r\n\tmargin-left: -14px;\r\n}\r\n\r\n/* The date/time */\r\n.timeline-v2 > li .cbp_tmtime {\r\n\twidth: 20%;\r\n\tdisplay: block;\r\n\tposition: absolute;\r\n\tpadding-right: 80px;\r\n}\r\n\r\n.timeline-v2 > li .cbp_tmtime span {\r\n\ttop: 17px;\r\n\tdisplay: block;\r\n\ttext-align: right;\r\n\tposition: relative;\r\n}\r\n\r\n.timeline-v2 > li .cbp_tmtime span:first-child {\r\n\tcolor: #999;\r\n\tfont-size: 14px;\r\n\tline-height: 0.9;\r\n}\r\n\r\n.timeline-v2 > li .cbp_tmtime span:last-child {\r\n\tcolor: #585f69;\r\n\tfont-size: 20px;\r\n\tfont-weight: normal;\r\n\r\n}\r\n\r\n/* Right content */\r\n.timeline-v2 > li .cbp_tmlabel {\r\n\tcolor: #fff;\r\n\tpadding: 10px 20px 20px;\r\n\tbackground: #f3f3f3;\r\n\tline-height: 1.4;\r\n\tclear: both;\r\n\tposition: relative;\r\n\t/*border-radius: 5px;*/\r\n\tmargin: 0 0 40px 25%;\r\n}\r\n\r\n/*\r\n.timeline-v2 > li .cbp_tmlabel img.big-thumb {\r\n\twidth: 100%;\r\n}\r\n*/\r\n\r\n.timeline-v2 > li .cbp_tmlabel li {\r\n\tpadding: 0;\r\n}\r\n\r\n/*\r\n.timeline-v2 > li .cbp_tmlabel img.small-thumb {\r\n\twidth: 111px;\r\n\theight: auto;\r\n}\r\n*/\r\n\r\n.timeline-v2 > li .cbp_tmlabel h2 {\r\n\tmargin-top: 0px;\r\n\tfont-size: 21px;\r\n\tpadding: 0 0 5px;\r\n\tmargin-bottom: 10px;\r\n\ttext-transform: capitalize;\r\n\tborder-bottom: 1px solid #ddd;\r\n}\r\n\r\n.timeline-v2 > li .cbp_tmlabel .text-left {\r\n\tfloat: left;\r\n}\r\n\r\n/* The triangle */\r\n.timeline-v2 > li .cbp_tmlabel:after {\r\n\tright: 100%;\r\n\tborder: solid transparent;\r\n\tcontent: \" \";\r\n\theight: 0;\r\n\twidth: 0;\r\n\tposition: absolute;\r\n\tpointer-events: none;\r\n\tborder-right-color: #f3f3f3;\r\n\tborder-width: 10px;\r\n\ttop: 18px;\r\n}\r\n\r\n/* The icons */\r\n.timeline-v2 > li .cbp_tmicon {\r\n\ttop: 22px;\r\n\tleft: 22%;\r\n\twidth: 10px;\r\n\theight: 10px;\r\n\tposition: absolute;\r\n\tbackground: #4765a0;\r\n\tmargin: 0 0 0 -17px;\r\n\tbox-shadow: 0 0 0 4px #f3f3f3;\r\n\t-webkit-font-smoothing: antialiased;\r\n}\r\n\r\n/* Example Media Queries */\r\n@media screen and (max-width: 65.375em) {\r\n\r\n\t.timeline-v2 > li .cbp_tmtime span:last-child {\r\n\t\tfont-size: 1.5em;\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 47.2em) {\r\n\t.timeline-v2:before {\r\n\t\tdisplay: none;\r\n\t}\r\n\r\n\t.timeline-v2 > li .cbp_tmtime {\r\n\t\twidth: 100%;\r\n\t\tposition: relative;\r\n\t\tpadding: 0 0 20px 0;\r\n\t}\r\n\r\n\t.timeline-v2 > li .cbp_tmtime span {\r\n\t\ttext-align: left;\r\n\t}\r\n\r\n\t.timeline-v2 > li .cbp_tmlabel {\r\n\t\tpadding: 1em;\r\n\t\tfont-weight: 400;\r\n\t\tmargin: 0 0 30px 0;\r\n\t}\r\n\r\n\t.timeline-v2 > li .cbp_tmlabel:after {\r\n\t\tleft: 20px;\r\n\t\ttop: -20px;\r\n\t\tright: auto;\r\n\t\tborder-bottom-color: #f3f3f3;\r\n\t\tborder-right-color: transparent;\r\n\t}\r\n\r\n\t.timeline-v2 > li .cbp_tmicon {\r\n\t\tleft: auto;\r\n\t\tfloat: right;\r\n\t\tposition: relative;\r\n\t\tmargin: -55px 5px 0 0px;\r\n\t}\r\n}\r\n\r\n/*timeline-v2 within tab-v2 issue issue fix*/\r\n.timeline-v2 > li .cbp_tmlabel.equal-height-column {\r\n    height: auto !important;\r\n}", ""]);
+	exports.push([module.id, "/*Timeline v2\r\n------------------------------------*/\r\n.timeline-v2 {\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n\tposition: relative;\r\n}\r\n\r\n/* The line */\r\n.timeline-v2 > li{\r\n\tposition: relative;\r\n}\r\n\r\n.timeline-v2:before {\r\n\ttop: 0;\r\n\tbottom: 0;\r\n\tleft: 22%;\r\n\twidth: 4px;\r\n\tcontent: '';\r\n\tbackground: #f3f3f3;\r\n\tposition: absolute;\r\n\tmargin-left: -14px;\r\n}\r\n\r\n/* The date/time */\r\n.timeline-v2 > li .cbp_tmtime {\r\n\twidth: 20%;\r\n\tdisplay: block;\r\n\tposition: absolute;\r\n\tpadding-right: 80px;\r\n}\r\n\r\n.timeline-v2 > li .cbp_tmtime span {\r\n\ttop: 17px;\r\n\tdisplay: block;\r\n\ttext-align: right;\r\n\tposition: relative;\r\n\tcolor: #585f69;\r\n\tfont-size: 20px;\r\n\tfont-weight: normal;\r\n}\r\n\r\n.timeline-v2 > li .cbp_tmtime span:first-child {\r\n\tcolor: #999;\r\n\tfont-size: 14px;\r\n\tline-height: 0.9;\r\n}\r\n\r\n/* Right content */\r\n.timeline-v2 > li .cbp_tmlabel {\r\n\tcolor: #fff;\r\n\tpadding: 10px 20px 20px;\r\n\tbackground: #f3f3f3;\r\n\tline-height: 1.4;\r\n\tclear: both;\r\n\tposition: relative;\r\n\t/*border-radius: 5px;*/\r\n\tmargin: 0 0 40px 25%;\r\n}\r\n\r\n/*\r\n.timeline-v2 > li .cbp_tmlabel img.big-thumb {\r\n\twidth: 100%;\r\n}\r\n*/\r\n\r\n.timeline-v2 > li .cbp_tmlabel li {\r\n\tpadding: 0;\r\n}\r\n\r\n/*\r\n.timeline-v2 > li .cbp_tmlabel img.small-thumb {\r\n\twidth: 111px;\r\n\theight: auto;\r\n}\r\n*/\r\n\r\n.timeline-v2 > li .cbp_tmlabel h2 {\r\n\tmargin-top: 0px;\r\n\tfont-size: 21px;\r\n\tpadding: 0 0 5px;\r\n\tmargin-bottom: 10px;\r\n\ttext-transform: capitalize;\r\n\tborder-bottom: 1px solid #ddd;\r\n}\r\n\r\n.timeline-v2 > li .cbp_tmlabel .text-left {\r\n\tfloat: left;\r\n}\r\n\r\n/* The triangle */\r\n.timeline-v2 > li .cbp_tmlabel:after {\r\n\tright: 100%;\r\n\tborder: solid transparent;\r\n\tcontent: \" \";\r\n\theight: 0;\r\n\twidth: 0;\r\n\tposition: absolute;\r\n\tpointer-events: none;\r\n\tborder-right-color: #f3f3f3;\r\n\tborder-width: 10px;\r\n\ttop: 18px;\r\n}\r\n\r\n/* The icons */\r\n.timeline-v2 > li .cbp_tmicon {\r\n\ttop: 22px;\r\n\tleft: 22%;\r\n\twidth: 10px;\r\n\theight: 10px;\r\n\tposition: absolute;\r\n\tbackground: #4765a0;\r\n\tmargin: 0 0 0 -17px;\r\n\tbox-shadow: 0 0 0 4px #f3f3f3;\r\n\t-webkit-font-smoothing: antialiased;\r\n}\r\n\r\n/* Example Media Queries */\r\n@media screen and (max-width: 65.375em) {\r\n\r\n\t.timeline-v2 > li .cbp_tmtime span:last-child {\r\n\t\tfont-size: 1.5em;\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 47.2em) {\r\n\t.timeline-v2:before {\r\n\t\tdisplay: none;\r\n\t}\r\n\r\n\t.timeline-v2 > li .cbp_tmtime {\r\n\t\twidth: 100%;\r\n\t\tposition: relative;\r\n\t\tpadding: 0 0 20px 0;\r\n\t}\r\n\r\n\t.timeline-v2 > li .cbp_tmtime span {\r\n\t\ttext-align: left;\r\n\t}\r\n\r\n\t.timeline-v2 > li .cbp_tmlabel {\r\n\t\tpadding: 1em;\r\n\t\tfont-weight: 400;\r\n\t\tmargin: 0 0 30px 0;\r\n\t}\r\n\r\n\t.timeline-v2 > li .cbp_tmlabel:after {\r\n\t\tleft: 20px;\r\n\t\ttop: -20px;\r\n\t\tright: auto;\r\n\t\tborder-bottom-color: #f3f3f3;\r\n\t\tborder-right-color: transparent;\r\n\t}\r\n\r\n\t.timeline-v2 > li .cbp_tmicon {\r\n\t\tleft: auto;\r\n\t\tfloat: right;\r\n\t\tposition: relative;\r\n\t\tmargin: -55px 5px 0 0px;\r\n\t}\r\n}\r\n\r\n/*timeline-v2 within tab-v2 issue issue fix*/\r\n.timeline-v2 > li .cbp_tmlabel.equal-height-column {\r\n    height: auto !important;\r\n}", ""]);
 
 	// exports
 
@@ -39492,9 +39529,16 @@
 	        value: function componentDidMount() {
 	            var _this2 = this;
 
-	            _user_repository2.default.getUserList(function (userList) {
-	                _this2.setState({ userList: userList });
-	            });
+	            console.log();
+	            if (this.props.params.userId) {
+	                _user_repository2.default.getUserUnfollowUserList(this.props.params.userId, function (userList) {
+	                    _this2.setState({ userList: userList });
+	                });
+	            } else {
+	                _user_repository2.default.getUserList(function (userList) {
+	                    _this2.setState({ userList: userList });
+	                });
+	            }
 	        }
 	    }, {
 	        key: 'render',
@@ -39831,6 +39875,8 @@
 
 	var _lodash2 = _interopRequireDefault(_lodash);
 
+	var _reactRouter = __webpack_require__(249);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -39900,6 +39946,11 @@
 	                                _react2.default.createElement(
 	                                    'p',
 	                                    null,
+	                                    !!loved.userName ? _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/user/' + loved.userId },
+	                                        "@" + loved.userName + ": "
+	                                    ) : null,
 	                                    loved.description
 	                                )
 	                            ),
@@ -41009,12 +41060,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var getUser = function getUser(userId, callBack) {
-	    var url = "http://localhost:3000/users/" + userId;
-	    _jquery2.default.get(url, function (user) {
-	        callBack(user);
-	    });
-	};
+	var baseUrl = "http://localhost:3000/";
 
 	var getUserList = function getUserList(callBack) {
 	    _jquery2.default.get('users', function (userList) {
@@ -41022,10 +41068,214 @@
 	    });
 	};
 
+	var getUser = function getUser(userId, callBack) {
+	    var url = baseUrl + "users/" + userId;
+	    _jquery2.default.get(url, function (user) {
+	        callBack(user);
+	    });
+	};
+
+	var getUserUnfollowUserList = function getUserUnfollowUserList(userId, callBack) {
+	    var url = baseUrl + "users/" + userId + "/userList";
+	    _jquery2.default.get(url, function (userList) {
+	        callBack(userList);
+	    });
+	};
+
+	var getUserFollowingRecommend = function getUserFollowingRecommend(userId, callBack) {
+	    var url = baseUrl + "users/" + userId + "/following";
+	    _jquery2.default.get(url, function (data) {
+	        callBack(data);
+	    });
+	};
+
 	exports.default = {
 	    getUser: getUser,
-	    getUserList: getUserList
+	    getUserList: getUserList,
+	    getUserFollowingRecommend: getUserFollowingRecommend,
+	    getUserUnfollowUserList: getUserUnfollowUserList
 	};
+
+/***/ },
+/* 352 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var isLogin = function isLogin() {
+	    return true;
+	};
+
+	exports.default = {
+	    isLogin: isLogin
+	};
+
+/***/ },
+/* 353 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	__webpack_require__(320);
+
+	var _lodash = __webpack_require__(314);
+
+	var _lodash2 = _interopRequireDefault(_lodash);
+
+	var _react = __webpack_require__(80);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _redux = __webpack_require__(335);
+
+	var _user_loved_content = __webpack_require__(323);
+
+	var _user_loved_content2 = _interopRequireDefault(_user_loved_content);
+
+	var _user_loved_filter_panel = __webpack_require__(349);
+
+	var _user_loved_filter_panel2 = _interopRequireDefault(_user_loved_filter_panel);
+
+	var _user_loved_filter_action = __webpack_require__(350);
+
+	var _user_loved_filter_reducer = __webpack_require__(348);
+
+	var _user_loved_filter_reducer2 = _interopRequireDefault(_user_loved_filter_reducer);
+
+	var _user_repository = __webpack_require__(351);
+
+	var _user_repository2 = _interopRequireDefault(_user_repository);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var store = (0, _redux.createStore)(_user_loved_filter_reducer2.default);
+
+	var User = function (_React$Component) {
+	    _inherits(User, _React$Component);
+
+	    function User(props) {
+	        _classCallCheck(this, User);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(User).call(this, props));
+
+	        _this.state = {
+	            data: {},
+	            lovedList: []
+	        };
+	        return _this;
+	    }
+
+	    _createClass(User, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            var _this2 = this;
+
+	            _user_repository2.default.getUserFollowingRecommend(this.props.params.userId, function (data) {
+	                _this2.setState({
+	                    data: data,
+	                    lovedList: data.lovedList
+	                });
+	            });
+
+	            this.unsubscribe = store.subscribe(function () {
+	                var filterList = _lodash2.default.filter(_this2.state.data.lovedList, function (loved) {
+	                    var typeFilter = false;
+	                    if (store.getState().typeFilterList.length === 0) {
+	                        typeFilter = true;
+	                    } else {
+	                        typeFilter = _lodash2.default.indexOf(store.getState().typeFilterList, loved.type) > -1;
+	                    }
+
+	                    var tagFilter = false;
+	                    if (store.getState().tagFilterList.length === 0) {
+	                        tagFilter = true;
+	                    } else {
+	                        tagFilter = _lodash2.default.intersection(store.getState().tagFilterList, loved.tags).length > 0;
+	                    }
+	                    return typeFilter && tagFilter;
+	                });
+	                _this2.setState({ lovedList: filterList });
+	            });
+	        }
+	    }, {
+	        key: 'componentWillUnmount',
+	        value: function componentWillUnmount() {
+	            this.unsubscribe();
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'container content-xs profile' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-md-12' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'profile-body' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'row' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'col-md-9' },
+	                                    _react2.default.createElement(_user_loved_content2.default, { lovedList: this.state.lovedList })
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'col-md-3' },
+	                                    _react2.default.createElement(_user_loved_filter_panel2.default, {
+	                                        name: 'Types',
+	                                        icon: 'fa-filter',
+	                                        filterList: this.state.data.lovedTypes,
+	                                        OnAddFilter: function OnAddFilter(filter) {
+	                                            store.dispatch((0, _user_loved_filter_action.addTypeFilter)(filter));
+	                                        },
+	                                        OnRemoveFilter: function OnRemoveFilter(filter) {
+	                                            store.dispatch((0, _user_loved_filter_action.removeTypeFilter)(filter));
+	                                        } }),
+	                                    _react2.default.createElement(_user_loved_filter_panel2.default, {
+	                                        name: 'Tags',
+	                                        icon: 'fa-tags',
+	                                        filterList: this.state.data.lovedTags,
+	                                        OnAddFilter: function OnAddFilter(filter) {
+	                                            store.dispatch((0, _user_loved_filter_action.addTagFilter)(filter));
+	                                        },
+	                                        OnRemoveFilter: function OnRemoveFilter(filter) {
+	                                            store.dispatch((0, _user_loved_filter_action.removeTagFilter)(filter));
+	                                        } })
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return User;
+	}(_react2.default.Component);
+
+	exports.default = User;
 
 /***/ }
 /******/ ]);

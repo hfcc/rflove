@@ -113,6 +113,98 @@ router.get('/users/:id', function(ctx, next){
     ctx.body = user;
 });
 
+router.get('/users/:id/following', function(ctx, next){
+    var data = {
+        lovedTypes:[
+            {name: "music", count: 50},
+            {name: "video", count: 100}
+        ],
+        lovedTags: [
+            {name: "beyond", count: 10},
+            {name: "郭德纲", count: 100}
+        ],
+        lovedList: [
+            {
+                time: "2016-06-01",
+                title: "光辉岁月",
+                link: "",
+                description: "非常喜欢这首歌曲",
+                type: "music",
+                tags: ["beyond"],
+                userName: 'cuican',
+                userId: 1
+            },
+            {
+                time: "2016-06-01",
+                title: "光辉岁月",
+                link: "",
+                description: "非常喜欢这首歌曲",
+                type: "video",
+                tags: ["郭德纲"],
+                userName: 'hanfeng',
+                userId: 2
+            }
+        ]
+    };
+    ctx.body = data;
+});
+
+router.get('/users/:id/userlist', function(ctx, next){
+    var userList = [
+            {
+                id: 1,
+                name: "cuican",
+                description: "developer",
+                lovedCount: 5000,
+                followerCount: 1000,
+                lovedTypes:[
+                    {name: "music", count: 50}
+                ]
+            },
+            {
+                id: 2,
+                name: "cuican",
+                description: "developer",
+                lovedCount: 5000,
+                followerCount: 1000,
+                lovedTypes:[
+                    {name: "music", count: 50}
+                ]
+            },
+            {
+                id: 3,
+                name: "cuican",
+                description: "developer",
+                lovedCount: 5000,
+                followerCount: 1000,
+                lovedTypes:[
+                    {name: "music", count: 50}
+                ]
+            },
+            {
+                id: 4,
+                name: "cuican",
+                description: "developer",
+                lovedCount: 5000,
+                followerCount: 1000,
+                lovedTypes:[
+                    {name: "music", count: 50}
+                ]
+            },
+            {
+                id: 5,
+                name: "cuican",
+                description: "developer",
+                lovedCount: 5000,
+                followerCount: 1000,
+                lovedTypes:[
+                    {name: "music", count: 50}
+                ]
+            },
+        ];
+    ctx.body = userList;
+})
+
 app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(3000);
