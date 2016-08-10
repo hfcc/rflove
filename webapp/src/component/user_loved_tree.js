@@ -24,7 +24,12 @@ export default class UserLovedTree extends React.Component {
                     <div className="cbp_tmlabel">
                         <div className="tag-box tag-box-v2 box-shadow shadow-effect-1">
                             <h2>
-                                <a href={loved.link}>{loved.title}</a>
+                                <Link to={`/`}>{loved.title}</Link>
+                                {
+                                    !!loved.link
+                                    ? <a href={loved.link} className="pull-right"><i className="fa fa-external-link"></i></a>
+                                    : null
+                                }
                             </h2>
                             <div className="margin-bottom-5">
                                 <p>

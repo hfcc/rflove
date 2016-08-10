@@ -39935,10 +39935,15 @@
 	                                'h2',
 	                                null,
 	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: loved.link },
+	                                    _reactRouter.Link,
+	                                    { to: '/' },
 	                                    loved.title
-	                                )
+	                                ),
+	                                !!loved.link ? _react2.default.createElement(
+	                                    'a',
+	                                    { href: loved.link, className: 'pull-right' },
+	                                    _react2.default.createElement('i', { className: 'fa fa-external-link' })
+	                                ) : null
 	                            ),
 	                            _react2.default.createElement(
 	                                'div',

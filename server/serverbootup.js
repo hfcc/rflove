@@ -95,7 +95,7 @@ router.get('/users/:id', function(ctx, next){
             {
                 time: "2016-06-01",
                 title: "光辉岁月",
-                link: "",
+                link: "http://google.com",
                 description: "非常喜欢这首歌曲",
                 type: "music",
                 tags: ["beyond"]
@@ -137,7 +137,7 @@ router.get('/users/:id/following', function(ctx, next){
             {
                 time: "2016-06-01",
                 title: "光辉岁月",
-                link: "",
+                link: "http://google.com",
                 description: "非常喜欢这首歌曲",
                 type: "video",
                 tags: ["郭德纲"],
