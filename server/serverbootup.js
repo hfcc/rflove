@@ -2,7 +2,7 @@ const Koa = require('koa');
 const co = require('co');
 const router = require('koa-router')();
 const staticServer = require('koa-static-server');
-
+var send = require('koa-send');
 const app = new Koa();
 
 app.use(co.wrap(function *(ctx, next){
@@ -204,6 +204,10 @@ router.get('/users/:id/userlist', function(ctx, next){
         ];
     ctx.body = userList;
 })
+
+router.get('*', co.wrap(function *(ctx, next){
+    yield send(ctx, 'webapp/index.html');
+}));
 
 app.use(router.routes()).use(router.allowedMethods());
 
