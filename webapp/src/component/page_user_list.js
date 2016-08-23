@@ -12,7 +12,6 @@ export default class UserList extends React.Component {
         this.state = { userList: [] };
     }
     componentDidMount() {
-        console.log();
         if(this.props.params.userId){
             userRepository.getUserUnfollowUserList(this.props.params.userId, (userList) => {
                 this.setState({userList: userList});

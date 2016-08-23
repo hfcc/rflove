@@ -1,6 +1,5 @@
 import './css/reset.css';
 import './css/main.less';
-import './css/timeline.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/unify/css/style.css';
 import './css/unify/plugins/sky-forms-pro/skyforms/css/sky-forms.css';

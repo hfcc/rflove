@@ -22,7 +22,7 @@ router.get('/users', function(ctx, next) {
             description: "developer",
             lovedCount: 5000,
             followerCount: 1000,
-            lovedTypes:[
+            lovedTags:[
                 {name: "music", count: 50}
             ]
         },
@@ -32,7 +32,7 @@ router.get('/users', function(ctx, next) {
             description: "developer",
             lovedCount: 5000,
             followerCount: 1000,
-            lovedTypes:[
+            lovedTags:[
                 {name: "music", count: 50}
             ]
         },
@@ -42,7 +42,7 @@ router.get('/users', function(ctx, next) {
             description: "developer",
             lovedCount: 5000,
             followerCount: 1000,
-            lovedTypes:[
+            lovedTags:[
                 {name: "music", count: 50}
             ]
         },
@@ -52,7 +52,7 @@ router.get('/users', function(ctx, next) {
             description: "developer",
             lovedCount: 5000,
             followerCount: 1000,
-            lovedTypes:[
+            lovedTags:[
                 {name: "music", count: 50}
             ]
         },
@@ -62,7 +62,7 @@ router.get('/users', function(ctx, next) {
             description: "developer",
             lovedCount: 5000,
             followerCount: 1000,
-            lovedTypes:[
+            lovedTags:[
                 {name: "music", count: 50}
             ]
         },
@@ -77,10 +77,6 @@ router.get('/users/:id', function(ctx, next){
         id: 1,
         name: "hanfeng",
         description: "developer",
-        lovedTypes:[
-            {name: "music", count: 50},
-            {name: "video", count: 100}
-        ],
         lovedTags: [
             {name: "beyond", count: 10},
             {name: "郭德纲", count: 100}
@@ -97,7 +93,6 @@ router.get('/users/:id', function(ctx, next){
                 title: "光辉岁月",
                 link: "http://google.com",
                 description: "非常喜欢这首歌曲",
-                type: "music",
                 tags: ["beyond"]
             },
             {
@@ -105,7 +100,6 @@ router.get('/users/:id', function(ctx, next){
                 title: "光辉岁月",
                 link: "",
                 description: "非常喜欢这首歌曲",
-                type: "video",
                 tags: ["郭德纲"]
             }
         ]
@@ -115,7 +109,7 @@ router.get('/users/:id', function(ctx, next){
 
 router.get('/users/:id/following', function(ctx, next){
     var data = {
-        lovedTypes:[
+        lovedTags:[
             {name: "music", count: 50},
             {name: "video", count: 100}
         ],
@@ -129,7 +123,6 @@ router.get('/users/:id/following', function(ctx, next){
                 title: "光辉岁月",
                 link: "",
                 description: "非常喜欢这首歌曲",
-                type: "music",
                 tags: ["beyond"],
                 userName: 'cuican',
                 userId: 1
@@ -139,7 +132,6 @@ router.get('/users/:id/following', function(ctx, next){
                 title: "光辉岁月",
                 link: "http://google.com",
                 description: "非常喜欢这首歌曲",
-                type: "video",
                 tags: ["郭德纲"],
                 userName: 'hanfeng',
                 userId: 2
@@ -157,7 +149,7 @@ router.get('/users/:id/userlist', function(ctx, next){
                 description: "developer",
                 lovedCount: 5000,
                 followerCount: 1000,
-                lovedTypes:[
+                lovedTags:[
                     {name: "music", count: 50}
                 ]
             },
@@ -167,7 +159,7 @@ router.get('/users/:id/userlist', function(ctx, next){
                 description: "developer",
                 lovedCount: 5000,
                 followerCount: 1000,
-                lovedTypes:[
+                lovedTags:[
                     {name: "music", count: 50}
                 ]
             },
@@ -177,7 +169,7 @@ router.get('/users/:id/userlist', function(ctx, next){
                 description: "developer",
                 lovedCount: 5000,
                 followerCount: 1000,
-                lovedTypes:[
+                lovedTags:[
                     {name: "music", count: 50}
                 ]
             },
@@ -187,7 +179,7 @@ router.get('/users/:id/userlist', function(ctx, next){
                 description: "developer",
                 lovedCount: 5000,
                 followerCount: 1000,
-                lovedTypes:[
+                lovedTags:[
                     {name: "music", count: 50}
                 ]
             },
@@ -197,7 +189,7 @@ router.get('/users/:id/userlist', function(ctx, next){
                 description: "developer",
                 lovedCount: 5000,
                 followerCount: 1000,
-                lovedTypes:[
+                lovedTags:[
                     {name: "music", count: 50}
                 ]
             },

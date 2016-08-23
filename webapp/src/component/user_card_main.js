@@ -25,14 +25,14 @@ export default class UserCardMain extends React.Component {
         );
     }
     renderUserTypeList() {
-        return this.props.user.lovedTypes.map((lovedType, index) => {
+        return this.props.user.lovedTags.map((lovedTag, index) => {
                         return (
                             <li className="margin-bottom-5" key={index}>
                                 <span className="label label-dark-blue">
-                                    {lovedType.name}
+                                    {lovedTag.name}
                                 </span>
                                 <span className="label label-light">
-                                    {lovedType.count}
+                                    {lovedTag.count}
                                 </span>
                             </li>
                         );

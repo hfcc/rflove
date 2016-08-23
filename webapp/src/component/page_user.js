@@ -8,7 +8,7 @@ import UserCardDetail from './user_card_detail.js';
 import UserLovedContent from './user_loved_content.js';
 import UserLovedFilterPanel from './user_loved_filter_panel.js'
 
-import {addTypeFilter, removeTypeFilter, addTagFilter, removeTagFilter} from '../action/user_loved_filter_action.js';
+import { addTagFilter, removeTagFilter} from '../action/user_loved_filter_action.js';
 import userLovedFilterReducer from '../reducer/user_loved_filter_reducer.js';
 
 import userRepository from '../repository/user_repository.js';
@@ -34,20 +34,13 @@ export default class User extends React.Component {
 
         this.unsubscribe = store.subscribe(() => {
             let filterList = _.filter(this.state.user.lovedList, (loved) => {
-                    let typeFilter = false;
-                    if (store.getState().typeFilterList.length === 0) {
-                        typeFilter = true;
-                    } else {
-                        typeFilter = _.indexOf(store.getState().typeFilterList, loved.type) > -1;
-                    }
-
                     let tagFilter = false;
-                    if (store.getState().tagFilterList.length === 0) {
+                    if (store.getState().length === 0) {
                         tagFilter = true;
                     } else {
-                        tagFilter = _.intersection(store.getState().tagFilterList, loved.tags).length > 0;
+                        tagFilter = _.intersection(store.getState(), loved.tags).length > 0;
                     }
-                    return typeFilter && tagFilter;
+                    return tagFilter;
                 });
             this.setState({lovedList: filterList});
         });
@@ -70,16 +63,6 @@ export default class User extends React.Component {
                                 </div>
 
                                 <div className="col-md-3">
-                                    <UserLovedFilterPanel
-                                        name = "Types"
-                                        icon = "fa-filter"
-                                        filterList = {this.state.user.lovedTypes}
-                                        OnAddFilter = { (filter) => {
-                                            store.dispatch(addTypeFilter(filter));
-                                        }}
-                                        OnRemoveFilter = {(filter) => {
-                                            store.dispatch(removeTypeFilter(filter));
-                                        }}/>
                                     <UserLovedFilterPanel
                                         name = "Tags"
                                         icon = "fa-tags"

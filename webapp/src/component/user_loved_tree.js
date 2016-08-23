@@ -17,19 +17,19 @@ export default class UserLovedTree extends React.Component {
             return (
                 <li key={index}>
                     <time dateTime="" className="cbp_tmtime">
-                        <span>{ loved.type }</span>
                         <span>{loved.time}</span>
                     </time>
                     <i className="cbp_tmicon rounded-x hidden-xs"></i>
                     <div className="cbp_tmlabel">
                         <div className="tag-box tag-box-v2 box-shadow shadow-effect-1">
                             <h2>
-                                <Link to={`/`}>{loved.title}</Link>
+                                <span>{loved.title}</span>
                                 {
                                     !!loved.link
                                     ? <a href={loved.link} className="pull-right"><i className="fa fa-external-link"></i></a>
                                     : null
                                 }
+                                <Link to={'/loved/' + loved.id} className="pull-right"><i className="fa fa-link"></i></Link>
                             </h2>
                             <div className="margin-bottom-5">
                                 <p>
