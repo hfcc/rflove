@@ -70,6 +70,11 @@ export default class Header extends React.Component {
                                         unFollow Users
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link to="/tags">
+                                        Tag List
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

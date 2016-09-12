@@ -15,6 +15,7 @@ import Header from './component/header.js';
 import PageUser from './component/page_user.js';
 import PageUserList from './component/page_user_list.js';
 import PageUserFollwingRecommend from './component/page_user_following_recommend.js';
+import PageTagList from './component/page_tag_list.js';
 import Footer from './component/footer.js';
 
 class Main extends React.Component {
@@ -36,6 +37,7 @@ ReactDOM.render((
             <Route path="/user/:userId/userList" component={ PageUserList } />
             <Route path="/user/:userId" component={ PageUser } />
             <Route path="/user/:userId/following" component={ PageUserFollwingRecommend } />
+            <Route path="/tags" component = { PageTagList } />
         </Route>
     </Router>
 ), document.getElementById('root'));
