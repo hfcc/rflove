@@ -71,7 +71,7 @@ export default class Header extends React.Component {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/tags">
+                                    <Link to="/tagList">
                                         Tag List
                                     </Link>
                                 </li>

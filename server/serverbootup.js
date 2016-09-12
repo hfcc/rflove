@@ -197,6 +197,47 @@ router.get('/users/:id/userlist', function(ctx, next){
     ctx.body = userList;
 })
 
+router.get('/tags', function(ctx, next) {
+    var tagList = [
+        {
+            id: 1,
+            name: "music",
+            description: "music music music music",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            id: 2,
+            name: "music",
+            description: "music music music music",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            id: 3,
+            name: "music",
+            description: "music music music music",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            id: 4,
+            name: "music",
+            description: "music music music music",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+        {
+            id: 5,
+            name: "music",
+            description: "music music music music",
+            lovedCount: 5000,
+            followerCount: 1000
+        },
+    ];
+    ctx.body = tagList;
+});
+
 router.get('*', co.wrap(function *(ctx, next){
     yield send(ctx, 'webapp/index.html');
 }));

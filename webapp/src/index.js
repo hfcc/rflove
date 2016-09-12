@@ -37,7 +37,7 @@ ReactDOM.render((
             <Route path="/user/:userId/userList" component={ PageUserList } />
             <Route path="/user/:userId" component={ PageUser } />
             <Route path="/user/:userId/following" component={ PageUserFollwingRecommend } />
-            <Route path="/tags" component = { PageTagList } />
+            <Route path="/tagList" component = { PageTagList } />
         </Route>
     </Router>
 ), document.getElementById('root'));

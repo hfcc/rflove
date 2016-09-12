@@ -145,7 +145,7 @@
 	        _react2.default.createElement(_reactRouter.Route, { path: '/user/:userId/userList', component: _page_user_list2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/user/:userId', component: _page_user2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/user/:userId/following', component: _page_user_following_recommend2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/tags', component: _page_tag_list2.default })
+	        _react2.default.createElement(_reactRouter.Route, { path: '/tagList', component: _page_tag_list2.default })
 	    )
 	), document.getElementById('root'));
 
@@ -38974,7 +38974,7 @@
 	                                    null,
 	                                    _react2.default.createElement(
 	                                        _reactRouter.Link,
-	                                        { to: '/tags' },
+	                                        { to: '/tagList' },
 	                                        'Tag List'
 	                                    )
 	                                )
@@ -41185,7 +41185,7 @@
 /* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -41193,9 +41193,23 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+	__webpack_require__(319);
+
 	var _react = __webpack_require__(78);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _lodash = __webpack_require__(312);
+
+	var _lodash2 = _interopRequireDefault(_lodash);
+
+	var _tag_card_main = __webpack_require__(350);
+
+	var _tag_card_main2 = _interopRequireDefault(_tag_card_main);
+
+	var _tag_repository = __webpack_require__(351);
+
+	var _tag_repository2 = _interopRequireDefault(_tag_repository);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41208,32 +41222,65 @@
 	var TagList = function (_React$Component) {
 	    _inherits(TagList, _React$Component);
 
-	    function TagList() {
+	    function TagList(props) {
 	        _classCallCheck(this, TagList);
 
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(TagList).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TagList).call(this, props));
+
+	        _this.state = { tagList: [] };
+	        return _this;
 	    }
 
 	    _createClass(TagList, [{
-	        key: "render",
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            var _this2 = this;
+
+	            _tag_repository2.default.getTagList(function (tagList) {
+	                _this2.setState({ tagList: tagList });
+	            });
+	        }
+	    }, {
+	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
-	                "div",
-	                { className: "container content-xs profile" },
+	                'div',
+	                { className: 'container content-xs profile' },
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "row" },
+	                    'div',
+	                    { className: 'row' },
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "col-md-12" },
+	                        'div',
+	                        { className: 'col-md-12' },
 	                        _react2.default.createElement(
-	                            "div",
-	                            null,
-	                            "tag list"
+	                            'div',
+	                            { className: 'profile-body' },
+	                            this.renderTagList()
 	                        )
 	                    )
 	                )
 	            );
+	        }
+	    }, {
+	        key: 'renderTagList',
+	        value: function renderTagList() {
+	            return (0, _lodash2.default)(this.state.tagList).chunk(4).map(function (tags, tagsIndex) {
+	                return _react2.default.createElement(
+	                    'div',
+	                    { className: 'row margin-bottom-20', key: tagsIndex },
+	                    _lodash2.default.map(tags, function (tag, tagIndex) {
+	                        var className = "col-sm-3 ";
+	                        if (tagIndex === 0 || tagIndex != 3) {
+	                            className += "sm-margin-bottom-20";
+	                        }
+	                        return _react2.default.createElement(
+	                            'div',
+	                            { className: className, key: tagIndex },
+	                            _react2.default.createElement(_tag_card_main2.default, { tag: tag })
+	                        );
+	                    })
+	                );
+	            }).value();
 	        }
 	    }]);
 
@@ -41241,6 +41288,114 @@
 	}(_react2.default.Component);
 
 	exports.default = TagList;
+
+/***/ },
+/* 350 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	__webpack_require__(319);
+
+	var _react = __webpack_require__(78);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(247);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var TagCardMain = function (_React$Component) {
+	    _inherits(TagCardMain, _React$Component);
+
+	    function TagCardMain() {
+	        _classCallCheck(this, TagCardMain);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(TagCardMain).apply(this, arguments));
+	    }
+
+	    _createClass(TagCardMain, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'profile-blog' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'user-name' },
+	                    this.props.tag.name
+	                ),
+	                _react2.default.createElement('div', { className: 'clearfix margin-bottom-20' }),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    this.props.tag.description
+	                ),
+	                _react2.default.createElement('hr', null),
+	                _react2.default.createElement(
+	                    'ul',
+	                    { className: 'list-inline share-list' },
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement('i', { className: 'fa fa-heart red' }),
+	                        this.props.tag.lovedCount
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement('i', { className: 'fa fa-group' }),
+	                        this.props.tag.followerCount
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return TagCardMain;
+	}(_react2.default.Component);
+
+	exports.default = TagCardMain;
+
+/***/ },
+/* 351 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _jquery = __webpack_require__(310);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var baseUrl = "http://localhost:3000/";
+
+	var getTagList = function getTagList(callBack) {
+	    _jquery2.default.get('tags', function (tagList) {
+	        callBack(tagList);
+	    });
+	};
+
+	exports.default = {
+	    getTagList: getTagList
+	};
 
 /***/ }
 /******/ ]);
